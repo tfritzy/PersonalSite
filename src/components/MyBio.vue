@@ -11,7 +11,7 @@ import SocialMediaLink from './SocialMediaLink.vue'
 
     <div>
       <h1 class="mb-1 mt-0">Tyler Fritz</h1>
-      <p>Software engineer and game developer</p>
+      <p>Software engineer and hobbyist game developer</p>
       <br />
 
       <div class="flex flex-col space-y-1">
