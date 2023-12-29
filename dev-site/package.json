@@ -14,7 +14,9 @@
   },
   "dependencies": {
     "@iconoir/vue": "^7.2.0",
+    "prismjs": "^1.29.0",
     "vue": "^3.3.11",
+    "vue-code-highlight": "^0.7.8",
     "vue-router": "^4.2.5"
   },
   "devDependencies": {

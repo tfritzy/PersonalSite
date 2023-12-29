@@ -4,15 +4,14 @@ import SocialMediaLink from './SocialMediaLink.vue'
 </script>
 
 <template>
-  <div class="flex flex-row space-x-2">
-    <div>
-      <img alt="Logo" class="logo rounded-full" src="@/assets/logo.png" width="100" height="100" />
+  <div class="flex flex-row space-x-2 items-start justify-start">
+    <div class="w-[75px] h-[75px]">
+      <img alt="Logo" class="logo rounded-full" src="@/assets/logo.png" width="75" height="75" />
     </div>
 
     <div>
-      <h1 class="green text-lg text-gray-100 mb-1">Tyler Fritz</h1>
-      <h3 class="text-gray-300">Software engineer and game developer</h3>
-
+      <h1 class="mb-1 mt-0">Tyler Fritz</h1>
+      <p>Software engineer and game developer</p>
       <br />
 
       <div class="flex flex-col space-y-1">
