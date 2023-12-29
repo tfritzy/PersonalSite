@@ -51,7 +51,7 @@ onMounted(() => {
     <h2><span>Furnaces</span></h2>
     <p>
       <span
-        >Smelting ores happens within furnaces. These are a type of building that accepts ore, and
+        >Smelting ore happens within furnaces. These are a type of building that accepts ore, and
         uses some form of the energy to melt it and extract the desired metals.
       </span>
     </p>
@@ -76,8 +76,8 @@ onMounted(() => {
     <p>
       <span
         >Each type of furnace has a value for what percent of energy it uses goes into heating the
-        ore. Lower tier furnaces are much less efficient than higher tier furnaces, meaning that
-        they use much more energy and time to heat ore to its melting point.
+        ore. The rest is lost as heat. Lower tier furnaces are much less efficient than higher tier
+        furnaces, meaning that they use much more energy and time to heat ore to its melting point.
       </span>
     </p>
 
@@ -106,17 +106,6 @@ onMounted(() => {
     <p>
       <span>The setup is that each <code>Furnace</code> has a set of components:</span>
     </p>
-
-    <pre class="language-csharp"><code>protected override void InitComponents()
-{
-    base.InitComponents();
-    SetComponent(new Smelt(this));
-    SetComponent(new ItemPort(this));
-    SetComponent(new Inventory(this, 2, 1));
-    SetComponent(new OreInventory(this, 1, 1));
-    SetComponent(new FuelInventory(this, 1, 1));
-}</code></pre>
-
     <ul>
       <li>
         <span><code>Smelt</code> - Houses the logic for consuming fuel and smelting metals.</span>
@@ -144,7 +133,7 @@ onMounted(() => {
     <br />
 
     <p>
-      <span>Most of the magic happens in the <code>Smelt</code> component</span>
+      <span>Most of the interesting things happen in the <code>Smelt</code> component</span>
     </p>
 
     <br />
@@ -170,25 +159,11 @@ onMounted(() => {
 
     <p>
       <span
-        >You may notice I&rsquo;m using an int of milligrams as the quantity field of the ore and
-        slag here, which I acknowledge feels odd, but was a good option imo. The other options I
-        could see were to make all items have a <code>Decimal</code> quantity (eww), or have a
-        parent item class that has one child with an <code>int</code> quantity and one with a
-        <code>Decimal</code> quantity. The second option felt plausible, and I even started
-        implementing it, but I abandoned this approach because many operations became significantly
-        more complicated with a dynamic data type, especially inventory management and
-        serialization.</span
-      >
-    </p>
-
-    <br />
-
-    <p>
-      <span
-        >With this solution I could leave the data type of quantity alone, and just introduce a
-        <code>Units</code> field, which becomes milligrams for <code>float</code> quantity items,
-        and is left at <code>Unit</code> for typical items. I ideally would have used grams, but
-        that wasn&rsquo;t reasonable because of the details of burning fuel.</span
+        >Each fuel type has a <code>BurnRate</code> in milligrams/second. This is an over
+        simplification, since the amount of fuel that burns over time depends on many different
+        factors such as oxygen availability and water content, but I felt it wouldn&rsquo;t add much
+        to the experience to calculate this value more accurately, and an approximation would
+        do.</span
       >
     </p>
 
@@ -197,34 +172,15 @@ onMounted(() => {
     <p>
       <span
         >Each frame, the smelt component combusts a small amount of fuel in its Owner&rsquo;s
-        <code>FuelInventory</code> and increases the heat of the ore it&rsquo;s smelting. When the
-        game is running at 60 fps, this ends up being 0.6-1.5 grams per frame. I theoretically could
-        have gotten by with using grams despite this using an </span
-      ><span
-        ><a href="https://en.wikipedia.org/wiki/Approximate_counting_algorithm"
-          >approximate counting algorithm</a
-        ></span
-      ><span>, but that sounded worse than just dealing with large numbers.</span>
-    </p>
-
-    <br />
-
-    <p>
-      <span
-        >Each fuel type has a <code>BurnRate</code> in milligrams/second. This didn&rsquo;t feel
-        great to add, since the amount of fuel that burns over time obviously depends on many
-        different factors such as oxygen availability and water content, but I felt it
-        wouldn&rsquo;t add much to the experience to calculate this value more accurately, and an
-        approximation would do.</span
+        <code>FuelInventory</code> according to the fuel's <code>BurnRate</code>. When the game is
+        running at 60 fps, this ends up being 60-150 mg per frame.</span
       >
     </p>
 
     <br />
 
     <p>
-      <span
-        >The <code>Smelt</code> component takes this burn rate to determine the mass of the fuel
-        that is burned in this frame, and multiplies it by the material&rsquo;s </span
+      <span>The combusted mass is then multiplied it by the fuel&rsquo;s </span
       ><span><a href="https://en.wikipedia.org/wiki/Heat_of_combustion">calorific value</a></span
       ><span
         >&nbsp;to determine how many joules to add to the ore (after multiplying by the
@@ -272,23 +228,17 @@ onMounted(() => {
 
     <p>
       <span
-        >The rest of the smelting process gets a bit simpler. We just need to check if the
-        temperature of the ore is sufficiently above its melting point (I went with 20%), and remove
-        the recipe&rsquo;s inputs from the ore inventory and add the outputs to the normal inventory
-        if it is.
+        >Finally, we just need to check if the temperature of the ore is sufficiently above its
+        melting point (I went with 20%), and remove the recipe&rsquo;s inputs from the ore inventory
+        and add the outputs to the normal inventory if it is.
       </span>
     </p>
 
     <br />
 
     <p>
-      <span
-        >So yeah, putting it all together we get a building that takes in Chalcopyrite and spits out
-        copper and slag.</span
-      >
+      <span>Putting it all together:</span>
     </p>
-
-    <br />
 
     <BorderedScreenshot>
       <template v-slot:screenshot>
