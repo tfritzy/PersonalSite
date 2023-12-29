@@ -8,6 +8,9 @@ body {
 
 
 @layer base {
+    body {
+        @apply bg-neutral-900
+    }
     h1 {
       @apply text-2xl font-bold text-gray-100 my-4;
     }
