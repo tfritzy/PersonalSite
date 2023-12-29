@@ -22,9 +22,11 @@ const currentView = computed(() => {
 </script>
 
 <template>
-  <PageWithSidebar name="Twitter" href="https://twitter.com/mossytrie">
-    <template v-slot:content>
-      <component :is="currentView" />
-    </template>
-  </PageWithSidebar>
+  <div class="content-container">
+    <PageWithSidebar name="Twitter" href="https://twitter.com/mossytrie">
+      <template v-slot:content>
+        <component :is="currentView" />
+      </template>
+    </PageWithSidebar>
+  </div>
 </template>

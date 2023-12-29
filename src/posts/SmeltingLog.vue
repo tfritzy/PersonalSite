@@ -242,7 +242,7 @@ onMounted(() => {
 
     <BorderedScreenshot>
       <template v-slot:screenshot>
-        <img src="./SmeltScreenshot.png" />
+        <img src="./SmeltScreenshot.png" width="600px" height="600px" />
       </template>
     </BorderedScreenshot>
   </div>

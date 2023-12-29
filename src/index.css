@@ -6,6 +6,21 @@ body {
     line-height: 1.5;
 }
 
+.content-container {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    padding-top: 100px;
+}
+
+@media screen and (max-width: 768px) {
+    .content-container {
+        padding: 5px; /* Reduce padding for smaller screens */
+        display: block;
+        justify-content: center;
+    }
+}
+  
 
 @layer base {
     body {
