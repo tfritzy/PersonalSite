@@ -219,7 +219,7 @@ onMounted(() => {
     <br />
 
     <p>
-      <span>So finally the change in temperature can be calculated as:</span>
+      <span>The change in temperature can then be calculated as:</span>
     </p>
 
     <pre class="language-csharp"><code>{{ tempChange }}</code></pre>
