@@ -1,8 +1,6 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
-import { RouterLink, RouterView } from 'vue-router'
 import PageWithSidebar from './components/PageWithSidebar.vue'
-import BlogPostLink from './components/BlogPostLink.vue'
 import HomeView from './views/HomeView.vue'
 import SmeltingLog from './posts/SmeltingLog.vue'
 

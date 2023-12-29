@@ -9,13 +9,13 @@ body {
 
 @layer base {
     h1 {
-      @apply text-2xl font-semibold text-gray-100 my-4;
+      @apply text-2xl font-bold text-gray-100 my-4;
     }
     h2 {
         @apply text-xl font-semibold text-gray-200 my-3;
       }
     h3 {
-        @apply text-lg text-gray-300 my-2
+        @apply text-lg font-semibold text-gray-300 my-2
     }
     span {
         @apply text-gray-300 
@@ -30,7 +30,7 @@ body {
         @apply text-gray-300
     }
     code {
-        @apply text-emerald-400
+        @apply text-emerald-200
     }
     a {
         @apply text-blue-400

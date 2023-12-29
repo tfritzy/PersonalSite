@@ -44,11 +44,14 @@ onMounted(() => {
         ability to convert ore into metal.</span
       >
     </p>
+
+    <br />
+
     <h2><span>Furnaces</span></h2>
     <p>
       <span
         >Smelting ores happens within furnaces. These are a type of building that accepts ore, and
-        uses some form of energy to melt it and extract the desired metals.
+        uses some form of the energy to melt it and extract the desired metals.
       </span>
     </p>
 
@@ -73,11 +76,18 @@ onMounted(() => {
       <span
         >Each type of furnace has a value for what percent of energy it uses goes into heating the
         ore. Lower tier furnaces are much less efficient than higher tier furnaces, meaning that
-        they use much more energy and time to heat ore to its melting point. For example the basic
-        clay furnace has an efficiency of 20%, while a well insulated, forced-air blast furnace has
-        an efficiency of 50%. Induction furnaces have the highest efficiency because their energy
-        goes directly into the ore, but are mostly inaccessible to early game players since they
-        require power generation, which has significant prerequisites.
+        they use much more energy and time to heat ore to its melting point.
+      </span>
+    </p>
+
+    <br />
+
+    <p>
+      <span
+        >For example the basic clay furnace has an efficiency of 20%, while a well insulated,
+        forced-air blast furnace has an efficiency of 50%. Induction furnaces have the highest
+        efficiency because their energy goes directly into the ore, but are mostly inaccessible to
+        early game players since they require power generation, which has significant prerequisites.
       </span>
     </p>
 
@@ -86,7 +96,7 @@ onMounted(() => {
     <p>
       <span
         >I haven&rsquo;t started working on power systems yet, so this week I focused on combustion
-        furnaces. Only the way the furnace acquires energy differs, however.
+        furnaces. Most of this logic will still apply to induction furnaces though.
       </span>
     </p>
 
@@ -143,7 +153,7 @@ onMounted(() => {
       <span
         >The first thing this component needs to do is identify whether its owner has the necessary
         materials to do any smelting. This means having enough of an ore to produce a bar, and any
-        fuel to heat that ore. The first part of that is handled by comparing the contents of the
+        fuel to heat that ore. The ore part is handled by comparing the contents of the
         Owner&rsquo;s <code>OreInventory</code> with the known <code>SmeltingRecipes</code>, a
         simple data structure that determines the output items from a given set of input items. For
         example 57kg of Chalcopyrite(CuFeS&#8322;) yields 1 copper bar (20kg) and about 37kg of
@@ -161,11 +171,12 @@ onMounted(() => {
       <span
         >You may notice I&rsquo;m using an int of milligrams as the quantity field of the ore and
         slag here, which I acknowledge feels odd, but was a good option imo. The other options I
-        could see were to make all items have a decimal quantity (eww), or have a parent item class
-        that has one child with an int quantity and one with a Decimal quantity. The second option
-        felt plausible, and I even started implementing it, but I abandoned this approach because
-        many operations became significantly more complicated with a dynamic data type, especially
-        inventory management and serialization.</span
+        could see were to make all items have a <code>Decimal</code> quantity (eww), or have a
+        parent item class that has one child with an <code>int</code> quantity and one with a
+        <code>Decimal</code> quantity. The second option felt plausible, and I even started
+        implementing it, but I abandoned this approach because many operations became significantly
+        more complicated with a dynamic data type, especially inventory management and
+        serialization.</span
       >
     </p>
 
@@ -231,15 +242,12 @@ onMounted(() => {
         <span><b>Lignite</b> - 12 Joules / mg</span>
       </li>
     </ul>
-    <p>
-      <span>(I skipped sub-bituminous because the name is too boring.)</span>
-    </p>
 
     <br />
 
     <p>
       <span
-        >Not all materials heat up the same amount per joule however. This is based on the
+        >Not all ores heat up the same amount per joule however. This is based on the
         material&rsquo;s </span
       ><span
         ><a href="https://en.wikipedia.org/wiki/Specific_heat_capacity"
