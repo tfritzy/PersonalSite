@@ -17,7 +17,7 @@ window.addEventListener('hashchange', () => {
 
 const currentView = computed(() => {
   // @ts-ignore
-  return routes[currentPath.value.slice(1) || '/']
+  return routes[currentPath.value.slice(1) || '/'] || HomeView
 })
 </script>
 
