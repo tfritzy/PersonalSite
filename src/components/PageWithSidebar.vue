@@ -9,7 +9,7 @@ import MyBio from './MyBio.vue'
 
       <div class="h-screen w-[1px] m-8 bg-neutral-700" />
 
-      <div class="flex-[3] max-h-screen overflow-y-scroll py-[150px] pr-[15px]">
+      <div class="flex-[3] max-h-screen overflow-y-auto py-[150px] pr-[15px]">
         <slot name="content" />
       </div>
     </div>
