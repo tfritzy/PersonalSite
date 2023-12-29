@@ -6,7 +6,7 @@ import SocialMediaLink from './SocialMediaLink.vue'
 <template>
   <div class="flex flex-row space-x-2 items-start justify-start">
     <div class="w-[75px] h-[75px]">
-      <img alt="Logo" class="logo rounded-full" src="@/assets/logo.png" width="75" height="75" />
+      <img alt="Logo" class="logo rounded-full" src="../assets/logo.png" width="75" height="75" />
     </div>
 
     <div>
