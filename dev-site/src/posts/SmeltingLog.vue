@@ -189,8 +189,7 @@ onMounted(() => {
         game is running at 60 fps, this ends up being 0.6-1.5 grams per frame. I theoretically could
         have gotten by with using grams despite this using an </span
       ><span
-        ><a
-          href="https://www.google.com/url?q=https://en.wikipedia.org/wiki/Approximate_counting_algorithm&amp;sa=D&amp;source=editors&amp;ust=1703828486075764&amp;usg=AOvVaw2SiWv7LIUUxg0OSkgyj4I5"
+        ><a href="https://en.wikipedia.org/wiki/Approximate_counting_algorithm"
           >approximate counting algorithm</a
         ></span
       ><span>, but that sounded worse than just dealing with large numbers.</span>
@@ -214,11 +213,7 @@ onMounted(() => {
       <span
         >The <code>Smelt</code> component takes this burn rate to determine the mass of the fuel
         that is burned in this frame, and multiplies it by the material&rsquo;s </span
-      ><span
-        ><a
-          href="https://www.google.com/url?q=https://en.wikipedia.org/wiki/Heat_of_combustion&amp;sa=D&amp;source=editors&amp;ust=1703828486076339&amp;usg=AOvVaw3bMGKFnJocc9tUzm5zXdIZ"
-          >calorific value</a
-        ></span
+      ><span><a href="https://en.wikipedia.org/wiki/Heat_of_combustion">calorific value</a></span
       ><span
         >&nbsp;to determine how many joules to add to the ore (after multiplying by the
         furnace&rsquo;s efficiency). Some examples from the types of coals I added to the
@@ -247,8 +242,7 @@ onMounted(() => {
         >Not all materials heat up the same amount per joule however. This is based on the
         material&rsquo;s </span
       ><span
-        ><a
-          href="https://www.google.com/url?q=https://en.wikipedia.org/wiki/Specific_heat_capacity&amp;sa=D&amp;source=editors&amp;ust=1703828486076889&amp;usg=AOvVaw0vqXMrKCsIk6ZZcPxNLONO"
+        ><a href="https://en.wikipedia.org/wiki/Specific_heat_capacity"
           >specific heat capacity</a
         ></span
       ><span
