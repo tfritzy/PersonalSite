@@ -234,6 +234,6 @@ onMounted(() => {
       <span>Putting it all together:</span>
     </p>
 
-    <img class="rounded-md" src="./SmeltScreenshot.png" width="600px" height="600px" />
+    <img class="rounded-md" src="./SmeltScreenshot.png" width="600" height="600" />
   </div>
 </template>
