@@ -9,9 +9,9 @@ defineProps({
 </script>
 
 <template>
-  <div class="flex flex-col space-y-1">
+  <div>
     <a v-bind:href="href" class="text-white font-bold text-lg hover:underline">
-      <h1 class="mb-1">{{ title }}</h1>
+      <h2 class="mb-1">{{ title }}</h2>
 
       <h3 class="text-white text-md font-normal text-sm">{{ description }}</h3>
     </a>

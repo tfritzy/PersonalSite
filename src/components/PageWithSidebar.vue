@@ -1,9 +1,12 @@
 <script setup lang="ts">
-import MyBio from './MyBio.vue'
+import PageSidebar from './PageSidebar.vue'
 </script>
 
 <template>
-  <div class="p-4 max-w-[750px]">
-    <slot name="content" />
+  <div class="relative max-w-[1000px] flex flex-row">
+    <PageSidebar class="sidebar" />
+    <div class="p-8">
+      <slot name="content" />
+    </div>
   </div>
 </template>

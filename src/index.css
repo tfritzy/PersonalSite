@@ -7,21 +7,20 @@ body {
 }
 
 .content-container {
-    display: flex;
-    justify-content: center;
     width: 100vw;
-    padding-top: 100px;
+    padding-left: 25%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
     .content-container {
-        padding: 5px; /* Reduce padding for smaller screens */
         display: block;
-        justify-content: center;
+        padding-left: 0%;
+    }
+    .sidebar {
+        display: none;
     }
 }
   
-
 @layer base {
     body {
         @apply bg-neutral-900
@@ -48,7 +47,7 @@ body {
         @apply text-gray-300
     }
     code {
-        @apply text-emerald-400
+        @apply text-emerald-400 bg-neutral-800 rounded p-[1px] px-[5px]
     }
     a {
         @apply text-blue-400

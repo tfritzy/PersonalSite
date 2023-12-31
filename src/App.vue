@@ -2,10 +2,12 @@
 import { ref, computed } from 'vue'
 import PageWithSidebar from './components/PageWithSidebar.vue'
 import HomeView from './views/HomeView.vue'
-import SmeltingLog from './posts/SmeltingLog.vue'
+import SmeltingLog from './posts/SmeltingLog/SmeltingLog.vue'
+import SmeltingInspection from './posts/Dec302023/SmeltingInspection.vue'
 
 const routes = {
   '/': HomeView,
+  '/factory-game/furnace-inspection': SmeltingInspection,
   '/factory-game/smelting': SmeltingLog
 }
 
@@ -23,7 +25,7 @@ const currentView = computed(() => {
 
 <template>
   <div class="content-container">
-    <PageWithSidebar name="Twitter" href="https://twitter.com/mossytrie">
+    <PageWithSidebar>
       <template v-slot:content>
         <component :is="currentView" />
       </template>
