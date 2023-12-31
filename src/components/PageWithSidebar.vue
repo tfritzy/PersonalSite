@@ -5,8 +5,7 @@ import PageSidebar from './PageSidebar.vue'
 <template>
   <div class="relative max-w-[1000px] flex flex-row space-x-8">
     <PageSidebar class="sidebar" />
-    <div class="bg-neutral-800 w-[1px] h-[100%]" />
-    <div class="content p-8">
+    <div class="content">
       <slot name="content" />
     </div>
   </div>
