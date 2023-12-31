@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Calendar } from '@iconoir/vue'
+import { Calendar, FastArrowLeft } from '@iconoir/vue'
 defineProps({
   title: String,
   date: String
@@ -8,7 +8,12 @@ defineProps({
 
 <template>
   <div class="mb-4">
-    <a class="text-gray-300 font-bold hover:underline" href="#/">Back</a>
+    <div class="flex flex-row items-center">
+      <FastArrowLeft height="16" color="white" />
+      <div>
+        <a class="text-gray-300 font-bold hover:underline" href="#/"> Back</a>
+      </div>
+    </div>
 
     <h1 class="mb-2">
       <span>{{ title }}</span>

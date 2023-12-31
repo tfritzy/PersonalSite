@@ -4,7 +4,7 @@ import SocialMediaLink from './SocialMediaLink.vue'
 </script>
 
 <template>
-  <div class="flex flex-row space-x-2">
+  <div class="flex flex-row space-x-6">
     <div class="flex flex-row space-x-4 pt-[400px]">
       <div class="w-[50px] h-[50px]">
         <img alt="Logo" class="logo rounded-full" src="../assets/Logo.png" width="50" height="50" />
@@ -36,8 +36,8 @@ import SocialMediaLink from './SocialMediaLink.vue'
           </SocialMediaLink>
         </div>
       </div>
-    </div>
 
-    <div class="bg-neutral-800 w-[1px] h-screen" />
+      <div class="bg-neutral-800 w-[1px] h-[225px]" />
+    </div>
   </div>
 </template>

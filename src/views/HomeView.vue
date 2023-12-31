@@ -3,7 +3,7 @@ import BlogPostLink from '../components/BlogPostLink.vue'
 </script>
 
 <template>
-  <div class="flex flex-col space-y-4">
+  <div class="flex flex-col space-y-6">
     <div>
       <h1 class="mb-1">Diary</h1>
       <p>Log of what I've been doing, mostly for myself to look back on.</p>
