@@ -15,7 +15,7 @@ defineProps({
       </div>
     </div>
 
-    <h1 class="mb-2">
+    <h1 class="mb-2 mt-2">
       <span>{{ title }}</span>
     </h1>
 

@@ -4,7 +4,6 @@ import { onMounted, ref } from 'vue'
 import Prism from 'prismjs'
 import 'prismjs/components/prism-csharp'
 import 'prismjs/themes/prism-tomorrow.css'
-import BorderedScreenshot from '../../components/BorderedScreenshot.vue'
 import PageHeader from '../../components/PageHeader.vue'
 
 const smeltingRecipe = ref(`new SmeltingRecipe(
@@ -235,10 +234,6 @@ onMounted(() => {
       <span>Putting it all together:</span>
     </p>
 
-    <BorderedScreenshot>
-      <template v-slot:screenshot>
-        <img src="./SmeltScreenshot.png" width="600px" height="600px" />
-      </template>
-    </BorderedScreenshot>
+    <img class="rounded-md" src="./SmeltScreenshot.png" width="600px" height="600px" />
   </div>
 </template>
