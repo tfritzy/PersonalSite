@@ -3,9 +3,9 @@ import PageSidebar from './PageSidebar.vue'
 </script>
 
 <template>
-  <div class="relative max-w-[1000px] flex flex-row space-x-8">
+  <div class="relative flex flex-row px-4">
     <PageSidebar class="sidebar" />
-    <div class="content">
+    <div class="content max-w-[600px]">
       <slot name="content" />
     </div>
   </div>

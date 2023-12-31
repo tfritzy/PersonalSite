@@ -4,7 +4,9 @@ import SocialMediaLink from './SocialMediaLink.vue'
 </script>
 
 <template>
-  <div class="flex flex-row space-x-4 pt-[400px] border-r border-neutral-800 min-h-screen pr-2">
+  <div
+    class="flex flex-row space-x-4 pt-[400px] border-r border-neutral-800 min-h-screen pr-2 mr-10"
+  >
     <div class="w-[50px] h-[50px]">
       <img alt="Logo" class="logo rounded-full" src="../assets/Logo.png" width="50" height="50" />
     </div>
