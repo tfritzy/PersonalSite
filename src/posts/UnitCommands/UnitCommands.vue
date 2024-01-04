@@ -8,8 +8,8 @@ import PageHeader from '../../components/PageHeader.vue'
     <p class="mb-2">
       Over the past few days I've been working on letting the player harvest resources, and pick up
       items in the world. This involved building a system for commanding a unit to do a series of
-      actions. For example, harvesting sticks and leaves form a bush would be a walk action to get
-      the unit near the bush, and a harvest action to actually do the harvest.
+      actions. For example, harvesting sticks and leaves from a bush would be a walk action to get
+      the unit near the bush, and a harvest action to actually do the harvesting.
     </p>
 
     <br />
