@@ -4,11 +4,13 @@ import PageWithSidebar from './components/PageWithSidebar.vue'
 import HomeView from './views/HomeView.vue'
 import SmeltingLog from './posts/SmeltingLog/SmeltingLog.vue'
 import SmeltingInspection from './posts/Dec302023/SmeltingInspection.vue'
+import UnitCommands from './posts/UnitCommands/UnitCommands.vue'
 
 const routes = {
   '/': HomeView,
   '/factory-game/furnace-inspection': SmeltingInspection,
-  '/factory-game/smelting': SmeltingLog
+  '/factory-game/smelting': SmeltingLog,
+  '/factory-game/unit-commands': UnitCommands
 }
 
 const currentPath = ref(window.location.hash)

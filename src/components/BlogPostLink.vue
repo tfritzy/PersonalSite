@@ -10,7 +10,7 @@ defineProps({
 
 <template>
   <a v-bind:href="href">
-    <div class="border rounded-md border-neutral-800 p-2 px-4 hover:bg-neutral-800">
+    <div class="border rounded-md border-neutral-700 p-2 px-4 hover:bg-neutral-800">
       <h2 class="mb-1 mt-0">{{ title }}</h2>
 
       <h3 class="text-white text-md font-normal text-sm">{{ description }}</h3>
