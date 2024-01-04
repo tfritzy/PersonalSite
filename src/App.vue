@@ -10,7 +10,7 @@ const routes = {
   '/': HomeView,
   '/factory-game/furnace-inspection': SmeltingInspection,
   '/factory-game/smelting': SmeltingLog,
-  '/factory-game/unit-commands': UnitCommands
+  '/unit-commands': UnitCommands
 }
 
 const currentPath = ref(window.location.hash)
