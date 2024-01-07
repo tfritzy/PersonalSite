@@ -10,6 +10,13 @@ import BlogPostLink from '../components/BlogPostLink.vue'
     </div>
 
     <BlogPostLink
+      title="Character controller"
+      description="Creating a character model and controller"
+      href="#/character-controller"
+      date="Jan 6, 2024"
+    />
+
+    <BlogPostLink
       title="Unit commands"
       description="Building a system for issuing commands to units."
       href="#/unit-commands"
