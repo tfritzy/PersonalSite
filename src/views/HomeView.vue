@@ -10,6 +10,13 @@ import BlogPostLink from '../components/BlogPostLink.vue'
     </div>
 
     <BlogPostLink
+      title="Tinkering"
+      description="Playing around with the game's style"
+      href="#/style-tinkering"
+      date="Jan 7, 2024"
+    />
+
+    <BlogPostLink
       title="Character controller"
       description="Creating a character model and controller"
       href="#/character-controller"
