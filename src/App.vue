@@ -7,9 +7,13 @@ import SmeltingInspection from './posts/Dec302023/SmeltingInspection.vue'
 import UnitCommands from './posts/UnitCommands/UnitCommands.vue'
 import CharacterController from './posts/CharacterController/CharacterController.vue'
 import StyleTinkering from './posts/StyleTinkering/StyleTinkering.vue'
+import ProtobufMigration from './posts/Jan2024/Protobuf/ProtobufMigration.vue'
+import NatPunchthrough from './posts/Jan2024/NatPunchthrough/NatPunchthrough.vue'
 
 const routes = {
   '/': HomeView,
+  '/nat-punchthrough': NatPunchthrough,
+  '/protobuf-migration': ProtobufMigration,
   '/style-tinkering': StyleTinkering,
   '/character-controller': CharacterController,
   '/factory-game/furnace-inspection': SmeltingInspection,

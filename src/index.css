@@ -56,12 +56,6 @@ body {
     code {
         @apply text-emerald-400 bg-neutral-800 rounded p-[1px] px-[5px]
     }
-    a {
-        @apply text-blue-400 hover:underline
-    }
-    img {
-        @apply border border-gray-600
-    }
   }
 
   

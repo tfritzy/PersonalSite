@@ -3,11 +3,25 @@ import BlogPostLink from '../components/BlogPostLink.vue'
 </script>
 
 <template>
-  <div class="flex flex-col space-y-5">
+  <div class="flex flex-col space-y-4">
     <div>
       <h1 class="mb-1">Diary</h1>
       <p>Log of what I've been working on.</p>
     </div>
+
+    <BlogPostLink
+      title="NAT punch-through"
+      description="Getting started on peer to peer connections"
+      href="#/nat-punchthrough"
+      date="Jan 13, 2024"
+    />
+
+    <BlogPostLink
+      title="Protobuf migration"
+      description="Migrating from JSON to protobuf"
+      href="#/protobuf-migration"
+      date="Jan 9, 2024"
+    />
 
     <BlogPostLink
       title="Tinkering"
