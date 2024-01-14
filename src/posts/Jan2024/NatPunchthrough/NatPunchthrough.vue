@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import PageHeader from '../../../components/PageHeader.vue'
 import BlueLink from '../../../components/BlueLink.vue'
-import BorderedImage from '../../../components/BorderedImage.vue'
 </script>
 
 <template>
