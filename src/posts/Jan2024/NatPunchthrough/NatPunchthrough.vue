@@ -5,7 +5,7 @@ import BlueLink from '../../../components/BlueLink.vue'
 
 <template>
   <div>
-    <PageHeader title="Migrating from JSON to protobuf" date="Jan 13, 2024" />
+    <PageHeader title="NAT punch-through" date="Jan 13, 2024" />
     <p class="mb-2">
       The past couple days I've started working on getting peer to peer connections working. I went
       in knowing basically nothing about the process, and it's a lot more complicated than I thought

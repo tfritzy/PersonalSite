@@ -4,7 +4,7 @@ import PageHeader from '../../../components/PageHeader.vue'
 
 <template>
   <div>
-    <PageHeader title="Character controller" date="Jan 6, 2024" />
+    <PageHeader title="Style tinkering" date="Jan 6, 2024" />
     <p class="mb-2">Today I spent basically the whole day tinkering with the style. Changes:</p>
 
     <ul>
