@@ -9,9 +9,11 @@ import CharacterController from './posts/Jan2024/CharacterController/CharacterCo
 import StyleTinkering from './posts/Jan2024/StyleTinkering/StyleTinkering.vue'
 import ProtobufMigration from './posts/Jan2024/Protobuf/ProtobufMigration.vue'
 import NatPunchthrough from './posts/Jan2024/NatPunchthrough/NatPunchthrough.vue'
+import Multiplayer from './posts/2024-02/Multiplayer.vue'
 
 const routes = {
   '/': HomeView,
+  '/multiplayer': Multiplayer,
   '/nat-punchthrough': NatPunchthrough,
   '/protobuf-migration': ProtobufMigration,
   '/style-tinkering': StyleTinkering,

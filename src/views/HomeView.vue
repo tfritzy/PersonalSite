@@ -10,6 +10,13 @@ import BlogPostLink from '../components/BlogPostLink.vue'
     </div>
 
     <BlogPostLink
+      title="Multiplayer"
+      description="Sending game logic through a peer to peer connection"
+      href="#/multiplayer"
+      date="Feb 13, 2024"
+    />
+
+    <BlogPostLink
       title="NAT punch-through"
       description="Getting started on peer to peer connections"
       href="#/nat-punchthrough"
