@@ -5,7 +5,7 @@ import PageSidebar from './PageSidebar.vue'
 <template>
   <div class="relative flex flex-row px-4">
     <PageSidebar class="sidebar" />
-    <div class="content max-w-[600px]">
+    <div class="content max-w-[625px]">
       <slot name="content" />
     </div>
   </div>

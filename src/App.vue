@@ -9,7 +9,8 @@ import CharacterController from './posts/Jan2024/CharacterController/CharacterCo
 import StyleTinkering from './posts/Jan2024/StyleTinkering/StyleTinkering.vue'
 import ProtobufMigration from './posts/Jan2024/Protobuf/ProtobufMigration.vue'
 import NatPunchthrough from './posts/Jan2024/NatPunchthrough/NatPunchthrough.vue'
-import Multiplayer from './posts/2024-02/Multiplayer.vue'
+import Multiplayer from './posts/2024-02/Multiplayer/MultiplayerHelloWorld.vue'
+import SmoothItems from './posts/2024-03/SmoothItems/SmoothItems.vue'
 
 const routes = {
   '/': HomeView,
@@ -20,7 +21,8 @@ const routes = {
   '/character-controller': CharacterController,
   '/factory-game/furnace-inspection': SmeltingInspection,
   '/factory-game/smelting': SmeltingLog,
-  '/unit-commands': UnitCommands
+  '/unit-commands': UnitCommands,
+  '/smooth-curves': SmoothItems
 }
 
 const currentPath = ref(window.location.hash)
@@ -44,3 +46,4 @@ const currentView = computed(() => {
     </PageWithSidebar>
   </div>
 </template>
+./posts/2024-02/Multiplayer/Multiplayer.vue./posts/2024-02/Multiplayer/MultiplayerHelloWorld.vue
