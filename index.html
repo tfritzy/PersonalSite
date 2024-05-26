@@ -17,6 +17,20 @@
     margin: 0;
     padding: 0;
    }
+   img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+   }
+   video {
+    border-radius: 10px;
+   }
+   br {
+    margin-bottom: 20px;
+   }
+   .project {
+    margin-bottom: 40px;
+   }
    .content {
     max-width: 800px;
     margin: auto;
@@ -27,33 +41,110 @@
  <body>
   <main class="content">
    <h2>Current project</h2>
-   <h3>TypeRacing.io</h3>
-   <p>A simple typing game where you race to finish a given phrase.</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/wpsSVzzDK3A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <div class="project">
+    <h3>TypeRacing.io</h3>
+    <p>
+     A simple typing game where you race to finish a given
+     phrase.
+    </p>
+    <video width="100%" height="500" controls>
+     <source src="typeracing.io.mp4" type="video/mp4" />
+     Your browser does not support the video tag.
+    </video>
+   </div>
 
+   <h2>Past projects</h2>
+   <div class="project">
+    <h3>bufo.fun</h3>
+    <p>
+     To help with bufo discovery and importing into your
+     servers.
+    </p>
+    <a href="https://bufo.fun">bufo.fun</a>
+    <br />
+    <a href="https://bufo.fun"
+     ><img src="bufo.fun.png" alt="bufo.fun"
+    /></a>
+   </div>
 
-<h2>Past projects</h2>
-<h3>bufo.fun</h3>
-   <p>To help with bufo discovery and importing into your servers. <a href="https://bufo.fun">bufo.fun</a> </p>
+   <div class="project">
+    <h3>Factory game era 3</h3>
+    <p>
+     A multiplayer survival game where you're defending
+     against waves of enemies by building a factory that
+     powers defensive towers. Probably abandonded. Spent
+     over a year on this, on and off, and got decently far,
+     but moved on because it feels so much nicer to work on
+     and finish small projects.
+    </p>
+    <video width="100%" height="500" controls>
+     <source src="Factory3.mp4" type="video/mp4" />
+     Your browser does not support the video tag.
+    </video>
+   </div>
 
-<h3>Unnamed factory game</h3>
-<p>A multiplayer survival game where you're defending against waves of enemies by building a factory that powers defensive towers. Probably abandonded. Spent over a year on this, on and off, and got decently far, but moved on because it feels so much nicer to work on and finish small projects. </p>
+   <div class="project">
+    <h3>Aces</h3>
+    <p>
+     An online version of a card game my family plays a lot,
+     called Aces. The gist is that you're trying to make
+     sets of 3+ cards, and get all cards in your hand into
+     some set. Has an entirely serverless back-end, which
+     was a nightmare to get websockets working for.
+    </p>
+    <a href="https://aces.cards">aces.cards</a>
+    <br />
+    <a href="https://aces.cards"
+     ><img src="aces.png" alt="aces"
+    /></a>
+   </div>
 
-<iframe width="560" height="315" src="https://youtube.com/embed/n17G1L7o7Xc?si=pvm3EJFKHlBSApAB" frameborder="0" allow=" encrypted-media; picture-in-picture" allowfullscreen></iframe>
+   <div class="project">
+    <h3>Solitary Keep</h3>
+    <p>
+     A pivot of my factory game into just a tower defense.
+     The idea was to make a simple game to proof the
+     architecture, and then later build the whole factory
+     game on top of it.
+    </p>
+    <video width="500px" height="500px" controls>
+     <source src="solitary-keep.mp4" type="video/mp4" />
+     Your browser does not support the video tag.
+    </video>
+   </div>
 
-<h3>Aces</h3>
-<p>An online version of a card game my family plays a lot, called Aces. The gist is that you're trying to make sets of 3+ cards, and get all cards in your hand into some set. Has an entirely serverless back-end, which was a nightmare to get websockets working for.<a href="https://aces.cards">aces.cards</a> </p>
+   <div class="project">
+    <h3>Factory game era 2</h3>
+    <p>
+     After a short break from working on the factory game, I
+     restarted it with a rebuild. The goal was to spend less
+     of the development cycle in unity, and more in vscode.
+     To do that, most of the game logic would live in a
+     package with unit tests, that gets imported into the
+     Unity project. This was actually a great idea, though I
+     abandoned the project eventually.
+    </p>
+    <video width="100%" height="500px" controls>
+     <source src="factory-era-2.mp4" type="video/mp4" />
+     Your browser does not support the video tag.
+    </video>
+   </div>
 
-<h3>Fly by Night</h3>
-<p>A remake of the first game I finished, which was a fancier version of the helicopter flash game.</p>
-
-
-
-
-
-
-
-
+   <div class="project">
+    <h3>Fly by Night</h3>
+    <p>
+     A remake of the first game I finished, which was a
+     fancier version of the helicopter flash game.
+    </p>
+    <a
+     href="https://play.google.com/store/apps/details?id=com.PineconeGames.FlybyNight"
+     >Play store</a
+    >
+    <video width="100%" height="500px" controls>
+     <source src="fly-by-night.mp4" type="video/mp4" />
+     Your browser does not support the video tag.
+    </video>
+   </div>
   </main>
  </body>
 </html>
