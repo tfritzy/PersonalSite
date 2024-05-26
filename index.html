@@ -20,10 +20,19 @@
         border-radius: 10px;
       }
       video {
-        border-radius: 10px;
+        border-radius: 5px;
+        background-color: #000;
       }
       .project {
         margin-bottom: 40px;
+        background-color: #161b22;
+        border-radius: 10px;
+        border-width: 1px;
+        border-color: #30363d;
+        border-style: solid;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
       }
       .content {
         max-width: 800px;
@@ -51,12 +60,11 @@
       <h2>Past projects</h2>
       <div class="project">
         <h3>bufo.fun</h3>
-        <p>To help with bufo discovery and importing into your servers.</p>
         <div>
           <a href="https://bufo.fun">bufo.fun</a> |
           <a href="https://github.com/tfritzy/bufo.fun">Source code</a>
         </div>
-        <br />
+        <p>To help with bufo discovery and importing into your servers.</p>
         <a href="https://bufo.fun"><img src="bufo.fun.png" alt="bufo.fun" /></a>
       </div>
 
@@ -84,17 +92,17 @@
 
       <div class="project">
         <h3>Aces</h3>
+        <div>
+          <a href="https://aces.cards">aces.cards</a> |
+          <a href="https://github.com/tfritzy/aces-web">Frontend source</a> |
+          <a href="https://github.com/tfritzy/AcesCore">Core source</a>
+        </div>
         <p>
           An online version of a card game my family plays a lot, called Aces.
           The gist is that you're trying to make sets of 3+ cards, and get all
           cards in your hand into some set. Has an entirely serverless back-end,
           which was a nightmare to get websockets working for.
         </p>
-        <div>
-          <a href="https://aces.cards">aces.cards</a> |
-          <a href="https://github.com/tfritzy/aces-web">Frontend source</a> |
-          <a href="https://github.com/tfritzy/AcesCore">Core source</a> |
-        </div>
         <br />
         <a href="https://aces.cards"
           ><img class="square-img" width="70%" src="aces.jpg" alt="aces"
@@ -103,15 +111,15 @@
 
       <div class="project">
         <h3>Zombie defense typing game</h3>
+        <div>
+          <a href="https://github.com/tfritzy/ZombieTyping.git">Source code</a>
+        </div>
         <p>
           A game that has been on my backlog for a long time, and still is,
           where making progress on the phrase causes survivors to fire their
           weapons. Tried using synty assets so I could focus on the game play,
           but ultimately didn't enjoy this strategy as much.
         </p>
-        <div>
-          <a href="https://github.com/tfritzy/ZombieTyping.git">Source code</a>
-        </div>
         <video width="100%" height="500px" controls>
           <source src="zombie-defense.mp4" type="video/mp4" />
           Your browser does not support the video tag.
@@ -161,6 +169,7 @@
           >
           | <a href="https://github.com/tfritzy/FlybyNight">Source code</a>
         </div>
+        <br />
         <video width="100%" height="500px" controls>
           <source src="fly-by-night.mp4" type="video/mp4" />
           Your browser does not support the video tag.
@@ -192,6 +201,7 @@
         <div>
           <a href="https://github.com/tfritzy/HexagonTDF">Source code</a>
         </div>
+        <br />
         <video width="100%" height="500px" controls>
           <source src="hex-grid-tower-defense.mp4" type="video/mp4" />
           Your browser does not support the video tag.
