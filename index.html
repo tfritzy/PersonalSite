@@ -1,150 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-  <meta charset="UTF-8" />
-  <meta
-   name="viewport"
-   content="width=device-width, initial-scale=1.0"
-  />
-  <title>Tyler Fritz</title>
-  <style>
-   html {
-    background-color: #0d1117;
-    color: #dfeaf1;
-   }
-   body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-   }
-   img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-   }
-   video {
-    border-radius: 10px;
-   }
-   br {
-    margin-bottom: 20px;
-   }
-   .project {
-    margin-bottom: 40px;
-   }
-   .content {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-   }
-  </style>
- </head>
- <body>
-  <main class="content">
-   <h2>Current project</h2>
-   <div class="project">
-    <h3>TypeRacing.io</h3>
-    <p>
-     A simple typing game where you race to finish a given
-     phrase.
-    </p>
-    <video width="100%" height="500" controls>
-     <source src="typeracing.io.mp4" type="video/mp4" />
-     Your browser does not support the video tag.
-    </video>
-   </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tyler Fritz</title>
+    <style>
+      html {
+        background-color: #0d1117;
+        color: #dfeaf1;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+      video {
+        border-radius: 10px;
+      }
+      .project {
+        margin-bottom: 40px;
+      }
+      .content {
+        max-width: 800px;
+        margin: auto;
+        padding: 20px;
+      }
+      .square-img {
+        max-height: 500px;
+        aspect-ratio: 1 / 1;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="content">
+      <h2>Current project</h2>
+      <div class="project">
+        <h3>TypeRacing.io</h3>
+        <p>A simple typing game where you race to finish a given phrase.</p>
+        <video width="100%" height="500" controls>
+          <source src="typeracing.io.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
 
-   <h2>Past projects</h2>
-   <div class="project">
-    <h3>bufo.fun</h3>
-    <p>
-     To help with bufo discovery and importing into your
-     servers.
-    </p>
-    <a href="https://bufo.fun">bufo.fun</a>
-    <br />
-    <a href="https://bufo.fun"
-     ><img src="bufo.fun.png" alt="bufo.fun"
-    /></a>
-   </div>
+      <h2>Past projects</h2>
+      <div class="project">
+        <h3>bufo.fun</h3>
+        <p>To help with bufo discovery and importing into your servers.</p>
+        <div>
+          <a href="https://bufo.fun">bufo.fun</a> |
+          <a href="https://github.com/tfritzy/bufo.fun">Source code</a>
+        </div>
+        <br />
+        <a href="https://bufo.fun"><img src="bufo.fun.png" alt="bufo.fun" /></a>
+      </div>
 
-   <div class="project">
-    <h3>Factory game era 3</h3>
-    <p>
-     A multiplayer survival game where you're defending
-     against waves of enemies by building a factory that
-     powers defensive towers. Probably abandonded. Spent
-     over a year on this, on and off, and got decently far,
-     but moved on because it feels so much nicer to work on
-     and finish small projects.
-    </p>
-    <video width="100%" height="500" controls>
-     <source src="Factory3.mp4" type="video/mp4" />
-     Your browser does not support the video tag.
-    </video>
-   </div>
+      <div class="project">
+        <h3>Factory game era 3</h3>
+        <div>
+          <a href="https://github.com/tfritzy/FactoryCoreLogic">Core logic</a>
+          |
+          <a href="https://github.com/tfritzy/FactorySurvivalGame"
+            >Unity project</a
+          >
+        </div>
+        <p>
+          I came back to the factory game once again. I mostly continued from
+          where I left off. I created a new Unity project, but reused the core
+          package. I mainly worked on setting up peer to peer networking, and
+          ended up with a decently compelling system. After 4-5 months though, I
+          got tired and wanted to make a small project again.
+        </p>
+        <video width="100%" height="500" controls>
+          <source src="factory-era-3.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
 
-   <div class="project">
-    <h3>Aces</h3>
-    <p>
-     An online version of a card game my family plays a lot,
-     called Aces. The gist is that you're trying to make
-     sets of 3+ cards, and get all cards in your hand into
-     some set. Has an entirely serverless back-end, which
-     was a nightmare to get websockets working for.
-    </p>
-    <a href="https://aces.cards">aces.cards</a>
-    <br />
-    <a href="https://aces.cards"
-     ><img src="aces.png" alt="aces"
-    /></a>
-   </div>
+      <div class="project">
+        <h3>Aces</h3>
+        <p>
+          An online version of a card game my family plays a lot, called Aces.
+          The gist is that you're trying to make sets of 3+ cards, and get all
+          cards in your hand into some set. Has an entirely serverless back-end,
+          which was a nightmare to get websockets working for.
+        </p>
+        <div>
+          <a href="https://aces.cards">aces.cards</a> |
+          <a href="https://github.com/tfritzy/aces-web">Frontend source</a> |
+          <a href="https://github.com/tfritzy/AcesCore">Core source</a> |
+        </div>
+        <br />
+        <a href="https://aces.cards"
+          ><img class="square-img" width="70%" src="aces.jpg" alt="aces"
+        /></a>
+      </div>
 
-   <div class="project">
-    <h3>Solitary Keep</h3>
-    <p>
-     A pivot of my factory game into just a tower defense.
-     The idea was to make a simple game to proof the
-     architecture, and then later build the whole factory
-     game on top of it.
-    </p>
-    <video width="500px" height="500px" controls>
-     <source src="solitary-keep.mp4" type="video/mp4" />
-     Your browser does not support the video tag.
-    </video>
-   </div>
+      <div class="project">
+        <h3>Zombie defense typing game</h3>
+        <p>
+          A game that has been on my backlog for a long time, and still is,
+          where making progress on the phrase causes survivors to fire their
+          weapons. Tried using synty assets so I could focus on the game play,
+          but ultimately didn't enjoy this strategy as much.
+        </p>
+        <div>
+          <a href="https://github.com/tfritzy/ZombieTyping.git">Source code</a>
+        </div>
+        <video width="100%" height="500px" controls>
+          <source src="zombie-defense.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
 
-   <div class="project">
-    <h3>Factory game era 2</h3>
-    <p>
-     After a short break from working on the factory game, I
-     restarted it with a rebuild. The goal was to spend less
-     of the development cycle in unity, and more in vscode.
-     To do that, most of the game logic would live in a
-     package with unit tests, that gets imported into the
-     Unity project. This was actually a great idea, though I
-     abandoned the project eventually.
-    </p>
-    <video width="100%" height="500px" controls>
-     <source src="factory-era-2.mp4" type="video/mp4" />
-     Your browser does not support the video tag.
-    </video>
-   </div>
+      <div class="project">
+        <h3>Solitary Keep</h3>
+        <p>
+          After spending a long time on the factory game, I wanted to make a
+          small project, using the code I had already written for it. Without
+          too much extension I could make a tower defense game, so I started on
+          that. Didn't finish though :/
+        </p>
+        <video class="square-img" width="500px" height="500px" controls>
+          <source src="solitary-keep.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
 
-   <div class="project">
-    <h3>Fly by Night</h3>
-    <p>
-     A remake of the first game I finished, which was a
-     fancier version of the helicopter flash game.
-    </p>
-    <a
-     href="https://play.google.com/store/apps/details?id=com.PineconeGames.FlybyNight"
-     >Play store</a
-    >
-    <video width="100%" height="500px" controls>
-     <source src="fly-by-night.mp4" type="video/mp4" />
-     Your browser does not support the video tag.
-    </video>
-   </div>
-  </main>
- </body>
+      <div class="project">
+        <h3>Factory game era 2</h3>
+        <p>
+          After a while on the zombie defense typing game, I continued with the
+          facotry game with a rebuild. The goal was to spend less of the
+          development cycle in unity, and more in the editor. To do that, most
+          of the game logic would live in a package with unit tests, that gets
+          imported into the Unity project. This was actually a great idea,
+          though I abandoned the project eventually.
+        </p>
+        <video width="100%" height="500px" controls>
+          <source src="factory-era-2.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <div class="project">
+        <h3>Fly by Night</h3>
+        <p>
+          A remake of the first game I finished, which was a fancier version of
+          the helicopter flash game.
+        </p>
+        <div>
+          <a
+            href="https://play.google.com/store/apps/details?id=com.PineconeGames.FlybyNight"
+            >Play store</a
+          >
+          | <a href="https://github.com/tfritzy/FlybyNight">Source code</a>
+        </div>
+        <video width="100%" height="500px" controls>
+          <source src="fly-by-night.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <div class="project">
+        <h3>Factory game era 1</h3>
+        <p>
+          Pivoted my mobile hex grid tower defense game into a factory game, for
+          some reason. Had a cool landscape, but the dev cycle was a nightmare.
+          Having complex logic live in Unity was so slow to debug with the only
+          way to test being through playing the game.
+        </p>
+        <video width="100%" height="500px" controls>
+          <source src="factory-era-1.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <div class="project">
+        <h3>Hex grid tower defense game</h3>
+        <p>
+          A game where you conquest across a landscape, as a tower defense game.
+          The building you're defending is a trebuchet that's seiging the enemy
+          fortefications. Had a lot of fun building the map. Struggled quite a
+          bit making the game fun though.
+        </p>
+        <div>
+          <a href="https://github.com/tfritzy/HexagonTDF">Source code</a>
+        </div>
+        <video width="100%" height="500px" controls>
+          <source src="hex-grid-tower-defense.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </main>
+  </body>
 </html>
