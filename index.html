@@ -3,88 +3,230 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tyler Fritz</title>
+    <title>Tyler Fritz - Game Developer & Engineer</title>
     <style>
-      html {
-        background-color: #0d1117;
-        color: #dfeaf1;
+      * {
+        box-sizing: border-box;
       }
+      
+      html {
+        background: linear-gradient(135deg, #0f1419 0%, #1a1f2e 100%);
+        color: #e6edf3;
+        scroll-behavior: smooth;
+      }
+      
       body {
-        font-family: Arial, sans-serif;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
         margin: 0;
         padding: 0;
+        line-height: 1.6;
       }
+      
+      .header {
+        text-align: center;
+        padding: 60px 20px 40px;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+      
+      .header h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        margin: 0 0 10px 0;
+        background: linear-gradient(135deg, #58a6ff 0%, #a371f7 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      
+      .header .subtitle {
+        font-size: 1.3rem;
+        color: #8b949e;
+        font-weight: 400;
+        margin: 0;
+      }
+      
       img {
         max-width: 100%;
         height: auto;
-        border-radius: 10px;
+        border-radius: 12px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
       }
+      
+      img:hover {
+        transform: scale(1.02);
+        box-shadow: 0 8px 30px rgba(88, 166, 255, 0.3);
+      }
+      
       video {
-        border-radius: 5px;
+        border-radius: 12px;
         background-color: #000;
+        width: 100%;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
       }
+      
+      video:hover {
+        transform: scale(1.01);
+        box-shadow: 0 8px 30px rgba(88, 166, 255, 0.2);
+      }
+      
       .project {
-        margin-bottom: 40px;
-        background-color: #161b22;
-        border-radius: 10px;
-        border-width: 1px;
-        border-color: #30363d;
-        border-style: solid;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-bottom: 20px;
+        margin-bottom: 50px;
+        background: linear-gradient(135deg, #161b22 0%, #1c2128 100%);
+        border-radius: 16px;
+        border: 1px solid #30363d;
+        padding: 30px;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       }
+      
+      .project:hover {
+        border-color: #58a6ff;
+        box-shadow: 0 8px 30px rgba(88, 166, 255, 0.15);
+        transform: translateY(-2px);
+      }
+      
+      .project h3 {
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin-top: 0;
+        margin-bottom: 15px;
+        color: #58a6ff;
+      }
+      
+      .project-links {
+        margin-bottom: 15px;
+        font-size: 0.95rem;
+      }
+      
+      .project-links a {
+        color: #58a6ff;
+        text-decoration: none;
+        margin-right: 15px;
+        padding: 6px 12px;
+        border-radius: 6px;
+        border: 1px solid #30363d;
+        display: inline-block;
+        margin-bottom: 8px;
+        transition: all 0.2s ease;
+      }
+      
+      .project-links a:hover {
+        background-color: #58a6ff;
+        color: #0d1117;
+        border-color: #58a6ff;
+        transform: translateY(-1px);
+      }
+      
+      .project p {
+        font-size: 1.05rem;
+        color: #c9d1d9;
+        margin: 15px 0;
+      }
+      
       .content {
-        max-width: 800px;
-        margin: auto;
+        max-width: 900px;
+        margin: 0 auto;
         padding: 20px;
       }
+      
+      .section-title {
+        font-size: 2rem;
+        font-weight: 600;
+        margin: 50px 0 30px 0;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #30363d;
+        color: #e6edf3;
+      }
+      
       .square-img {
         max-height: 500px;
         aspect-ratio: 1 / 1;
+        object-fit: cover;
+      }
+      
+      @media (max-width: 768px) {
+        .header h1 {
+          font-size: 2rem;
+        }
+        
+        .header .subtitle {
+          font-size: 1.1rem;
+        }
+        
+        .project {
+          padding: 20px;
+        }
+        
+        .project h3 {
+          font-size: 1.5rem;
+        }
+        
+        .section-title {
+          font-size: 1.6rem;
+        }
       }
     </style>
   </head>
   <body>
+    <header class="header">
+      <h1>Tyler Fritz</h1>
+      <p class="subtitle">Game Developer & Software Engineer</p>
+    </header>
+    
     <main class="content">
-      <h2>Current project</h2>
+      <h2 class="section-title">Current Projects</h2>
       <div class="project">
         <h3>TypeRacing.io</h3>
-        <p>A simple typing game where you race to finish a given phrase.</p>
-        <video width="100%" height="427" controls>
+        <div class="project-links">
+          <a href="https://typeracing.io" target="_blank">Visit Site</a>
+        </div>
+        <p>An online multiplayer typing game where you compete in real-time races to complete phrases. Test your typing speed and accuracy against players from around the world.</p>
+        <video controls>
           <source src="typeracing.io.mkv" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
 
-      <h2>Past projects</h2>
       <div class="project">
-        <h3>bufo.fun</h3>
-        <div>
-          <a href="https://bufo.fun">bufo.fun</a> |
-          <a href="https://github.com/tfritzy/bufo.fun">Source code</a>
+        <h3>typerace.io</h3>
+        <div class="project-links">
+          <a href="https://typerace.io" target="_blank">Visit Site</a>
         </div>
-        <p>To help with bufo discovery and importing into your servers.</p>
-        <a href="https://bufo.fun"><img src="bufo.fun.png" alt="bufo.fun" /></a>
+        <p>A competitive typing race platform where speed and precision matter. Challenge yourself and climb the leaderboards as you type your way to victory.</p>
       </div>
 
       <div class="project">
-        <h3>Factory game era 3</h3>
-        <div>
-          <a href="https://github.com/tfritzy/FactoryCoreLogic">Core logic</a>
-          |
-          <a href="https://github.com/tfritzy/FactorySurvivalGame"
-            >Unity project</a
-          >
+        <h3>CL Tanks</h3>
+        <p>A multiplayer tank battle game built with command-line aesthetics. Navigate the battlefield, strategize your attacks, and dominate the arena in this terminal-inspired combat experience.</p>
+      </div>
+
+      <div class="project">
+        <h3>LunaVoxol</h3>
+        <p>A voxel-based space exploration game set on the moon. Mine resources, build structures, and explore the lunar landscape in this creative sandbox adventure.</p>
+      </div>
+
+      <h2 class="section-title">Past Projects</h2>
+      <div class="project">
+        <h3>bufo.fun</h3>
+        <div class="project-links">
+          <a href="https://bufo.fun" target="_blank">Visit Site</a>
+          <a href="https://github.com/tfritzy/bufo.fun" target="_blank">Source Code</a>
+        </div>
+        <p>A web application to help with bufo discovery and importing into your servers. Making it easy to find and integrate the perfect bufo for your needs.</p>
+        <a href="https://bufo.fun" target="_blank"><img src="bufo.fun.png" alt="bufo.fun screenshot" /></a>
+      </div>
+
+      <div class="project">
+        <h3>Factory Game Era 3</h3>
+        <div class="project-links">
+          <a href="https://github.com/tfritzy/FactoryCoreLogic" target="_blank">Core Logic</a>
+          <a href="https://github.com/tfritzy/FactorySurvivalGame" target="_blank">Unity Project</a>
         </div>
         <p>
-          I came back to the factory game once again. I mostly continued from
-          where I left off. I created a new Unity project, but reused the core
-          package. I mainly worked on setting up peer to peer networking, and
-          ended up with a decently compelling system. After 4-5 months though, I
-          got tired and wanted to make a small project again.
+          The third iteration of my factory game project. I continued from where I left off, creating a new Unity project while reusing the core package. The main focus was implementing peer-to-peer networking, which resulted in a compelling multiplayer system. After 4-5 months of development, I decided to pivot to a smaller project.
         </p>
-        <video width="100%" height="500" controls>
+        <video controls>
           <source src="factory-era-3.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
@@ -92,35 +234,28 @@
 
       <div class="project">
         <h3>Aces</h3>
-        <div>
-          <a href="https://aces.cards">aces.cards</a> |
-          <a href="https://github.com/tfritzy/aces-web">Frontend source</a> |
-          <a href="https://github.com/tfritzy/AcesCore">Core source</a>
+        <div class="project-links">
+          <a href="https://aces.cards" target="_blank">Visit Site</a>
+          <a href="https://github.com/tfritzy/aces-web" target="_blank">Frontend Source</a>
+          <a href="https://github.com/tfritzy/AcesCore" target="_blank">Core Source</a>
         </div>
         <p>
-          An online version of a card game my family plays a lot, called Aces.
-          The gist is that you're trying to make sets of 3+ cards, and get all
-          cards in your hand into some set. Has an entirely serverless back-end,
-          which was a nightmare to get websockets working for.
+          An online multiplayer version of Aces, a card game my family loves. The objective is to create sets of 3 or more cards and empty your hand by fitting all cards into sets. Features an entirely serverless backend architecture, which presented interesting challenges for implementing WebSocket connections.
         </p>
-        <br />
-        <a href="https://aces.cards"
-          ><img class="square-img" width="70%" src="aces.jpg" alt="aces"
-        /></a>
+        <a href="https://aces.cards" target="_blank">
+          <img class="square-img" src="aces.jpg" alt="Aces card game screenshot" />
+        </a>
       </div>
 
       <div class="project">
-        <h3>Zombie defense typing game</h3>
-        <div>
-          <a href="https://github.com/tfritzy/ZombieTyping.git">Source code</a>
+        <h3>Zombie Defense Typing Game</h3>
+        <div class="project-links">
+          <a href="https://github.com/tfritzy/ZombieTyping.git" target="_blank">Source Code</a>
         </div>
         <p>
-          A game that has been on my backlog for a long time, and still is,
-          where making progress on the phrase causes survivors to fire their
-          weapons. Tried using synty assets so I could focus on the game play,
-          but ultimately didn't enjoy this strategy as much.
+          A typing game concept that's been on my backlog, where typing progress causes survivors to fire their weapons at approaching zombies. I experimented with Synty assets to focus more on gameplay mechanics, though this approach didn't work out as well as I'd hoped.
         </p>
-        <video width="100%" height="500px" controls>
+        <video controls>
           <source src="zombie-defense.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
@@ -129,28 +264,20 @@
       <div class="project">
         <h3>Solitary Keep</h3>
         <p>
-          After spending a long time on the factory game, I wanted to make a
-          small project, using the code I had already written for it. Without
-          too much extension I could make a tower defense game, so I started on
-          that. Didn't finish though :/
+          After investing significant time in the factory game, I wanted to create something smaller using the existing codebase. The code was flexible enough to support a tower defense game without much modification, so I started building one. Unfortunately, I didn't finish this project.
         </p>
-        <video class="square-img" width="500px" height="500px" controls>
+        <video class="square-img" controls>
           <source src="solitary-keep.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
 
       <div class="project">
-        <h3>Factory game era 2</h3>
+        <h3>Factory Game Era 2</h3>
         <p>
-          After a while on the zombie defense typing game, I continued with the
-          facotry game with a rebuild. The goal was to spend less of the
-          development cycle in unity, and more in the editor. To do that, most
-          of the game logic would live in a package with unit tests, that gets
-          imported into the Unity project. This was actually a great idea,
-          though I abandoned the project eventually.
+          After working on the zombie defense typing game, I returned to the factory game with a complete rebuild. The goal was to minimize development time in Unity and maximize time in a proper code editor. To achieve this, I moved most game logic into a separate package with unit tests that could be imported into Unity. This architectural decision proved to be excellent, though I eventually moved on to other projects.
         </p>
-        <video width="100%" height="500px" controls>
+        <video controls>
           <source src="factory-era-2.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
@@ -158,51 +285,39 @@
 
       <div class="project">
         <h3>Fly by Night</h3>
-        <p>
-          A remake of the first game I finished, which was a fancier version of
-          the helicopter flash game.
-        </p>
-        <div>
-          <a
-            href="https://play.google.com/store/apps/details?id=com.PineconeGames.FlybyNight"
-            >Play store</a
-          >
-          | <a href="https://github.com/tfritzy/FlybyNight">Source code</a>
+        <div class="project-links">
+          <a href="https://play.google.com/store/apps/details?id=com.PineconeGames.FlybyNight" target="_blank">Play Store</a>
+          <a href="https://github.com/tfritzy/FlybyNight" target="_blank">Source Code</a>
         </div>
-        <br />
-        <video width="100%" height="500px" controls>
+        <p>
+          A remake of the first game I completed, which was an enhanced version of the classic helicopter flash game. Navigate through challenging obstacles in this mobile arcade experience.
+        </p>
+        <video controls>
           <source src="fly-by-night.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
 
       <div class="project">
-        <h3>Factory game era 1</h3>
+        <h3>Factory Game Era 1</h3>
         <p>
-          Pivoted my mobile hex grid tower defense game into a factory game, for
-          some reason. Had a cool landscape, but the dev cycle was a nightmare.
-          Having complex logic live in Unity was so slow to debug with the only
-          way to test being through playing the game.
+          I pivoted my mobile hex grid tower defense game into a factory-building game. The landscape design turned out great, but the development cycle was challenging. Having complex game logic tightly coupled with Unity made debugging slow and tedious, as the only way to test was by playing through the game.
         </p>
-        <video width="100%" height="500px" controls>
+        <video controls>
           <source src="factory-era-1.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
 
       <div class="project">
-        <h3>Hex grid tower defense game</h3>
-        <p>
-          A game where you conquest across a landscape, as a tower defense game.
-          The building you're defending is a trebuchet that's seiging the enemy
-          fortefications. Had a lot of fun building the map. Struggled quite a
-          bit making the game fun though.
-        </p>
-        <div>
-          <a href="https://github.com/tfritzy/HexagonTDF">Source code</a>
+        <h3>Hex Grid Tower Defense Game</h3>
+        <div class="project-links">
+          <a href="https://github.com/tfritzy/HexagonTDF" target="_blank">Source Code</a>
         </div>
-        <br />
-        <video width="100%" height="500px" controls>
+        <p>
+          A conquest-based tower defense game set on a hex grid landscape. The structure you're defending is a trebuchet sieging enemy fortifications. I had a lot of fun creating the map system, but struggled to make the gameplay as engaging as I'd hoped.
+        </p>
+        <video controls>
           <source src="hex-grid-tower-defense.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
