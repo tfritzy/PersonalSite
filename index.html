@@ -350,6 +350,20 @@
         return `repeating-linear-gradient(135deg, ${stops})`;
       }
 
+      function hasSameProjects(current, previous) {
+        if (!current?.bucket || !previous?.bucket) {
+          return false;
+        }
+
+        const currentRepos = current.bucket.repos;
+        const previousRepos = previous.bucket.repos;
+
+        return (
+          currentRepos.size === previousRepos.size &&
+          [...currentRepos.keys()].every((repo) => previousRepos.has(repo))
+        );
+      }
+
       function renderTimeline(rows) {
         const fragment = document.createDocumentFragment();
 
@@ -366,9 +380,7 @@
                 a.repo.localeCompare(b.repo)
               )
             : [];
-          const labeledRepos = repos.filter(
-            (repo) => !previous?.bucket?.repos.has(repo.repo)
-          );
+          const labeledRepos = hasSameProjects(row, previous) ? [] : repos;
           const classes = [
             "day",
             isActive ? "active" : "empty",
