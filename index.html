@@ -21,7 +21,7 @@
       }
 
       main {
-        max-width: 1040px;
+        max-width: 1080px;
         margin: auto;
         padding: 44px 20px 64px;
       }
@@ -61,7 +61,8 @@
       }
 
       .link-pill:hover,
-      .segment:hover .segment-name {
+      .repo-link:hover,
+      .day-link:hover .day-repo {
         color: #79c0ff;
       }
 
@@ -74,7 +75,7 @@
         display: grid;
         gap: 10px;
         margin: 0 0 34px;
-        max-width: 680px;
+        max-width: 720px;
       }
 
       .summary-row {
@@ -105,8 +106,7 @@
         min-width: 2px;
       }
 
-      .summary-count,
-      .segment-count {
+      .summary-days {
         color: #8b949e;
         font-family: "Cascadia Mono", Consolas, "Courier New", monospace;
         font-size: 0.82rem;
@@ -117,78 +117,86 @@
         display: grid;
       }
 
-      .segment {
+      .day {
         color: inherit;
         display: grid;
-        grid-template-columns: 118px 22px minmax(0, 1fr);
-        min-height: var(--segment-height);
+        grid-template-columns: 96px 26px minmax(0, 1fr);
+        min-height: 26px;
         text-decoration: none;
       }
 
-      .segment-range {
+      .day-date {
         color: #8b949e;
         font-family: "Cascadia Mono", Consolas, "Courier New", monospace;
         font-size: 0.78rem;
-        line-height: 1.35;
-        padding: 3px 12px 0 0;
+        line-height: 26px;
+        padding-right: 12px;
         text-align: right;
       }
 
-      .rail {
+      .day-rail {
         position: relative;
       }
 
-      .rail::before {
-        background: var(--project-color);
+      .day-rail::before {
+        background: var(--project-color, #2a313b);
         bottom: 0;
         content: "";
-        left: 10px;
-        opacity: 0.42;
+        left: 11px;
+        opacity: var(--rail-opacity, 0.34);
         position: absolute;
         top: 0;
-        width: 3px;
+        width: 4px;
       }
 
-      .rail::after {
+      .day.active .day-rail::after {
         background: var(--project-color);
         content: "";
         height: 8px;
-        left: 7px;
+        left: 9px;
         position: absolute;
-        top: 6px;
+        top: 9px;
         width: 8px;
       }
 
-      .segment-body {
-        border-top: 1px solid #20262f;
-        padding: 0 0 20px 12px;
+      .day.join-prev .day-rail::after,
+      .day.join-next .day-rail::after {
+        display: none;
       }
 
-      .segment-topline {
-        align-items: baseline;
+      .day-body {
+        align-items: center;
+        border-top: 1px solid #20262f;
+        display: flex;
+        gap: 10px;
+        min-width: 0;
+        padding-left: 12px;
+      }
+
+      .day.empty .day-body {
+        color: #59636e;
+      }
+
+      .day-repo {
+        color: var(--project-color);
+        font-weight: 700;
+        min-width: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .repo-list {
+        color: #aebbc5;
         display: flex;
         flex-wrap: wrap;
-        gap: 8px 12px;
-        margin: 0 0 7px;
+        gap: 8px;
+        min-width: 0;
       }
 
-      .segment-name {
-        color: var(--project-color);
-        font-size: 1.08rem;
-        font-weight: 700;
-      }
-
-      .current-label {
-        border: 1px solid #30363d;
-        color: #aebbc5;
-        font-size: 0.78rem;
-        padding: 2px 6px;
-      }
-
-      .segment-meta {
-        color: #aebbc5;
-        line-height: 1.45;
-        margin: 0;
+      .repo-link {
+        color: #dfeaf1;
+        text-decoration: none;
       }
 
       @media (max-width: 680px) {
@@ -200,20 +208,20 @@
           grid-template-columns: minmax(100px, 1fr) minmax(60px, 1fr) auto;
         }
 
-        .segment {
-          grid-template-columns: 82px 18px minmax(0, 1fr);
+        .day {
+          grid-template-columns: 72px 22px minmax(0, 1fr);
         }
 
-        .segment-range {
+        .day-date {
           padding-right: 8px;
         }
 
-        .rail::before {
-          left: 8px;
+        .day-rail::before {
+          left: 9px;
         }
 
-        .rail::after {
-          left: 5px;
+        .day.active .day-rail::after {
+          left: 7px;
         }
       }
     </style>
@@ -222,9 +230,8 @@
     <main>
       <h1>Tyler Fritz</h1>
       <p class="intro">
-        Public GitHub activity grouped by project. The chart shows total commit
-        volume; the timeline shows stretches where the same repo was being
-        worked on.
+        Public GitHub activity by day. Empty days stay gray; active days are
+        colored by the repo with the most commits that day.
       </p>
 
       <nav class="links" aria-label="Project links">
@@ -235,8 +242,8 @@
       </nav>
 
       <p class="status" id="status">Loading public activity...</p>
-      <section class="summary" id="summary" aria-label="Commit counts by repo"></section>
-      <section class="timeline" id="timeline" aria-label="Project activity timeline"></section>
+      <section class="summary" id="summary" aria-label="Active days by repo"></section>
+      <section class="timeline" id="timeline" aria-label="Daily project activity timeline"></section>
     </main>
 
     <script>
@@ -294,11 +301,27 @@
         });
       }
 
+      function dayKey(value) {
+        return new Date(value).toISOString().slice(0, 10);
+      }
+
+      function localDateFromKey(key) {
+        return new Date(`${key}T00:00:00Z`);
+      }
+
+      function addDays(date, days) {
+        const next = new Date(date);
+
+        next.setUTCDate(next.getUTCDate() + days);
+        return next;
+      }
+
       function formatDate(value) {
         return new Intl.DateTimeFormat("en", {
           month: "short",
           day: "numeric",
           year: "2-digit",
+          timeZone: "UTC",
         }).format(new Date(value));
       }
 
@@ -312,11 +335,15 @@
         return colors[hash % colors.length];
       }
 
-      function repoStats(commits) {
+      function repoStats(dayRows) {
         const counts = new Map();
 
-        commits.forEach((commit) => {
-          counts.set(commit.repo, (counts.get(commit.repo) || 0) + 1);
+        dayRows.forEach((row) => {
+          if (!row.repo) {
+            return;
+          }
+
+          counts.set(row.repo, (counts.get(row.repo) || 0) + 1);
         });
 
         return [...counts.entries()]
@@ -324,32 +351,76 @@
           .sort((a, b) => b.count - a.count || a.repo.localeCompare(b.repo));
       }
 
-      function activitySegments(commits) {
-        const segments = [];
+      function daysBetween(startKey, endKey) {
+        const days = [];
+        let cursor = localDateFromKey(startKey);
+        const end = localDateFromKey(endKey);
 
-        commits.forEach((commit) => {
-          const last = segments[segments.length - 1];
+        while (cursor >= end) {
+          days.push(cursor.toISOString().slice(0, 10));
+          cursor = addDays(cursor, -1);
+        }
 
-          if (last && last.repo === commit.repo) {
-            last.count += 1;
-            last.endDate = commit.date;
-            return;
-          }
-
-          segments.push({
-            repo: commit.repo,
-            count: 1,
-            startDate: commit.date,
-            endDate: commit.date,
-            url: commit.url,
-          });
-        });
-
-        return segments;
+        return days;
       }
 
-      function renderSummary(commits) {
-        const stats = repoStats(commits);
+      function dayBuckets(commits) {
+        const buckets = new Map();
+
+        commits.forEach((commit) => {
+          const key = dayKey(commit.date);
+          const bucket = buckets.get(key) || {
+            key,
+            commits: [],
+            repos: new Map(),
+          };
+          const repo = bucket.repos.get(commit.repo) || {
+            repo: commit.repo,
+            count: 0,
+            url: commit.url,
+          };
+
+          repo.count += 1;
+          bucket.repos.set(commit.repo, repo);
+          bucket.commits.push(commit);
+          buckets.set(key, bucket);
+        });
+
+        return buckets;
+      }
+
+      function dominantRepo(bucket) {
+        if (!bucket || bucket.repos.size === 0) {
+          return null;
+        }
+
+        return [...bucket.repos.values()].sort(
+          (a, b) => b.count - a.count || a.repo.localeCompare(b.repo)
+        )[0];
+      }
+
+      function buildDayRows(commits) {
+        const sorted = [...commits].sort((a, b) => new Date(b.date) - new Date(a.date));
+        const buckets = dayBuckets(sorted);
+        const newest = dayKey(sorted[0].date);
+        const oldest = dayKey(sorted[sorted.length - 1].date);
+        const days = daysBetween(newest, oldest);
+
+        return days.map((key) => {
+          const bucket = buckets.get(key);
+          const dominant = dominantRepo(bucket);
+
+          return {
+            key,
+            bucket,
+            dominant,
+            repo: dominant?.repo || null,
+          };
+        });
+      }
+
+      function renderSummary(dayRows) {
+        const stats = repoStats(dayRows);
         const max = Math.max(1, ...stats.map((item) => item.count));
         const fragment = document.createDocumentFragment();
 
@@ -366,7 +437,7 @@
             <span class="summary-track" aria-hidden="true">
               <span class="summary-fill" style="width: ${percent}%"></span>
             </span>
-            <span class="summary-count">${item.count.toLocaleString()} commit${item.count === 1 ? "" : "s"}</span>
+            <span class="summary-days">${item.count.toLocaleString()} day${item.count === 1 ? "" : "s"}</span>
           `;
           fragment.appendChild(row);
         });
@@ -374,40 +445,54 @@
         summary.appendChild(fragment);
       }
 
-      function renderTimeline(commits) {
-        const segments = activitySegments(commits);
-        const maxSegment = Math.max(1, ...segments.map((segment) => segment.count));
+      function renderTimeline(rows) {
         const fragment = document.createDocumentFragment();
 
         timeline.replaceChildren();
 
-        segments.forEach((segment, index) => {
-          const link = document.createElement("a");
-          const range =
-            segment.startDate === segment.endDate
-              ? formatDate(segment.startDate)
-              : `${formatDate(segment.startDate)} - ${formatDate(segment.endDate)}`;
-          const height = 54 + Math.round((segment.count / maxSegment) * 110);
+        rows.forEach((row, index) => {
+          const isActive = Boolean(row.bucket);
+          const previous = rows[index - 1];
+          const next = rows[index + 1];
+          const day = document.createElement(isActive ? "a" : "div");
+          const repos = isActive
+            ? [...row.bucket.repos.values()].sort((a, b) => b.count - a.count || a.repo.localeCompare(b.repo))
+            : [];
+          const classes = [
+            "day",
+            isActive ? "active" : "empty",
+            previous?.repo === row.repo && row.repo ? "join-prev" : "",
+            next?.repo === row.repo && row.repo ? "join-next" : "",
+          ]
+            .filter(Boolean)
+            .join(" ");
 
-          link.className = "segment";
-          link.href = segment.url;
-          link.style.setProperty("--project-color", colorForRepo(segment.repo));
-          link.style.setProperty("--segment-height", `${height}px`);
-          link.innerHTML = `
-            <time class="segment-range" datetime="${segment.startDate}">${range}</time>
-            <span class="rail" aria-hidden="true"></span>
-            <span class="segment-body">
-              <span class="segment-topline">
-                <span class="segment-name">${escapeHtml(segment.repo)}</span>
-                <span class="segment-count">${segment.count.toLocaleString()} commit${segment.count === 1 ? "" : "s"}</span>
-                ${index === 0 ? '<span class="current-label">current</span>' : ""}
-              </span>
-              <p class="segment-meta">
-                ${segment.count === 1 ? "A quick pass" : "Focused stretch"} on ${escapeHtml(segment.repo)}.
-              </p>
+          day.className = classes;
+          day.style.setProperty("--project-color", row.repo ? colorForRepo(row.repo) : "#2a313b");
+
+          if (isActive) {
+            day.href = row.dominant.url;
+          }
+
+          day.innerHTML = `
+            <time class="day-date" datetime="${row.key}">${formatDate(`${row.key}T00:00:00Z`)}</time>
+            <span class="day-rail" aria-hidden="true"></span>
+            <span class="day-body">
+              ${
+                isActive
+                  ? `<span class="day-repo">${escapeHtml(row.repo)}</span>
+                     <span class="repo-list">${repos
+                       .slice(1)
+                       .map(
+                         (repo) =>
+                           `<a class="repo-link" href="${repo.url}">${escapeHtml(repo.repo)}</a>`
+                       )
+                       .join("")}</span>`
+                  : ""
+              }
             </span>
           `;
-          fragment.appendChild(link);
+          fragment.appendChild(day);
         });
 
         timeline.appendChild(fragment);
@@ -416,11 +501,20 @@
       function render(activity, label) {
         const commits = [...activity.commits].sort((a, b) => new Date(b.date) - new Date(a.date));
 
+        if (commits.length === 0) {
+          status.textContent = "No public commits found.";
+          summary.replaceChildren();
+          timeline.replaceChildren();
+          return;
+        }
+
+        const dayRows = buildDayRows(commits);
+
         status.textContent =
           label ||
-          `${activity.commitCount.toLocaleString()} public commits across ${activity.repoCount.toLocaleString()} repos. Updated ${formatDate(activity.generatedAt)}.`;
-        renderSummary(commits);
-        renderTimeline(commits);
+          `Public activity across ${activity.repoCount.toLocaleString()} repos. Updated ${formatDate(activity.generatedAt)}.`;
+        renderSummary(dayRows);
+        renderTimeline(dayRows);
       }
 
       async function loadActivity() {
