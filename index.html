@@ -5,67 +5,439 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tyler Fritz</title>
     <style>
-      html {
-        background-color: #0d1117;
+      :root {
+        color-scheme: dark;
+        background: #0d1117;
         color: #dfeaf1;
-      }
-      body {
         font-family: Arial, sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
         margin: 0;
-        padding: 0;
       }
+
       main {
-        max-width: 1100px;
+        max-width: 1040px;
         margin: auto;
-        padding: 40px 20px;
+        padding: 44px 20px 64px;
       }
+
+      a {
+        color: inherit;
+      }
+
       h1 {
-        margin: 0 0 24px 0;
+        margin: 0 0 10px;
+        font-size: clamp(2rem, 4vw, 3.2rem);
         font-weight: 500;
+        line-height: 1;
       }
-      .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-        gap: 16px;
+
+      .intro {
+        max-width: 720px;
+        margin: 0 0 28px;
+        color: #aebbc5;
+        line-height: 1.55;
       }
-      .project {
-        display: block;
-        background-color: #161b22;
+
+      .links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 0 0 34px;
+      }
+
+      .link-pill {
         border: 1px solid #30363d;
-        border-radius: 10px;
-        padding: 16px;
+        background: #161b22;
         color: #dfeaf1;
+        min-height: 38px;
+        padding: 9px 12px;
         text-decoration: none;
-        font-size: 1.05rem;
-        font-weight: 600;
-        transition: border-color 0.15s ease, background-color 0.15s ease;
       }
-      .project:hover {
-        border-color: #58a6ff;
-        background-color: #1c232c;
+
+      .link-pill:hover,
+      .segment:hover .segment-name {
+        color: #79c0ff;
+      }
+
+      .status {
+        color: #8b949e;
+        margin: 0 0 18px;
+      }
+
+      .summary {
+        display: grid;
+        gap: 10px;
+        margin: 0 0 34px;
+        max-width: 680px;
+      }
+
+      .summary-row {
+        align-items: center;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: minmax(120px, 210px) minmax(90px, 1fr) auto;
+      }
+
+      .summary-name {
+        color: #f0f6fc;
+        font-weight: 600;
+        min-width: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .summary-track {
+        background: #161b22;
+        height: 4px;
+      }
+
+      .summary-fill {
+        background: var(--project-color);
+        display: block;
+        height: 100%;
+        min-width: 2px;
+      }
+
+      .summary-count,
+      .segment-count {
+        color: #8b949e;
+        font-family: "Cascadia Mono", Consolas, "Courier New", monospace;
+        font-size: 0.82rem;
+        white-space: nowrap;
+      }
+
+      .timeline {
+        display: grid;
+      }
+
+      .segment {
+        color: inherit;
+        display: grid;
+        grid-template-columns: 118px 22px minmax(0, 1fr);
+        min-height: var(--segment-height);
+        text-decoration: none;
+      }
+
+      .segment-range {
+        color: #8b949e;
+        font-family: "Cascadia Mono", Consolas, "Courier New", monospace;
+        font-size: 0.78rem;
+        line-height: 1.35;
+        padding: 3px 12px 0 0;
+        text-align: right;
+      }
+
+      .rail {
+        position: relative;
+      }
+
+      .rail::before {
+        background: var(--project-color);
+        bottom: 0;
+        content: "";
+        left: 10px;
+        opacity: 0.42;
+        position: absolute;
+        top: 0;
+        width: 3px;
+      }
+
+      .rail::after {
+        background: var(--project-color);
+        content: "";
+        height: 8px;
+        left: 7px;
+        position: absolute;
+        top: 6px;
+        width: 8px;
+      }
+
+      .segment-body {
+        border-top: 1px solid #20262f;
+        padding: 0 0 20px 12px;
+      }
+
+      .segment-topline {
+        align-items: baseline;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 12px;
+        margin: 0 0 7px;
+      }
+
+      .segment-name {
+        color: var(--project-color);
+        font-size: 1.08rem;
+        font-weight: 700;
+      }
+
+      .current-label {
+        border: 1px solid #30363d;
+        color: #aebbc5;
+        font-size: 0.78rem;
+        padding: 2px 6px;
+      }
+
+      .segment-meta {
+        color: #aebbc5;
+        line-height: 1.45;
+        margin: 0;
+      }
+
+      @media (max-width: 680px) {
+        main {
+          padding: 32px 14px 48px;
+        }
+
+        .summary-row {
+          grid-template-columns: minmax(100px, 1fr) minmax(60px, 1fr) auto;
+        }
+
+        .segment {
+          grid-template-columns: 82px 18px minmax(0, 1fr);
+        }
+
+        .segment-range {
+          padding-right: 8px;
+        }
+
+        .rail::before {
+          left: 8px;
+        }
+
+        .rail::after {
+          left: 5px;
+        }
       }
     </style>
   </head>
   <body>
     <main>
-      <h1>Tyler Fritz — Projects</h1>
-      <div class="grid">
-        <a class="project" href="https://typerace.io">typerace.io</a>
-        <a class="project" href="https://bufo.fun">bufo.fun</a>
-        <a class="project" href="https://aces.cards">aces.cards</a>
-        <a class="project" href="https://github.com/tfritzy/LunaVoxel">LunaVoxel</a>
-        <a class="project" href="https://github.com/tfritzy/CommandLineTanks">Command Line Tanks</a>
-        <a class="project" href="https://github.com/tfritzy/FactorialRevolution">Factorial Revolution</a>
-        <a class="project" href="https://github.com/tfritzy/BastionWars">Bastion Wars</a>
-        <a class="project" href="https://github.com/tfritzy/typeracing.io">typeracing.io</a>
-        <a class="project" href="https://github.com/tfritzy/FactorySurvivalGame">Factory Survival Game</a>
-        <a class="project" href="https://github.com/tfritzy/FactoryCoreLogic">Factory Core Logic</a>
-        <a class="project" href="https://github.com/tfritzy/ZombieTyping">Zombie Typing</a>
-        <a class="project" href="https://github.com/tfritzy/AcesCore">Aces Core</a>
-        <a class="project" href="./braille.html">Braille Binary Order</a>
-        <a class="project" href="https://play.google.com/store/apps/details?id=com.PineconeGames.FlybyNight">Fly by Night</a>
-        <a class="project" href="https://github.com/tfritzy/HexagonTDF">Hex Grid Tower Defense</a>
-      </div>
+      <h1>Tyler Fritz</h1>
+      <p class="intro">
+        Public GitHub activity grouped by project. The chart shows total commit
+        volume; the timeline shows stretches where the same repo was being
+        worked on.
+      </p>
+
+      <nav class="links" aria-label="Project links">
+        <a class="link-pill" href="https://typerace.io">typerace.io</a>
+        <a class="link-pill" href="https://bufo.fun">bufo.fun</a>
+        <a class="link-pill" href="https://aces.cards">aces.cards</a>
+        <a class="link-pill" href="./braille.html">Braille Binary Order</a>
+      </nav>
+
+      <p class="status" id="status">Loading public activity...</p>
+      <section class="summary" id="summary" aria-label="Commit counts by repo"></section>
+      <section class="timeline" id="timeline" aria-label="Project activity timeline"></section>
     </main>
+
+    <script>
+      const status = document.querySelector("#status");
+      const summary = document.querySelector("#summary");
+      const timeline = document.querySelector("#timeline");
+      const colors = [
+        "#79c0ff",
+        "#7ee787",
+        "#ffa657",
+        "#d2a8ff",
+        "#ff7b72",
+        "#a5d6ff",
+        "#f2cc60",
+        "#56d4dd",
+      ];
+
+      const fallbackActivity = {
+        generatedAt: "2026-07-14T00:00:00Z",
+        repoCount: 2,
+        commitCount: 3,
+        commits: [
+          {
+            repo: "PersonalSite",
+            date: "2026-07-14T00:00:00Z",
+            url: "https://github.com/tfritzy/PersonalSite",
+            sha: "local-1",
+          },
+          {
+            repo: "PersonalSite",
+            date: "2026-07-13T23:00:00Z",
+            url: "https://github.com/tfritzy/PersonalSite",
+            sha: "local-2",
+          },
+          {
+            repo: "typerace.io",
+            date: "2026-07-10T00:00:00Z",
+            url: "https://github.com/tfritzy/typerace.io",
+            sha: "local-3",
+          },
+        ],
+      };
+
+      function escapeHtml(value) {
+        return String(value).replace(/[&<>"']/g, (character) => {
+          const entities = {
+            "&": "&amp;",
+            "<": "&lt;",
+            ">": "&gt;",
+            '"': "&quot;",
+            "'": "&#39;",
+          };
+
+          return entities[character];
+        });
+      }
+
+      function formatDate(value) {
+        return new Intl.DateTimeFormat("en", {
+          month: "short",
+          day: "numeric",
+          year: "2-digit",
+        }).format(new Date(value));
+      }
+
+      function colorForRepo(repoName) {
+        let hash = 0;
+
+        for (const character of repoName) {
+          hash = (hash * 31 + character.charCodeAt(0)) >>> 0;
+        }
+
+        return colors[hash % colors.length];
+      }
+
+      function repoStats(commits) {
+        const counts = new Map();
+
+        commits.forEach((commit) => {
+          counts.set(commit.repo, (counts.get(commit.repo) || 0) + 1);
+        });
+
+        return [...counts.entries()]
+          .map(([repo, count]) => ({ repo, count, color: colorForRepo(repo) }))
+          .sort((a, b) => b.count - a.count || a.repo.localeCompare(b.repo));
+      }
+
+      function activitySegments(commits) {
+        const segments = [];
+
+        commits.forEach((commit) => {
+          const last = segments[segments.length - 1];
+
+          if (last && last.repo === commit.repo) {
+            last.count += 1;
+            last.endDate = commit.date;
+            return;
+          }
+
+          segments.push({
+            repo: commit.repo,
+            count: 1,
+            startDate: commit.date,
+            endDate: commit.date,
+            url: commit.url,
+          });
+        });
+
+        return segments;
+      }
+
+      function renderSummary(commits) {
+        const stats = repoStats(commits);
+        const max = Math.max(1, ...stats.map((item) => item.count));
+        const fragment = document.createDocumentFragment();
+
+        summary.replaceChildren();
+
+        stats.forEach((item) => {
+          const row = document.createElement("div");
+          const percent = Math.max(2, (item.count / max) * 100);
+
+          row.className = "summary-row";
+          row.style.setProperty("--project-color", item.color);
+          row.innerHTML = `
+            <span class="summary-name">${escapeHtml(item.repo)}</span>
+            <span class="summary-track" aria-hidden="true">
+              <span class="summary-fill" style="width: ${percent}%"></span>
+            </span>
+            <span class="summary-count">${item.count.toLocaleString()} commit${item.count === 1 ? "" : "s"}</span>
+          `;
+          fragment.appendChild(row);
+        });
+
+        summary.appendChild(fragment);
+      }
+
+      function renderTimeline(commits) {
+        const segments = activitySegments(commits);
+        const maxSegment = Math.max(1, ...segments.map((segment) => segment.count));
+        const fragment = document.createDocumentFragment();
+
+        timeline.replaceChildren();
+
+        segments.forEach((segment, index) => {
+          const link = document.createElement("a");
+          const range =
+            segment.startDate === segment.endDate
+              ? formatDate(segment.startDate)
+              : `${formatDate(segment.startDate)} - ${formatDate(segment.endDate)}`;
+          const height = 54 + Math.round((segment.count / maxSegment) * 110);
+
+          link.className = "segment";
+          link.href = segment.url;
+          link.style.setProperty("--project-color", colorForRepo(segment.repo));
+          link.style.setProperty("--segment-height", `${height}px`);
+          link.innerHTML = `
+            <time class="segment-range" datetime="${segment.startDate}">${range}</time>
+            <span class="rail" aria-hidden="true"></span>
+            <span class="segment-body">
+              <span class="segment-topline">
+                <span class="segment-name">${escapeHtml(segment.repo)}</span>
+                <span class="segment-count">${segment.count.toLocaleString()} commit${segment.count === 1 ? "" : "s"}</span>
+                ${index === 0 ? '<span class="current-label">current</span>' : ""}
+              </span>
+              <p class="segment-meta">
+                ${segment.count === 1 ? "A quick pass" : "Focused stretch"} on ${escapeHtml(segment.repo)}.
+              </p>
+            </span>
+          `;
+          fragment.appendChild(link);
+        });
+
+        timeline.appendChild(fragment);
+      }
+
+      function render(activity, label) {
+        const commits = [...activity.commits].sort((a, b) => new Date(b.date) - new Date(a.date));
+
+        status.textContent =
+          label ||
+          `${activity.commitCount.toLocaleString()} public commits across ${activity.repoCount.toLocaleString()} repos. Updated ${formatDate(activity.generatedAt)}.`;
+        renderSummary(commits);
+        renderTimeline(commits);
+      }
+
+      async function loadActivity() {
+        try {
+          const response = await fetch("./github-activity.json");
+
+          if (!response.ok) {
+            throw new Error(`Activity cache returned ${response.status}`);
+          }
+
+          render(await response.json());
+        } catch {
+          render(fallbackActivity, "Showing a small fallback activity sample");
+        }
+      }
+
+      loadActivity();
+    </script>
   </body>
 </html>
