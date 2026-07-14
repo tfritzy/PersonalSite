@@ -61,8 +61,7 @@
       }
 
       .link-pill:hover,
-      .repo-link:hover,
-      .day-link:hover .day-repo {
+      .day-project:hover {
         color: #79c0ff;
       }
 
@@ -138,30 +137,24 @@
         position: relative;
       }
 
-      .day-rail::before {
-        background: var(--project-color, #2a313b);
+      .day.empty .day-rail::before {
+        background: #2a313b;
         bottom: 0;
         content: "";
         left: 11px;
-        opacity: var(--rail-opacity, 0.34);
+        opacity: 0.34;
         position: absolute;
         top: 0;
         width: 4px;
       }
 
-      .day.active .day-rail::after {
+      .rail-segment {
         background: var(--project-color);
-        content: "";
-        height: 8px;
-        left: 9px;
+        bottom: 0;
+        left: calc(7px + (var(--lane) * 5px));
         position: absolute;
-        top: 9px;
-        width: 8px;
-      }
-
-      .day.join-prev .day-rail::after,
-      .day.join-next .day-rail::after {
-        display: none;
+        top: 0;
+        width: 4px;
       }
 
       .day-body {
@@ -177,26 +170,33 @@
         color: #59636e;
       }
 
-      .day-repo {
+      .day-projects {
+        align-items: center;
+        display: flex;
+        gap: 14px;
+        min-width: 0;
+        overflow: hidden;
+      }
+
+      .day-project {
         color: var(--project-color);
         font-weight: 700;
         min-width: 0;
         overflow: hidden;
+        position: relative;
+        text-decoration: none;
         text-overflow: ellipsis;
         white-space: nowrap;
       }
 
-      .repo-list {
-        color: #aebbc5;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-        min-width: 0;
-      }
-
-      .repo-link {
-        color: #dfeaf1;
-        text-decoration: none;
+      .day-project + .day-project::before {
+        background: #30363d;
+        content: "";
+        height: 12px;
+        left: -7px;
+        position: absolute;
+        top: 3px;
+        width: 1px;
       }
 
       @media (max-width: 680px) {
@@ -231,7 +231,7 @@
       <h1>Tyler Fritz</h1>
       <p class="intro">
         Public GitHub activity by day. Empty days stay gray; active days are
-        colored by the repo with the most commits that day.
+        colored by the projects in progress.
       </p>
 
       <nav class="links" aria-label="Project links">
@@ -250,6 +250,7 @@
       const status = document.querySelector("#status");
       const summary = document.querySelector("#summary");
       const timeline = document.querySelector("#timeline");
+      let activityUsername = "tfritzy";
       const colors = [
         "#79c0ff",
         "#7ee787",
@@ -339,11 +340,13 @@
         const counts = new Map();
 
         dayRows.forEach((row) => {
-          if (!row.repo) {
+          if (!row.bucket) {
             return;
           }
 
-          counts.set(row.repo, (counts.get(row.repo) || 0) + 1);
+          row.bucket.repos.forEach(({ repo }) => {
+            counts.set(repo, (counts.get(repo) || 0) + 1);
+          });
         });
 
         return [...counts.entries()]
@@ -389,16 +392,6 @@
         return buckets;
       }
 
-      function dominantRepo(bucket) {
-        if (!bucket || bucket.repos.size === 0) {
-          return null;
-        }
-
-        return [...bucket.repos.values()].sort(
-          (a, b) => b.count - a.count || a.repo.localeCompare(b.repo)
-        )[0];
-      }
-
       function buildDayRows(commits) {
         const sorted = [...commits].sort((a, b) => new Date(b.date) - new Date(a.date));
         const buckets = dayBuckets(sorted);
@@ -408,14 +401,49 @@
 
         return days.map((key) => {
           const bucket = buckets.get(key);
-          const dominant = dominantRepo(bucket);
 
           return {
             key,
             bucket,
-            dominant,
-            repo: dominant?.repo || null,
           };
+        });
+      }
+
+      function assignRailLanes(rows) {
+        let previousLanes = new Map();
+
+        rows.forEach((row) => {
+          if (!row.bucket) {
+            row.lanes = new Map();
+            previousLanes = new Map();
+            return;
+          }
+
+          const repos = [...row.bucket.repos.keys()];
+          const lanes = new Map();
+          const used = new Set();
+
+          repos.forEach((repo) => {
+            const lane = previousLanes.get(repo);
+
+            if (lane !== undefined) {
+              lanes.set(repo, lane);
+              used.add(lane);
+            }
+          });
+
+          repos
+            .filter((repo) => !lanes.has(repo))
+            .sort((a, b) => a.localeCompare(b))
+            .forEach((repo) => {
+              const lane = [1, 0, 2].find((candidate) => !used.has(candidate));
+
+              lanes.set(repo, lane ?? 1);
+              used.add(lane);
+            });
+
+          row.lanes = lanes;
+          previousLanes = lanes;
         });
       }
 
@@ -449,43 +477,37 @@
         const fragment = document.createDocumentFragment();
 
         timeline.replaceChildren();
+        assignRailLanes(rows);
 
-        rows.forEach((row, index) => {
+        rows.forEach((row) => {
           const isActive = Boolean(row.bucket);
-          const previous = rows[index - 1];
-          const next = rows[index + 1];
-          const day = document.createElement(isActive ? "a" : "div");
+          const day = document.createElement("div");
           const repos = isActive
-            ? [...row.bucket.repos.values()].sort((a, b) => b.count - a.count || a.repo.localeCompare(b.repo))
+            ? [...row.bucket.repos.values()].sort(
+                (a, b) => row.lanes.get(a.repo) - row.lanes.get(b.repo)
+              )
             : [];
-          const classes = [
-            "day",
-            isActive ? "active" : "empty",
-            previous?.repo === row.repo && row.repo ? "join-prev" : "",
-            next?.repo === row.repo && row.repo ? "join-next" : "",
-          ]
-            .filter(Boolean)
-            .join(" ");
+          const classes = ["day", isActive ? "active" : "empty"].join(" ");
 
           day.className = classes;
-          day.style.setProperty("--project-color", row.repo ? colorForRepo(row.repo) : "#2a313b");
-
-          if (isActive) {
-            day.href = row.dominant.url;
-          }
 
           day.innerHTML = `
             <time class="day-date" datetime="${row.key}">${formatDate(`${row.key}T00:00:00Z`)}</time>
-            <span class="day-rail" aria-hidden="true"></span>
+            <span class="day-rail" aria-hidden="true">
+              ${repos
+                .map(
+                  (repo) =>
+                    `<span class="rail-segment" style="--lane: ${row.lanes.get(repo.repo)}; --project-color: ${colorForRepo(repo.repo)}"></span>`
+                )
+                .join("")}
+            </span>
             <span class="day-body">
               ${
                 isActive
-                  ? `<span class="day-repo">${escapeHtml(row.repo)}</span>
-                     <span class="repo-list">${repos
-                       .slice(1)
+                  ? `<span class="day-projects">${repos
                        .map(
                          (repo) =>
-                           `<a class="repo-link" href="${repo.url}">${escapeHtml(repo.repo)}</a>`
+                           `<a class="day-project" style="--project-color: ${colorForRepo(repo.repo)}" href="https://github.com/${encodeURIComponent(activityUsername)}/${encodeURIComponent(repo.repo)}">${escapeHtml(repo.repo)}</a>`
                        )
                        .join("")}</span>`
                   : ""
@@ -499,6 +521,7 @@
       }
 
       function render(activity, label) {
+        activityUsername = activity.username || "tfritzy";
         const commits = [...activity.commits].sort((a, b) => new Date(b.date) - new Date(a.date));
 
         if (commits.length === 0) {
