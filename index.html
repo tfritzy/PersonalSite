@@ -70,48 +70,6 @@
         margin: 0 0 18px;
       }
 
-      .summary {
-        display: grid;
-        gap: 10px;
-        margin: 0 0 34px;
-        max-width: 720px;
-      }
-
-      .summary-row {
-        align-items: center;
-        display: grid;
-        gap: 10px;
-        grid-template-columns: minmax(120px, 210px) minmax(90px, 1fr) auto;
-      }
-
-      .summary-name {
-        color: #f0f6fc;
-        font-weight: 600;
-        min-width: 0;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-      }
-
-      .summary-track {
-        background: #161b22;
-        height: 4px;
-      }
-
-      .summary-fill {
-        background: var(--project-color);
-        display: block;
-        height: 100%;
-        min-width: 2px;
-      }
-
-      .summary-days {
-        color: #8b949e;
-        font-family: "Cascadia Mono", Consolas, "Courier New", monospace;
-        font-size: 0.82rem;
-        white-space: nowrap;
-      }
-
       .timeline {
         display: grid;
       }
@@ -120,7 +78,7 @@
         color: inherit;
         display: grid;
         grid-template-columns: 96px 26px minmax(0, 1fr);
-        min-height: 26px;
+        height: 26px;
         text-decoration: none;
       }
 
@@ -131,6 +89,11 @@
         line-height: 26px;
         padding-right: 12px;
         text-align: right;
+      }
+
+      .day.month-start .day-date {
+        color: #c9d1d9;
+        font-weight: 700;
       }
 
       .day-rail {
@@ -151,7 +114,7 @@
       .rail-segment {
         background: var(--project-color);
         bottom: 0;
-        left: calc(7px + (var(--lane) * 5px));
+        left: calc(6px + (var(--lane) * 5px));
         position: absolute;
         top: 0;
         width: 4px;
@@ -164,6 +127,10 @@
         gap: 10px;
         min-width: 0;
         padding-left: 12px;
+      }
+
+      .day.month-start .day-body {
+        border-top-color: #30363d;
       }
 
       .day.empty .day-body {
@@ -204,10 +171,6 @@
           padding: 32px 14px 48px;
         }
 
-        .summary-row {
-          grid-template-columns: minmax(100px, 1fr) minmax(60px, 1fr) auto;
-        }
-
         .day {
           grid-template-columns: 72px 22px minmax(0, 1fr);
         }
@@ -216,12 +179,12 @@
           padding-right: 8px;
         }
 
-        .day-rail::before {
+        .day.empty .day-rail::before {
           left: 9px;
         }
 
-        .day.active .day-rail::after {
-          left: 7px;
+        .rail-segment {
+          left: calc(4px + (var(--lane) * 5px));
         }
       }
     </style>
@@ -230,8 +193,7 @@
     <main>
       <h1>Tyler Fritz</h1>
       <p class="intro">
-        Public GitHub activity by day. Empty days stay gray; active days are
-        colored by the projects in progress.
+        A day-by-day calendar of the public projects I have been working on.
       </p>
 
       <nav class="links" aria-label="Project links">
@@ -242,13 +204,11 @@
       </nav>
 
       <p class="status" id="status">Loading public activity...</p>
-      <section class="summary" id="summary" aria-label="Active days by repo"></section>
       <section class="timeline" id="timeline" aria-label="Daily project activity timeline"></section>
     </main>
 
     <script>
       const status = document.querySelector("#status");
-      const summary = document.querySelector("#summary");
       const timeline = document.querySelector("#timeline");
       let activityUsername = "tfritzy";
       const colors = [
@@ -326,6 +286,14 @@
         }).format(new Date(value));
       }
 
+      function formatMonth(key) {
+        return new Intl.DateTimeFormat("en", {
+          month: "short",
+          year: "numeric",
+          timeZone: "UTC",
+        }).format(localDateFromKey(key));
+      }
+
       function colorForRepo(repoName) {
         let hash = 0;
 
@@ -334,24 +302,6 @@
         }
 
         return colors[hash % colors.length];
-      }
-
-      function repoStats(dayRows) {
-        const counts = new Map();
-
-        dayRows.forEach((row) => {
-          if (!row.bucket) {
-            return;
-          }
-
-          row.bucket.repos.forEach(({ repo }) => {
-            counts.set(repo, (counts.get(repo) || 0) + 1);
-          });
-        });
-
-        return [...counts.entries()]
-          .map(([repo, count]) => ({ repo, count, color: colorForRepo(repo) }))
-          .sort((a, b) => b.count - a.count || a.repo.localeCompare(b.repo));
       }
 
       function daysBetween(startKey, endKey) {
@@ -447,52 +397,42 @@
         });
       }
 
-      function renderSummary(dayRows) {
-        const stats = repoStats(dayRows);
-        const max = Math.max(1, ...stats.map((item) => item.count));
-        const fragment = document.createDocumentFragment();
-
-        summary.replaceChildren();
-
-        stats.forEach((item) => {
-          const row = document.createElement("div");
-          const percent = Math.max(2, (item.count / max) * 100);
-
-          row.className = "summary-row";
-          row.style.setProperty("--project-color", item.color);
-          row.innerHTML = `
-            <span class="summary-name">${escapeHtml(item.repo)}</span>
-            <span class="summary-track" aria-hidden="true">
-              <span class="summary-fill" style="width: ${percent}%"></span>
-            </span>
-            <span class="summary-days">${item.count.toLocaleString()} day${item.count === 1 ? "" : "s"}</span>
-          `;
-          fragment.appendChild(row);
-        });
-
-        summary.appendChild(fragment);
-      }
-
       function renderTimeline(rows) {
         const fragment = document.createDocumentFragment();
 
         timeline.replaceChildren();
         assignRailLanes(rows);
 
-        rows.forEach((row) => {
+        rows.forEach((row, index) => {
           const isActive = Boolean(row.bucket);
+          const previous = rows[index - 1];
+          const monthStart =
+            index === 0 || row.key.slice(0, 7) !== previous.key.slice(0, 7);
           const day = document.createElement("div");
           const repos = isActive
             ? [...row.bucket.repos.values()].sort(
                 (a, b) => row.lanes.get(a.repo) - row.lanes.get(b.repo)
               )
             : [];
-          const classes = ["day", isActive ? "active" : "empty"].join(" ");
+          const labeledRepos = repos.filter(
+            (repo) => !previous?.bucket?.repos.has(repo.repo)
+          );
+          const classes = [
+            "day",
+            isActive ? "active" : "empty",
+            monthStart ? "month-start" : "",
+          ]
+            .filter(Boolean)
+            .join(" ");
 
           day.className = classes;
+          day.setAttribute(
+            "aria-label",
+            `${row.key}: ${isActive ? repos.map((repo) => repo.repo).join(", ") : "No public activity"}`
+          );
 
           day.innerHTML = `
-            <time class="day-date" datetime="${row.key}">${formatDate(`${row.key}T00:00:00Z`)}</time>
+            <time class="day-date" datetime="${row.key}">${monthStart ? formatMonth(row.key) : ""}</time>
             <span class="day-rail" aria-hidden="true">
               ${repos
                 .map(
@@ -503,8 +443,8 @@
             </span>
             <span class="day-body">
               ${
-                isActive
-                  ? `<span class="day-projects">${repos
+                labeledRepos.length
+                  ? `<span class="day-projects">${labeledRepos
                        .map(
                          (repo) =>
                            `<a class="day-project" style="--project-color: ${colorForRepo(repo.repo)}" href="https://github.com/${encodeURIComponent(activityUsername)}/${encodeURIComponent(repo.repo)}">${escapeHtml(repo.repo)}</a>`
@@ -526,7 +466,6 @@
 
         if (commits.length === 0) {
           status.textContent = "No public commits found.";
-          summary.replaceChildren();
           timeline.replaceChildren();
           return;
         }
@@ -536,7 +475,6 @@
         status.textContent =
           label ||
           `Public activity across ${activity.repoCount.toLocaleString()} repos. Updated ${formatDate(activity.generatedAt)}.`;
-        renderSummary(dayRows);
         renderTimeline(dayRows);
       }
 
