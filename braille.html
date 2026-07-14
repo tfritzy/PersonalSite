@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Copy Braille Unicode characters arranged by binary bit order for terminal apps, text UIs, and character grids."
+    />
+    <meta name="author" content="Tyler Fritz" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Braille Binary Order" />
+    <meta
+      property="og:description"
+      content="A quiet 16x16 table of Braille Unicode characters for copying binary bit patterns into terminal apps."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Braille Binary Order" />
+    <meta
+      name="twitter:description"
+      content="Copy Braille Unicode characters arranged by binary bit order for terminal apps and text UIs."
+    />
+    <title>Braille Binary Order for Terminal Apps</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Braille Binary Order",
+        "description": "Copy Braille Unicode characters arranged by binary bit order for terminal apps, text UIs, and character grids.",
+        "author": {
+          "@type": "Person",
+          "name": "Tyler Fritz"
+        }
+      }
+    </script>
+    <style>
+      :root {
+        color-scheme: dark;
+        background: #0d1117;
+        color: #dfeaf1;
+        font-family: Arial, sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      main {
+        max-width: 1180px;
+        margin: auto;
+        padding: 40px 20px 56px;
+      }
+
+      a {
+        color: #79c0ff;
+      }
+
+      .back-link {
+        display: inline-block;
+        margin-bottom: 28px;
+        text-decoration: none;
+      }
+
+      h1 {
+        margin: 0 0 12px;
+        font-size: clamp(2rem, 4vw, 3.4rem);
+        font-weight: 500;
+        line-height: 1;
+      }
+
+      .intro {
+        max-width: 760px;
+        margin: 0 0 24px;
+        color: #b7c3cc;
+        font-size: 1rem;
+        line-height: 1.55;
+      }
+
+      .toolbar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 0 0 10px;
+      }
+
+      .copy-toolbar {
+        margin-bottom: 30px;
+      }
+
+      button {
+        align-items: center;
+        border: 1px solid #30363d;
+        background: #161b22;
+        color: #dfeaf1;
+        cursor: pointer;
+        display: inline-flex;
+        gap: 8px;
+        font: inherit;
+        justify-content: center;
+        min-height: 42px;
+        padding: 0 14px;
+        transition: background-color 0.15s ease, border-color 0.15s ease;
+      }
+
+      .button-icon {
+        color: #9ba7b0;
+        font-family: "Cascadia Mono", Consolas, "Courier New", monospace;
+        font-size: 1.05em;
+        line-height: 1;
+      }
+
+      button[aria-pressed="true"] .button-icon {
+        color: #ffffff;
+      }
+
+      button:hover,
+      button:focus-visible {
+        background: #1c232c;
+        border-color: #58a6ff;
+        outline: none;
+      }
+
+      button[aria-pressed="true"] {
+        background: #1f6feb;
+        border-color: #79c0ff;
+        color: #ffffff;
+      }
+
+      .grid {
+        border-bottom: 1px solid #20262f;
+        border-left: 1px solid #20262f;
+        display: grid;
+        font-size: clamp(1.15rem, 4vw, 1.65rem);
+        grid-auto-rows: 1.45em;
+        grid-template-columns: repeat(16, 1.25ch);
+        width: max-content;
+        user-select: text;
+      }
+
+      .cell {
+        align-items: center;
+        border-right: 1px solid #20262f;
+        border-top: 1px solid #20262f;
+        cursor: text;
+        color: #f0f6fc;
+        display: flex;
+        font-family: "Cascadia Mono", Consolas, "Courier New", "Segoe UI Symbol", monospace;
+        font-size: 1em;
+        justify-content: center;
+        line-height: 1;
+        min-width: 0;
+        overflow: hidden;
+        text-align: center;
+        user-select: text;
+      }
+
+      .cell::selection,
+      .grid::selection {
+        background: #58a6ff;
+        color: #0d1117;
+      }
+
+      @media (max-width: 520px) {
+        main {
+          padding: 28px 14px 42px;
+        }
+
+        .grid {
+          font-size: clamp(1rem, 4.5vw, 1.35rem);
+          grid-template-columns: repeat(16, 1.25ch);
+        }
+
+        button {
+          flex: 1 1 100%;
+          padding: 0 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <a class="back-link" href="./index.html">Back to projects</a>
+      <h1>Braille Binary Order</h1>
+      <p class="intro">
+        All 256 Braille patterns, counted up from the empty cell. Each button
+        chooses the first dot added, then the path later bits follow. Useful
+        for copying Braille binary bit patterns into terminal apps and text UIs.
+      </p>
+      <section class="toolbar order-toolbar" aria-label="Braille order controls">
+        <button type="button" data-order="topLeftDown" aria-pressed="true">
+          <span class="button-icon" aria-hidden="true">↧↦</span>
+          <span>Start top left: down, then right</span>
+        </button>
+        <button type="button" data-order="topRightDown" aria-pressed="false">
+          <span class="button-icon" aria-hidden="true">↤↧</span>
+          <span>Start top right: down, then left</span>
+        </button>
+        <button type="button" data-order="bottomLeftUp" aria-pressed="false">
+          <span class="button-icon" aria-hidden="true">↥↦</span>
+          <span>Start bottom left: up, then right</span>
+        </button>
+        <button type="button" data-order="bottomRightUp" aria-pressed="false">
+          <span class="button-icon" aria-hidden="true">↤↥</span>
+          <span>Start bottom right: up, then left</span>
+        </button>
+      </section>
+      <section class="toolbar copy-toolbar" aria-label="Braille copy controls">
+        <button type="button" id="copy-1d">
+          <span class="button-icon" aria-hidden="true">[]</span>
+          <span>Copy 1D array</span>
+        </button>
+        <button type="button" id="copy-2d">
+          <span class="button-icon" aria-hidden="true">▦</span>
+          <span>Copy 2D array</span>
+        </button>
+      </section>
+      <section class="grid" id="braille-grid" aria-label="Braille patterns in binary order"></section>
+    </main>
+
+    <script>
+      const dotToUnicodeBit = {
+        1: 1,
+        2: 2,
+        3: 4,
+        4: 8,
+        5: 16,
+        6: 32,
+        7: 64,
+        8: 128,
+      };
+
+      const grid = document.querySelector("#braille-grid");
+      const orderButtons = [...document.querySelectorAll("[data-order]")];
+      const dotOrders = {
+        topLeftDown: [1, 2, 3, 7, 4, 5, 6, 8],
+        topRightDown: [4, 5, 6, 8, 1, 2, 3, 7],
+        bottomLeftUp: [7, 3, 2, 1, 8, 6, 5, 4],
+        bottomRightUp: [8, 6, 5, 4, 7, 3, 2, 1],
+      };
+
+      const orderLabels = {
+        topLeftDown: "start top left, down left column, then down right column",
+        topRightDown: "start top right, down right column, then down left column",
+        bottomLeftUp: "start bottom left, up left column, then up right column",
+        bottomRightUp: "start bottom right, up right column, then up left column",
+      };
+
+      let currentOrder = "topLeftDown";
+
+      function toUnicodeOffset(value, dotOrder) {
+        let unicodeOffset = 0;
+
+        dotOrder.forEach((dot, bitIndex) => {
+          if ((value & (1 << bitIndex)) !== 0) {
+            unicodeOffset += dotToUnicodeBit[dot];
+          }
+        });
+
+        return unicodeOffset;
+      }
+
+      function toBraille(value, dotOrder) {
+        const unicodeOffset = toUnicodeOffset(value, dotOrder);
+
+        return String.fromCodePoint(0x2800 + unicodeOffset);
+      }
+
+      function activeDots(value, dotOrder) {
+        return dotOrder
+          .filter((_, bitIndex) => (value & (1 << bitIndex)) !== 0)
+          .sort((a, b) => a - b)
+          .join("") || "none";
+      }
+
+      function patternsFor(dotOrder) {
+        return Array.from({ length: 256 }, (_, value) => ({
+          binary: value.toString(2).padStart(8, "0"),
+          glyph: toBraille(value, dotOrder),
+          dots: activeDots(value, dotOrder),
+        }));
+      }
+
+      function render(orderName) {
+        currentOrder = orderName;
+        const patterns = patternsFor(dotOrders[orderName]);
+        const fragment = document.createDocumentFragment();
+        grid.replaceChildren();
+
+        patterns.forEach((pattern) => {
+          const cell = document.createElement("span");
+          cell.className = "cell";
+          cell.textContent = pattern.glyph;
+          cell.title = `${pattern.binary} dots ${pattern.dots}`;
+          cell.setAttribute("aria-label", `Braille pattern ${pattern.binary}, dots ${pattern.dots}`);
+          fragment.appendChild(cell);
+        });
+
+        grid.appendChild(fragment);
+        grid.setAttribute("aria-label", `Braille patterns arranged by ${orderLabels[orderName]}`);
+        orderButtons.forEach((button) => {
+          button.setAttribute("aria-pressed", String(button.dataset.order === orderName));
+        });
+      }
+
+      function currentGlyphs() {
+        return patternsFor(dotOrders[currentOrder]).map((pattern) => pattern.glyph);
+      }
+
+      function quoteChar(char) {
+        return `'${char.replace(/\\/g, "\\\\").replace(/'/g, "\\'")}'`;
+      }
+
+      function oneDimensionalArray() {
+        return `[${currentGlyphs().map(quoteChar).join(", ")}]`;
+      }
+
+      function twoDimensionalArray() {
+        const glyphs = currentGlyphs();
+        const rows = [];
+
+        for (let index = 0; index < glyphs.length; index += 16) {
+          rows.push(`  [${glyphs.slice(index, index + 16).map(quoteChar).join(", ")}]`);
+        }
+
+        return `[\n${rows.join(",\n")}\n]`;
+      }
+
+      async function copyText(text) {
+        if (navigator.clipboard) {
+          try {
+            await navigator.clipboard.writeText(text);
+            return;
+          } catch {
+            // Fall back for local file URLs or stricter clipboard settings.
+          }
+        }
+
+        const textarea = document.createElement("textarea");
+        textarea.value = text;
+        textarea.setAttribute("readonly", "");
+        textarea.style.position = "fixed";
+        textarea.style.left = "-9999px";
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand("copy");
+        textarea.remove();
+      }
+
+      orderButtons.forEach((button) => {
+        button.addEventListener("click", () => render(button.dataset.order));
+      });
+
+      document.querySelector("#copy-1d").addEventListener("click", () => {
+        copyText(oneDimensionalArray());
+      });
+
+      document.querySelector("#copy-2d").addEventListener("click", () => {
+        copyText(twoDimensionalArray());
+      });
+
+      render(currentOrder);
+    </script>
+  </body>
+</html>
