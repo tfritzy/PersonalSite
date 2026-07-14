@@ -49,7 +49,8 @@
       }
 
       .status {
-        color: #8b949e;
+        color: #59636e;
+        font-size: 0.82rem;
         margin: 0 0 18px;
       }
 
@@ -105,19 +106,10 @@
 
       .day-body {
         align-items: center;
-        border-top: 1px solid #20262f;
         display: flex;
         gap: 10px;
         min-width: 0;
         padding-left: 12px;
-      }
-
-      .day.month-start .day-body {
-        border-top-color: #30363d;
-      }
-
-      .day.empty .day-body {
-        color: #59636e;
       }
 
       .day-projects {
@@ -415,7 +407,7 @@
         timeline.appendChild(fragment);
       }
 
-      function render(activity, label) {
+      function render(activity) {
         activityUsername = activity.username || "tfritzy";
         const commits = [...activity.commits].sort((a, b) => new Date(b.date) - new Date(a.date));
 
@@ -427,9 +419,7 @@
 
         const dayRows = buildDayRows(commits);
 
-        status.textContent =
-          label ||
-          `Public activity across ${activity.repoCount.toLocaleString()} repos. Updated ${formatDate(activity.generatedAt)}.`;
+        status.textContent = `Last updated ${formatDate(activity.generatedAt)}.`;
         renderTimeline(dayRows);
       }
 
@@ -443,7 +433,7 @@
 
           render(await response.json());
         } catch {
-          render(fallbackActivity, "Showing a small fallback activity sample");
+          render(fallbackActivity);
         }
       }
 
