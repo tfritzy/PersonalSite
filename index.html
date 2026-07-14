@@ -44,6 +44,82 @@
         line-height: 1.55;
       }
 
+      .site-strip {
+        display: grid;
+        gap: 12px;
+        grid-auto-columns: min(420px, calc(100vw - 40px));
+        grid-auto-flow: column;
+        margin: 0 0 28px;
+        overflow-x: auto;
+        padding: 0 0 10px;
+        scroll-snap-type: x proximity;
+        scrollbar-color: #30363d transparent;
+      }
+
+      .site-card {
+        background: #0d1117;
+        border: 1px solid #30363d;
+        border-radius: 6px;
+        display: grid;
+        grid-template-columns: 118px minmax(0, 1fr);
+        min-height: 118px;
+        overflow: hidden;
+        scroll-snap-align: start;
+        text-decoration: none;
+      }
+
+      .site-visual {
+        align-items: center;
+        background: #161b22;
+        border-right: 1px solid #30363d;
+        display: flex;
+        justify-content: center;
+        min-width: 0;
+        overflow: hidden;
+      }
+
+      .site-visual img {
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+      }
+
+      .typerace-visual {
+        background: #282828;
+        color: #ebdbb2;
+        font-family: "Cascadia Mono", Consolas, "Courier New", monospace;
+        font-size: 1rem;
+        font-weight: 700;
+      }
+
+      .typerace-visual span {
+        color: #fabd2f;
+      }
+
+      .site-copy {
+        align-content: center;
+        display: grid;
+        gap: 5px;
+        min-width: 0;
+        padding: 14px 16px;
+      }
+
+      .site-domain {
+        color: #59636e;
+        font-size: 0.78rem;
+      }
+
+      .site-title {
+        color: #f0f6fc;
+        font-size: 1rem;
+      }
+
+      .site-description {
+        color: #8b949e;
+        font-size: 0.86rem;
+        line-height: 1.35;
+      }
+
       .day-project:hover {
         color: #79c0ff;
       }
@@ -61,7 +137,7 @@
       .day {
         color: inherit;
         display: grid;
-        grid-template-columns: 96px 26px minmax(0, 1fr);
+        grid-template-columns: 72px 18px minmax(0, 1fr);
         height: 26px;
         text-decoration: none;
       }
@@ -71,7 +147,7 @@
         font-family: "Cascadia Mono", Consolas, "Courier New", monospace;
         font-size: 0.78rem;
         line-height: 26px;
-        padding-right: 12px;
+        padding-right: 8px;
         text-align: right;
       }
 
@@ -88,7 +164,7 @@
         background: #2a313b;
         bottom: 0;
         content: "";
-        left: 11px;
+        left: 7px;
         opacity: 0.34;
         position: absolute;
         top: 0;
@@ -98,7 +174,7 @@
       .rail-segment {
         background: var(--rail-background);
         bottom: 0;
-        left: 9px;
+        left: 5px;
         position: absolute;
         top: 0;
         width: 8px;
@@ -147,19 +223,15 @@
         }
 
         .day {
-          grid-template-columns: 72px 22px minmax(0, 1fr);
+          grid-template-columns: 64px 18px minmax(0, 1fr);
         }
 
         .day-date {
           padding-right: 8px;
         }
 
-        .day.empty .day-rail::before {
-          left: 9px;
-        }
-
-        .rail-segment {
-          left: 7px;
+        .site-card {
+          grid-template-columns: 96px minmax(0, 1fr);
         }
       }
     </style>
@@ -170,6 +242,59 @@
       <p class="intro">
         Software engineer habitually doodling on side projects
       </p>
+
+      <section
+        class="site-strip"
+        aria-label="Live sites"
+        itemscope
+        itemtype="https://schema.org/ItemList"
+      >
+        <a
+          class="site-card"
+          href="https://typerace.io/"
+          itemprop="itemListElement"
+          itemscope
+          itemtype="https://schema.org/ListItem"
+        >
+          <meta itemprop="position" content="1" />
+          <link itemprop="url" href="https://typerace.io/" />
+          <span class="site-visual typerace-visual" aria-hidden="true">
+            Type<span>Race</span>.io
+          </span>
+          <span class="site-copy">
+            <span class="site-domain">typerace.io</span>
+            <strong class="site-title" itemprop="name">Multiplayer typing races</strong>
+            <span class="site-description" itemprop="description">
+              Real-time races, private lobbies, solo practice, and WPM tracking.
+            </span>
+          </span>
+        </a>
+        <a
+          class="site-card"
+          href="https://bufo.fun/"
+          itemprop="itemListElement"
+          itemscope
+          itemtype="https://schema.org/ListItem"
+        >
+          <meta itemprop="position" content="2" />
+          <link itemprop="url" href="https://bufo.fun/" />
+          <span class="site-visual" aria-hidden="true">
+            <img
+              src="https://bufo.fun/bufos/bufo-all-warm-and-fuzzy-inside.png"
+              alt=""
+              width="128"
+              height="128"
+            />
+          </span>
+          <span class="site-copy">
+            <span class="site-domain">bufo.fun</span>
+            <strong class="site-title" itemprop="name">Bufo Emoji Repository</strong>
+            <span class="site-description" itemprop="description">
+              Browse and download a large collection of Bufo emoji.
+            </span>
+          </span>
+        </a>
+      </section>
 
       <p class="status" id="status">Loading public activity...</p>
       <section class="timeline" id="timeline" aria-label="Daily project activity timeline"></section>
@@ -257,7 +382,7 @@
       function formatMonth(key) {
         return new Intl.DateTimeFormat("en", {
           month: "short",
-          year: "numeric",
+          year: "2-digit",
           timeZone: "UTC",
         }).format(localDateFromKey(key));
       }
