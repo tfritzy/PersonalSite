@@ -112,12 +112,12 @@
       }
 
       .rail-segment {
-        background: var(--project-color);
+        background: var(--rail-background);
         bottom: 0;
-        left: calc(6px + (var(--lane) * 5px));
+        left: 9px;
         position: absolute;
         top: 0;
-        width: 4px;
+        width: 8px;
       }
 
       .day-body {
@@ -184,7 +184,7 @@
         }
 
         .rail-segment {
-          left: calc(4px + (var(--lane) * 5px));
+          left: 7px;
         }
       }
     </style>
@@ -359,49 +359,33 @@
         });
       }
 
-      function assignRailLanes(rows) {
-        let previousLanes = new Map();
+      function railBackground(repos) {
+        const projectColors = repos.map((repo) => colorForRepo(repo.repo));
 
-        rows.forEach((row) => {
-          if (!row.bucket) {
-            row.lanes = new Map();
-            previousLanes = new Map();
-            return;
-          }
+        if (projectColors.length <= 1) {
+          return projectColors[0] || "#2a313b";
+        }
 
-          const repos = [...row.bucket.repos.keys()];
-          const lanes = new Map();
-          const used = new Set();
+        const bandWidth = 7;
+        const stops = projectColors
+          .map(
+            (color, index) => {
+              const start = index * bandWidth;
+              const divider = (index + 1) * bandWidth - 1;
+              const end = (index + 1) * bandWidth;
 
-          repos.forEach((repo) => {
-            const lane = previousLanes.get(repo);
-
-            if (lane !== undefined) {
-              lanes.set(repo, lane);
-              used.add(lane);
+              return `${color} ${start}px ${divider}px, #0d1117 ${divider}px ${end}px`;
             }
-          });
+          )
+          .join(", ");
 
-          repos
-            .filter((repo) => !lanes.has(repo))
-            .sort((a, b) => a.localeCompare(b))
-            .forEach((repo) => {
-              const lane = [1, 0, 2].find((candidate) => !used.has(candidate));
-
-              lanes.set(repo, lane ?? 1);
-              used.add(lane);
-            });
-
-          row.lanes = lanes;
-          previousLanes = lanes;
-        });
+        return `repeating-linear-gradient(135deg, ${stops})`;
       }
 
       function renderTimeline(rows) {
         const fragment = document.createDocumentFragment();
 
         timeline.replaceChildren();
-        assignRailLanes(rows);
 
         rows.forEach((row, index) => {
           const isActive = Boolean(row.bucket);
@@ -410,8 +394,8 @@
             index === 0 || row.key.slice(0, 7) !== previous.key.slice(0, 7);
           const day = document.createElement("div");
           const repos = isActive
-            ? [...row.bucket.repos.values()].sort(
-                (a, b) => row.lanes.get(a.repo) - row.lanes.get(b.repo)
+            ? [...row.bucket.repos.values()].sort((a, b) =>
+                a.repo.localeCompare(b.repo)
               )
             : [];
           const labeledRepos = repos.filter(
@@ -434,12 +418,7 @@
           day.innerHTML = `
             <time class="day-date" datetime="${row.key}">${monthStart ? formatMonth(row.key) : ""}</time>
             <span class="day-rail" aria-hidden="true">
-              ${repos
-                .map(
-                  (repo) =>
-                    `<span class="rail-segment" style="--lane: ${row.lanes.get(repo.repo)}; --project-color: ${colorForRepo(repo.repo)}"></span>`
-                )
-                .join("")}
+              ${isActive ? `<span class="rail-segment" style="--rail-background: ${railBackground(repos)}"></span>` : ""}
             </span>
             <span class="day-body">
               ${
