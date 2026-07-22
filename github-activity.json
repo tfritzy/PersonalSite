@@ -1,9 +1,30 @@
 {
   "username": "tfritzy",
-  "generatedAt": "2026-07-22T12:49:08.493Z",
+  "generatedAt": "2026-07-22T18:43:09.165Z",
   "repoCount": 48,
-  "commitCount": 3206,
+  "commitCount": 3209,
   "commits": [
+    {
+      "repo": "typerace.io",
+      "message": "Handle stale assets better",
+      "date": "2026-07-22T14:44:59Z",
+      "url": "https://github.com/tfritzy/typerace.io/commit/17abc2ec23d8f1887cad2cf73291258932780bbd",
+      "sha": "17abc2ec23d8f1887cad2cf73291258932780bbd"
+    },
+    {
+      "repo": "typerace.io",
+      "message": "Auto reconnect",
+      "date": "2026-07-22T14:28:37Z",
+      "url": "https://github.com/tfritzy/typerace.io/commit/1eb7939aa0e011d0e317befb61b75a0d656a8cb2",
+      "sha": "1eb7939aa0e011d0e317befb61b75a0d656a8cb2"
+    },
+    {
+      "repo": "typerace.io",
+      "message": "Make db connection optional and lazy load some pages",
+      "date": "2026-07-22T14:21:26Z",
+      "url": "https://github.com/tfritzy/typerace.io/commit/93311f4a74b2f395ab48424958e3fe4ca97a1be3",
+      "sha": "93311f4a74b2f395ab48424958e3fe4ca97a1be3"
+    },
     {
       "repo": "typerace.io",
       "message": "Fix countdown",
