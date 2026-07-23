@@ -1,9 +1,23 @@
 {
   "username": "tfritzy",
-  "generatedAt": "2026-07-23T12:50:24.078Z",
+  "generatedAt": "2026-07-23T18:44:34.173Z",
   "repoCount": 48,
-  "commitCount": 3209,
+  "commitCount": 3211,
   "commits": [
+    {
+      "repo": "typerace.io",
+      "message": "More subtle type notice",
+      "date": "2026-07-23T14:11:14Z",
+      "url": "https://github.com/tfritzy/typerace.io/commit/51e67c12cd2753bc57ab85c762a5457bd71affb0",
+      "sha": "51e67c12cd2753bc57ab85c762a5457bd71affb0"
+    },
+    {
+      "repo": "typerace.io",
+      "message": "Add notice to lobby",
+      "date": "2026-07-23T14:02:18Z",
+      "url": "https://github.com/tfritzy/typerace.io/commit/af6cc8441b874cb40a7829bbe1d79de158e4af09",
+      "sha": "af6cc8441b874cb40a7829bbe1d79de158e4af09"
+    },
     {
       "repo": "typerace.io",
       "message": "Handle stale assets better",
