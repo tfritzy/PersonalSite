@@ -1,9 +1,16 @@
 {
   "username": "tfritzy",
-  "generatedAt": "2026-07-25T12:40:43.513Z",
+  "generatedAt": "2026-07-25T18:37:31.498Z",
   "repoCount": 48,
-  "commitCount": 3216,
+  "commitCount": 3217,
   "commits": [
+    {
+      "repo": "typerace.io",
+      "message": "Remove some languages that don't work well",
+      "date": "2026-07-25T18:25:48Z",
+      "url": "https://github.com/tfritzy/typerace.io/commit/c282ceb40aee0cb8e540ecf290851eb383bd8142",
+      "sha": "c282ceb40aee0cb8e540ecf290851eb383bd8142"
+    },
     {
       "repo": "typerace.io",
       "message": "Position bufo and countdown timer. Adjust confetti",
