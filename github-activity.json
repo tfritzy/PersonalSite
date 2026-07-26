@@ -1,9 +1,16 @@
 {
   "username": "tfritzy",
-  "generatedAt": "2026-07-25T18:37:31.498Z",
+  "generatedAt": "2026-07-26T01:00:15.397Z",
   "repoCount": 48,
-  "commitCount": 3217,
+  "commitCount": 3218,
   "commits": [
+    {
+      "repo": "typerace.io",
+      "message": "fix nav timeouts",
+      "date": "2026-07-25T19:47:22Z",
+      "url": "https://github.com/tfritzy/typerace.io/commit/d28d1d1adc64adb40fe779d867188fd43ef0665a",
+      "sha": "d28d1d1adc64adb40fe779d867188fd43ef0665a"
+    },
     {
       "repo": "typerace.io",
       "message": "Remove some languages that don't work well",
