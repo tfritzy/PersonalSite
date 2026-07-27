@@ -1,9 +1,16 @@
 {
   "username": "tfritzy",
-  "generatedAt": "2026-07-27T01:00:17.385Z",
+  "generatedAt": "2026-07-27T07:29:10.358Z",
   "repoCount": 48,
-  "commitCount": 3219,
+  "commitCount": 3220,
   "commits": [
+    {
+      "repo": "typerace.io",
+      "message": "Add game replay playback (#560)",
+      "date": "2026-07-27T01:28:15Z",
+      "url": "https://github.com/tfritzy/typerace.io/commit/b41df7f643b971b4af9df96ae8c4418f8740938a",
+      "sha": "b41df7f643b971b4af9df96ae8c4418f8740938a"
+    },
     {
       "repo": "typerace.io",
       "message": "previous name tag'",
