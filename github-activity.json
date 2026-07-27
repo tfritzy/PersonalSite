@@ -1,9 +1,16 @@
 {
   "username": "tfritzy",
-  "generatedAt": "2026-07-27T13:22:21.461Z",
+  "generatedAt": "2026-07-27T18:49:48.283Z",
   "repoCount": 48,
-  "commitCount": 3220,
+  "commitCount": 3221,
   "commits": [
+    {
+      "repo": "typerace.io",
+      "message": "Fix composition issue blocking typing así. Sorry :(",
+      "date": "2026-07-27T13:33:19Z",
+      "url": "https://github.com/tfritzy/typerace.io/commit/089fdaf04d65d9d5053ed9e64346c52df4fec732",
+      "sha": "089fdaf04d65d9d5053ed9e64346c52df4fec732"
+    },
     {
       "repo": "typerace.io",
       "message": "Add game replay playback (#560)",
