@@ -1,9 +1,16 @@
 {
   "username": "tfritzy",
-  "generatedAt": "2026-07-28T12:57:52.023Z",
+  "generatedAt": "2026-07-28T18:49:45.806Z",
   "repoCount": 48,
-  "commitCount": 3221,
+  "commitCount": 3222,
   "commits": [
+    {
+      "repo": "typerace.io",
+      "message": "Add recent abandoned games table",
+      "date": "2026-07-28T13:20:35Z",
+      "url": "https://github.com/tfritzy/typerace.io/commit/4ef0ffdc0818ba3757040eb593f0585be2adf32b",
+      "sha": "4ef0ffdc0818ba3757040eb593f0585be2adf32b"
+    },
     {
       "repo": "typerace.io",
       "message": "Fix composition issue blocking typing así. Sorry :(",
