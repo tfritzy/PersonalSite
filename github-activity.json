@@ -1,9 +1,16 @@
 {
   "username": "tfritzy",
-  "generatedAt": "2026-08-02T18:38:15.591Z",
+  "generatedAt": "2026-08-03T00:58:26.935Z",
   "repoCount": 48,
-  "commitCount": 3236,
+  "commitCount": 3237,
   "commits": [
+    {
+      "repo": "typerace.io",
+      "message": "Make auto fixes handle cases where phrase is offset",
+      "date": "2026-08-02T18:51:27Z",
+      "url": "https://github.com/tfritzy/typerace.io/commit/81d464dd2c362b76938804d7a09b23461652aa9c",
+      "sha": "81d464dd2c362b76938804d7a09b23461652aa9c"
+    },
     {
       "repo": "typerace.io",
       "message": "tweaks",
