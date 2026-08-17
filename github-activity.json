@@ -1,8 +1,8 @@
 {
   "username": "tfritzy",
-  "generatedAt": "2026-08-17T12:29:59.134Z",
+  "generatedAt": "2026-08-17T18:29:36.774Z",
   "repoCount": 49,
-  "commitCount": 2982,
+  "commitCount": 3247,
   "commits": [
     {
       "repo": "steam-deck-split-keyboard",
@@ -12941,6 +12941,13 @@
       "sha": "462c6f253e61d2b0f11b32560c6b7cc808944654"
     },
     {
+      "repo": "FactoryCoreLogic",
+      "message": "Adding building rotation testts",
+      "date": "2024-03-13T14:14:51Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/4ce6adff75e4012401b232bda107d9e7180c4db0",
+      "sha": "4ce6adff75e4012401b232bda107d9e7180c4db0"
+    },
+    {
       "repo": "PersonalSite",
       "message": "Smooth items",
       "date": "2024-03-12T15:58:30Z",
@@ -12955,11 +12962,60 @@
       "sha": "f7dd4e678aa92a275a7bf1ed63e14ecb47b28c21"
     },
     {
+      "repo": "FactoryCoreLogic",
+      "message": "Merge branch 'master' of https://github.com/tfritzy/FactoryCoreLogic",
+      "date": "2024-03-10T05:07:26Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/2676e6463fee681d288341aee0b5afd1bed3afe4",
+      "sha": "2676e6463fee681d288341aee0b5afd1bed3afe4"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Small things",
+      "date": "2024-03-10T05:07:15Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/ce3de4e784f220f7d68b6f13cbed5c509b7b05bc",
+      "sha": "ce3de4e784f220f7d68b6f13cbed5c509b7b05bc"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Giving client ability to request building buildigns",
+      "date": "2024-03-10T04:57:55Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/a4aa458fba9f95170eb090145089dc66e75e178c",
+      "sha": "a4aa458fba9f95170eb090145089dc66e75e178c"
+    },
+    {
       "repo": "FactorySurvivalGame",
       "message": "Working on multiplayer building placement",
       "date": "2024-03-08T04:32:35Z",
       "url": "https://github.com/tfritzy/FactorySurvivalGame/commit/b9ae2039e06269d34399e6e90bb4822e0d5f9d2d",
       "sha": "b9ae2039e06269d34399e6e90bb4822e0d5f9d2d"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Rotating buildings",
+      "date": "2024-03-08T04:02:01Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/8f4d7757abd6f83d9d7a9ca08221e43a0c8c605b",
+      "sha": "8f4d7757abd6f83d9d7a9ca08221e43a0c8c605b"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Fixing previous length bug",
+      "date": "2024-03-07T17:08:57Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/04cea746ca78731200bfd7e6fa7e42471c3f620f",
+      "sha": "04cea746ca78731200bfd7e6fa7e42471c3f620f"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Fix bug",
+      "date": "2024-03-04T16:26:14Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/aabcd3df20db5ac1c7750892a907ffaa0e0ade89",
+      "sha": "aabcd3df20db5ac1c7750892a907ffaa0e0ade89"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Adding logic to not double move items in the same frame",
+      "date": "2024-03-04T16:11:36Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/b4cab01b8e7bbfcd7aa5bf726e9e33152937e0a5",
+      "sha": "b4cab01b8e7bbfcd7aa5bf726e9e33152937e0a5"
     },
     {
       "repo": "FactorySurvivalGame",
@@ -12969,6 +13025,41 @@
       "sha": "bdf21ab6078a3dd038abb7ccfbe30a5d1973d162"
     },
     {
+      "repo": "FactoryCoreLogic",
+      "message": "Fixing bug",
+      "date": "2024-03-04T04:53:35Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/40507f16fca236ae1bf3e5f8c1eba684d37926ee",
+      "sha": "40507f16fca236ae1bf3e5f8c1eba684d37926ee"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "no need to pass extra param",
+      "date": "2024-03-04T04:45:44Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/9d8f9eb86bd3052885806337a3a9c1cc08b5d04a",
+      "sha": "9d8f9eb86bd3052885806337a3a9c1cc08b5d04a"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Merge branch 'master' of https://github.com/tfritzy/FactoryCoreLogic",
+      "date": "2024-03-04T04:33:31Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/16c9ca64f70b3df00d59e8c44f815e48d941485c",
+      "sha": "16c9ca64f70b3df00d59e8c44f815e48d941485c"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Making player own removing old preview buildings",
+      "date": "2024-03-04T04:33:17Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/0c6b0c29bf38c4c9fd832b26fbfe1b724699940e",
+      "sha": "0c6b0c29bf38c4c9fd832b26fbfe1b724699940e"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "IsApproximately",
+      "date": "2024-03-01T05:36:02Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/7476bf4355361daae93ca11860130595f12b52ed",
+      "sha": "7476bf4355361daae93ca11860130595f12b52ed"
+    },
+    {
       "repo": "FactorySurvivalGame",
       "message": "WIP items going smoothly around corners on conveyors",
       "date": "2024-03-01T05:35:32Z",
@@ -12976,11 +13067,67 @@
       "sha": "564d7e1145da70475458fa9aeb9802a3210caa19"
     },
     {
+      "repo": "FactoryCoreLogic",
+      "message": "WIP implementing smooth item object movement on conveyors",
+      "date": "2024-03-01T05:35:15Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/f95c75b71a91aa7c5cf9e3c1917f0f7479b8c22b",
+      "sha": "f95c75b71a91aa7c5cf9e3c1917f0f7479b8c22b"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Finishing smooth item movement",
+      "date": "2024-02-29T16:11:43Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/ec5d11db07d32f18ea4d5064f96a0e406ded3a41",
+      "sha": "ec5d11db07d32f18ea4d5064f96a0e406ded3a41"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Figured out curve positioning",
+      "date": "2024-02-28T17:15:59Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/0012f2ed56628fce7716734ecfee26b63724a9fb",
+      "sha": "0012f2ed56628fce7716734ecfee26b63724a9fb"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "WIP smooth curves",
+      "date": "2024-02-26T15:16:16Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/031be24f5ca0c38c83dd3ef0d9812e40c29d57eb",
+      "sha": "031be24f5ca0c38c83dd3ef0d9812e40c29d57eb"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Calculating item position of straight conveyors",
+      "date": "2024-02-21T11:24:48Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/2da98cc982810a9a4f7421032506403cc43b1b2c",
+      "sha": "2da98cc982810a9a4f7421032506403cc43b1b2c"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Making items on conveyors just item ids",
+      "date": "2024-02-18T20:53:11Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/6c477e0ca943a7db51f8072c7fa2eb3ce26d043e",
+      "sha": "6c477e0ca943a7db51f8072c7fa2eb3ce26d043e"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Moving items by velocity",
+      "date": "2024-02-17T05:55:36Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/29308f76edfe3a0648dc27b7436a64d541c96e27",
+      "sha": "29308f76edfe3a0648dc27b7436a64d541c96e27"
+    },
+    {
       "repo": "FactorySurvivalGame",
       "message": "tiny",
       "date": "2024-02-16T02:56:23Z",
       "url": "https://github.com/tfritzy/FactorySurvivalGame/commit/ad803148bdab3174e5578f33ecb48947515c36b3",
       "sha": "ad803148bdab3174e5578f33ecb48947515c36b3"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Only resending non-recent packets",
+      "date": "2024-02-15T17:13:26Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/9659cad583753e099ad9f21e5537899622a4a8f4",
+      "sha": "9659cad583753e099ad9f21e5537899622a4a8f4"
     },
     {
       "repo": "PersonalSite",
@@ -13004,11 +13151,46 @@
       "sha": "c9ff4cb407ca595f39b2701fe2a6c35dbf3ecacc"
     },
     {
+      "repo": "FactoryCoreLogic",
+      "message": "Adding rotation",
+      "date": "2024-02-12T04:42:31Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/1d329875cb59331a495ea852783a6091c994a58b",
+      "sha": "1d329875cb59331a495ea852783a6091c994a58b"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Fixing tests",
+      "date": "2024-02-11T23:54:33Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/1b85c59e4840d8a487a913b4d833f7bdcecd17cd",
+      "sha": "1b85c59e4840d8a487a913b4d833f7bdcecd17cd"
+    },
+    {
       "repo": "FactorySurvivalGame",
       "message": "Network debugging",
       "date": "2024-02-10T17:49:59Z",
       "url": "https://github.com/tfritzy/FactorySurvivalGame/commit/aef7ead2bdc6e57241ef345871207ea4ac3e399a",
       "sha": "aef7ead2bdc6e57241ef345871207ea4ac3e399a"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Network debugging help",
+      "date": "2024-02-10T17:49:41Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/08d148f2ae0997273215169e012c21dfa95720b5",
+      "sha": "08d148f2ae0997273215169e012c21dfa95720b5"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Implementing a network tick rate",
+      "date": "2024-02-10T17:15:17Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/0822fa8fd2906718d9d30711633c5ebc49c7ff78",
+      "sha": "0822fa8fd2906718d9d30711633c5ebc49c7ff78"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "WIP networking",
+      "date": "2024-02-10T05:13:03Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/4f49311094986e22d458e7504c4e24dd7b343a5c",
+      "sha": "4f49311094986e22d458e7504c4e24dd7b343a5c"
     },
     {
       "repo": "FactorySurvivalGame",
@@ -13018,6 +13200,20 @@
       "sha": "7ba75b092684a8e94cae1c85a1c2516b97a97837"
     },
     {
+      "repo": "FactoryCoreLogic",
+      "message": "Adding player id to players",
+      "date": "2024-02-07T15:34:11Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/6bf54d305d6ea7a95655bb120b188a1638b5de6a",
+      "sha": "6bf54d305d6ea7a95655bb120b188a1638b5de6a"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Mostly debugging changes",
+      "date": "2024-02-06T16:46:50Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/231ab90441deea9af20e4c53d51efc0e0f583b4a",
+      "sha": "231ab90441deea9af20e4c53d51efc0e0f583b4a"
+    },
+    {
       "repo": "FactorySurvivalGame",
       "message": "WIP getting movement over the network working",
       "date": "2024-02-06T16:45:44Z",
@@ -13025,11 +13221,74 @@
       "sha": "f5ba11eb5c66b06cf355722219da9c5ff4e82510"
     },
     {
+      "repo": "FactoryCoreLogic",
+      "message": "heartbeat method",
+      "date": "2024-02-04T19:35:35Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/84b1efa6b33db74549098881f41d2e37b2a26dde",
+      "sha": "84b1efa6b33db74549098881f41d2e37b2a26dde"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Switching to a heartbeat based system for packet retransmission",
+      "date": "2024-02-03T00:06:39Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/2b05393bec19e17e2bbbdf489ff26c5b887ad591",
+      "sha": "2b05393bec19e17e2bbbdf489ff26c5b887ad591"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Fixing bug in packet replay",
+      "date": "2024-02-02T16:10:23Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/59d4241edfb1e9a5b4a9fc398218915d95bf0bc2",
+      "sha": "59d4241edfb1e9a5b4a9fc398218915d95bf0bc2"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Testing packet resend logic and fixing bugs with it",
+      "date": "2024-02-02T04:59:24Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/aecbd390901dc4063f14df316ef146e8690ace7d",
+      "sha": "aecbd390901dc4063f14df316ef146e8690ace7d"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "WIP handling missed packets",
+      "date": "2024-02-01T17:01:21Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/42026b05a2fd862d24dd7983f5ff593d6ff5c8ff",
+      "sha": "42026b05a2fd862d24dd7983f5ff593d6ff5c8ff"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "WIP implementing clients requesting previous versions",
+      "date": "2024-01-31T04:55:09Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/89fe1ebf6a10e5241ac2f5bea41b75d5d2d6b294",
+      "sha": "89fe1ebf6a10e5241ac2f5bea41b75d5d2d6b294"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "idk",
+      "date": "2024-01-31T03:45:56Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/d7463c60df14d025806cb51cb26b07082130a5f6",
+      "sha": "d7463c60df14d025806cb51cb26b07082130a5f6"
+    },
+    {
       "repo": "FactorySurvivalGame",
       "message": "Fixing issues with netowrking",
       "date": "2024-01-30T03:56:04Z",
       "url": "https://github.com/tfritzy/FactorySurvivalGame/commit/2843cb9fcee7701b922c53955033ae2349381a1e",
       "sha": "2843cb9fcee7701b922c53955033ae2349381a1e"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Fixing shit with networking",
+      "date": "2024-01-30T03:55:50Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/09059ac6108e221391153149671090bdcac2172d",
+      "sha": "09059ac6108e221391153149671090bdcac2172d"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Changing more interfaces to be more useful",
+      "date": "2024-01-29T02:52:39Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/444e03c5d0c72790b151e90b6f622da6dddb3de5",
+      "sha": "444e03c5d0c72790b151e90b6f622da6dddb3de5"
     },
     {
       "repo": "FactorySurvivalGame",
@@ -13046,11 +13305,123 @@
       "sha": "c4be5d265beb12c9e24f284e576374c7e8b36fc6"
     },
     {
+      "repo": "FactoryCoreLogic",
+      "message": "Getting things wired up in unity",
+      "date": "2024-01-28T20:47:40Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/007f1a5f7c2fb88f3cb96b9acef3718c677e61a8",
+      "sha": "007f1a5f7c2fb88f3cb96b9acef3718c677e61a8"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Have multiplayer integration test working",
+      "date": "2024-01-27T23:02:48Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/c7ec212a7cd4c463f49ea5c79afe82a826070a7b",
+      "sha": "c7ec212a7cd4c463f49ea5c79afe82a826070a7b"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Getting client connection up to date",
+      "date": "2024-01-26T17:34:39Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/df02f584d9d09c68f8b0a8e865424d99fff4cd2a",
+      "sha": "df02f584d9d09c68f8b0a8e865424d99fff4cd2a"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Fixing tests.",
+      "date": "2024-01-25T18:04:14Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/ef837e845a9e08be0700bd7fdb6be2c91e07ca2b",
+      "sha": "ef837e845a9e08be0700bd7fdb6be2c91e07ca2b"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Fixing tests",
+      "date": "2024-01-25T04:18:18Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/00f9979e306ae905bc247c1bf2c3d537e49a006a",
+      "sha": "00f9979e306ae905bc247c1bf2c3d537e49a006a"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "16 bugs and what do you get",
+      "date": "2024-01-23T16:52:23Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/55f9b6118e661917e7158728ccc29bce34d167cc",
+      "sha": "55f9b6118e661917e7158728ccc29bce34d167cc"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Getting started implementing update handling. This means having the host handle updates through the same method as clients, which breaks a lot of shit.",
+      "date": "2024-01-22T17:00:42Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/9ee8625b0a679aba513c931eaf3a15fa46c37295",
+      "sha": "9ee8625b0a679aba513c931eaf3a15fa46c37295"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Getting the flow of messages from host to client going",
+      "date": "2024-01-22T16:06:31Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/11394296d016dcc196245c79fd616e12b624048a",
+      "sha": "11394296d016dcc196245c79fd616e12b624048a"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Adding message chunking and migrating updates to protos",
+      "date": "2024-01-21T20:09:40Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/7534a68c7ba9ab6bea0201e37663329034027011",
+      "sha": "7534a68c7ba9ab6bea0201e37663329034027011"
+    },
+    {
       "repo": "FactorySurvivalGame",
       "message": "WIP getting connections hooked up",
       "date": "2024-01-19T06:01:01Z",
       "url": "https://github.com/tfritzy/FactorySurvivalGame/commit/9dc449429eab5ecaf0f1ec75cbae9358d6d24172",
       "sha": "9dc449429eab5ecaf0f1ec75cbae9358d6d24172"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "updating connection schema",
+      "date": "2024-01-19T05:25:15Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/37ccdec8f03c620d6b8ce3712e6b732293bb3a22",
+      "sha": "37ccdec8f03c620d6b8ce3712e6b732293bb3a22"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Updating schema",
+      "date": "2024-01-19T05:01:05Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/ab2babe16a58be4b0d362689b85f3188d30d0ffa",
+      "sha": "ab2babe16a58be4b0d362689b85f3188d30d0ffa"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Adding ipEndpoint to client",
+      "date": "2024-01-18T16:48:40Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/561f09b07b468cda6d0f49837f534b133f44385c",
+      "sha": "561f09b07b468cda6d0f49837f534b133f44385c"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Important tweaks",
+      "date": "2024-01-18T16:41:44Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/31db9b4502aa2b18a42b57cede5b2a43de82e41b",
+      "sha": "31db9b4502aa2b18a42b57cede5b2a43de82e41b"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Merge branch 'master' of https://github.com/tfritzy/FactoryCoreLogic",
+      "date": "2024-01-18T15:19:49Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/f6bf7c7298fe780081befe0ee240c18e74345017",
+      "sha": "f6bf7c7298fe780081befe0ee240c18e74345017"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Refactoring connection",
+      "date": "2024-01-18T15:18:53Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/1c442a9629e725c98d265d4857de3fa33d7d2637",
+      "sha": "1c442a9629e725c98d265d4857de3fa33d7d2637"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Switch to newtonsoft",
+      "date": "2024-01-18T15:15:53Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/7993b1d8d2d3f1587ec79fa7da3cb0d172ab28f5",
+      "sha": "7993b1d8d2d3f1587ec79fa7da3cb0d172ab28f5"
     },
     {
       "repo": "FactorySurvivalGame",
@@ -13074,6 +13445,20 @@
       "sha": "6637beed2912bbfc1d489f36e2f0309d6df9f882"
     },
     {
+      "repo": "FactoryCoreLogic",
+      "message": "Getting host connection set up",
+      "date": "2024-01-16T15:55:48Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/0d9c24997fc093897c2455030a2b447941546a77",
+      "sha": "0d9c24997fc093897c2455030a2b447941546a77"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "networking updates'",
+      "date": "2024-01-15T23:18:49Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/87acafd6aeb559bf1b59e93a9e08c6793d1f3cf1",
+      "sha": "87acafd6aeb559bf1b59e93a9e08c6793d1f3cf1"
+    },
+    {
       "repo": "FactorySurvivalGame",
       "message": "Merge branch 'master' of https://github.com/tfritzy/FactorySurvivalGame",
       "date": "2024-01-15T03:36:49Z",
@@ -13086,6 +13471,20 @@
       "date": "2024-01-15T03:36:32Z",
       "url": "https://github.com/tfritzy/FactorySurvivalGame/commit/23addff65470a67a95c256136318576ec85a0ab6",
       "sha": "23addff65470a67a95c256136318576ec85a0ab6"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Putting api in the wrong place. Will fix later :(",
+      "date": "2024-01-15T01:10:40Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/f9e76139d54e2a112da3d7bca1961ace62550e49",
+      "sha": "f9e76139d54e2a112da3d7bca1961ace62550e49"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Getting networking logic started",
+      "date": "2024-01-15T00:57:41Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/f5550044c11137b7091f12ac6f588488fc2e3e66",
+      "sha": "f5550044c11137b7091f12ac6f588488fc2e3e66"
     },
     {
       "repo": "PersonalSite",
@@ -13228,6 +13627,97 @@
       "sha": "003a4b1389828cdc5fe04dc14c2945b7e8ba8044"
     },
     {
+      "repo": "FactoryCoreLogic",
+      "message": "Serializing world",
+      "date": "2024-01-11T16:04:07Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/6406e3ce5028ed99e10b319f9d738dd225134c52",
+      "sha": "6406e3ce5028ed99e10b319f9d738dd225134c52"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Making entities and components use protobuf",
+      "date": "2024-01-11T05:52:28Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/b13e36e8f679710d4720d933a6c9177c6fc9a04a",
+      "sha": "b13e36e8f679710d4720d933a6c9177c6fc9a04a"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "WIP migrating entities and characters to protobuf",
+      "date": "2024-01-10T17:08:10Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/46c214fcbceece81e688009012840d4909a06d5f",
+      "sha": "46c214fcbceece81e688009012840d4909a06d5f"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Switching items to use protos",
+      "date": "2024-01-10T05:10:43Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/9d05128bc57c5e9ec7d2d0d9b0ce01c7fb16f7eb",
+      "sha": "9d05128bc57c5e9ec7d2d0d9b0ce01c7fb16f7eb"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Serializing terrain objects",
+      "date": "2024-01-10T03:59:13Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/9a32c5e3593796d42ecb85ef70de307dbf8cb11e",
+      "sha": "9a32c5e3593796d42ecb85ef70de307dbf8cb11e"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Switching terrain to serialize using protobufs",
+      "date": "2024-01-09T17:04:41Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/594c008a32dfed0087835cf1684ce750fcbea2db",
+      "sha": "594c008a32dfed0087835cf1684ce750fcbea2db"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Getting started with proto",
+      "date": "2024-01-09T05:30:08Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/f938b5fe4c9d7faeea509653e5eb850f06fb62d1",
+      "sha": "f938b5fe4c9d7faeea509653e5eb850f06fb62d1"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Making pluck bush use give item helper",
+      "date": "2024-01-09T01:00:18Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/006c4335e16e8b21068cd43064ce09852390922e",
+      "sha": "006c4335e16e8b21068cd43064ce09852390922e"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Inventory priority",
+      "date": "2024-01-08T16:40:50Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/1eb5169f0be9f23ab0ed6de2b7b680c855cadc65",
+      "sha": "1eb5169f0be9f23ab0ed6de2b7b680c855cadc65"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Deleting objects that get out of bounds",
+      "date": "2024-01-08T05:51:55Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/985cb6bfedc61ce79ac8cf30942f451d234e085e",
+      "sha": "985cb6bfedc61ce79ac8cf30942f451d234e085e"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Fixing tests",
+      "date": "2024-01-08T05:31:21Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/516c78d09128de8d6bf665f7f89e86f5f505bb79",
+      "sha": "516c78d09128de8d6bf665f7f89e86f5f505bb79"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Merge conflicts",
+      "date": "2024-01-08T04:46:33Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/9ec286f87d0b46f1a3251a04862cc1b36da36c79",
+      "sha": "9ec286f87d0b46f1a3251a04862cc1b36da36c79"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Mushroom",
+      "date": "2024-01-08T04:45:43Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/7e08b63f4da5b1f126b76098978c0b003a7bc19e",
+      "sha": "7e08b63f4da5b1f126b76098978c0b003a7bc19e"
+    },
+    {
       "repo": "PersonalSite",
       "message": "Typo",
       "date": "2024-01-08T01:45:43Z",
@@ -13263,6 +13753,13 @@
       "sha": "b148f310c3967345877c9fa2dc56ea943f7e45b3"
     },
     {
+      "repo": "FactoryCoreLogic",
+      "message": "Update serialization",
+      "date": "2024-01-07T04:56:05Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/ee2379cdc968485a51ff476ade9e4c275b5ffdc5",
+      "sha": "ee2379cdc968485a51ff476ade9e4c275b5ffdc5"
+    },
+    {
       "repo": "PersonalSite",
       "message": "Post for character controller",
       "date": "2024-01-07T01:38:27Z",
@@ -13270,11 +13767,25 @@
       "sha": "b2258be2d849882c0c249931b7f47185c93873cf"
     },
     {
+      "repo": "FactoryCoreLogic",
+      "message": "Getting picking up working",
+      "date": "2024-01-07T01:12:03Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/7608836472e751a181d8c2253e33e46f5072e6f2",
+      "sha": "7608836472e751a181d8c2253e33e46f5072e6f2"
+    },
+    {
       "repo": "FactorySurvivalGame",
       "message": "Working on character controller",
       "date": "2024-01-06T22:57:50Z",
       "url": "https://github.com/tfritzy/FactorySurvivalGame/commit/e8b49c2c848991927b0bb56ab4592c198e375db2",
       "sha": "e8b49c2c848991927b0bb56ab4592c198e375db2"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "item objects and stuff",
+      "date": "2024-01-06T05:24:11Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/2d0369a76073dd75db214d98ac3d53d5b02597ec",
+      "sha": "2d0369a76073dd75db214d98ac3d53d5b02597ec"
     },
     {
       "repo": "FactorySurvivalGame",
@@ -13347,6 +13858,20 @@
       "sha": "238135967c8a2da3a56691f9e1766348ad0c3888"
     },
     {
+      "repo": "FactoryCoreLogic",
+      "message": "Giving pluck state",
+      "date": "2024-01-03T05:55:00Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/9a8fa92dc052216d12f4b7dc34062d79ce907b77",
+      "sha": "9a8fa92dc052216d12f4b7dc34062d79ce907b77"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Needed updates",
+      "date": "2024-01-03T05:29:45Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/3380424b7cac2b63e79bdc86c930634b48d853d2",
+      "sha": "3380424b7cac2b63e79bdc86c930634b48d853d2"
+    },
+    {
       "repo": "FactorySurvivalGame",
       "message": "Getting started on bush interacting",
       "date": "2024-01-03T05:28:17Z",
@@ -13375,11 +13900,74 @@
       "sha": "ed7e5fc346702885f55a8c536664b04225e8ed04"
     },
     {
+      "repo": "FactoryCoreLogic",
+      "message": "Getting started on commands",
+      "date": "2024-01-02T15:53:08Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/06e0b36603aa8a45cb819b8811d219b9af1297bb",
+      "sha": "06e0b36603aa8a45cb819b8811d219b9af1297bb"
+    },
+    {
       "repo": "FactorySurvivalGame",
       "message": "Getting started on commands",
       "date": "2024-01-02T15:52:40Z",
       "url": "https://github.com/tfritzy/FactorySurvivalGame/commit/83f5c41ffdcad0ae900128a6e8b4d7cc28aa0ca0",
       "sha": "83f5c41ffdcad0ae900128a6e8b4d7cc28aa0ca0"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Merge branch 'master' of https://github.com/tfritzy/FactoryCoreLogic",
+      "date": "2024-01-02T14:44:01Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/3fb9cee5e8d998ad045646e4bbd171d9eafcdb89",
+      "sha": "3fb9cee5e8d998ad045646e4bbd171d9eafcdb89"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Small changes",
+      "date": "2024-01-02T14:43:57Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/92b42d484da7c53c32b21af15b560b8fbe8873ef",
+      "sha": "92b42d484da7c53c32b21af15b560b8fbe8873ef"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Items drop to ground if plucker can't hold them",
+      "date": "2024-01-02T04:08:14Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/44f134305180df9964b757ead2779a632d48b310",
+      "sha": "44f134305180df9964b757ead2779a632d48b310"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Finishing item objects - serialization",
+      "date": "2024-01-01T22:36:45Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/b3fba445099c236fb55be8791dcc38da9389461a",
+      "sha": "b3fba445099c236fb55be8791dcc38da9389461a"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Vege updates and getting started on item events",
+      "date": "2024-01-01T19:32:41Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/4b601c8c49e3fc7fe15213fe6920694e15c05a15",
+      "sha": "4b601c8c49e3fc7fe15213fe6920694e15c05a15"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Plucking bush logic",
+      "date": "2024-01-01T18:44:57Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/2284bcd9f1b6be70554c1d999d5565fd1cf5cf55",
+      "sha": "2284bcd9f1b6be70554c1d999d5565fd1cf5cf55"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Getting started on commands",
+      "date": "2024-01-01T06:14:16Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/65cf70a4568c65eb67a93c26bdbc00eb78a02217",
+      "sha": "65cf70a4568c65eb67a93c26bdbc00eb78a02217"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Fixing mine",
+      "date": "2023-12-31T20:01:20Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/02d930e6b1b5e9ee1662c96c545e7b2cd2f129b4",
+      "sha": "02d930e6b1b5e9ee1662c96c545e7b2cd2f129b4"
     },
     {
       "repo": "FactorySurvivalGame",
@@ -13394,6 +13982,20 @@
       "date": "2023-12-31T10:24:28Z",
       "url": "https://github.com/tfritzy/PersonalSite/commit/c54ae8d90530b385ed0b63a7a6a812709e8457a7",
       "sha": "c54ae8d90530b385ed0b63a7a6a812709e8457a7"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Merge branch 'master' of https://github.com/tfritzy/FactoryCoreLogic",
+      "date": "2023-12-31T06:55:15Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/9a079c0d1c46e2a239cbf3cd785b260af7b7fdb0",
+      "sha": "9a079c0d1c46e2a239cbf3cd785b260af7b7fdb0"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Fixing tetss",
+      "date": "2023-12-31T06:55:05Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/3e7fb61840ea275fdc54b63831648f053bd694d6",
+      "sha": "3e7fb61840ea275fdc54b63831648f053bd694d6"
     },
     {
       "repo": "PersonalSite",
@@ -13585,11 +14187,179 @@
       "sha": "1d0b444052c9d0e7fee2a1535323d753c2563e39"
     },
     {
+      "repo": "FactoryCoreLogic",
+      "message": "Adding items for a couple buildings",
+      "date": "2023-12-28T18:57:22Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/52421a0b20996b8b58cbafaedeab6bbc88e81c96",
+      "sha": "52421a0b20996b8b58cbafaedeab6bbc88e81c96"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "WIP making furnaces fully functional",
+      "date": "2023-12-28T06:35:34Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/330f1f70a57835a32fe2b706f31ce2c20ec26f8b",
+      "sha": "330f1f70a57835a32fe2b706f31ce2c20ec26f8b"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Got smelting working",
+      "date": "2023-12-28T01:27:52Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/e87e1c5d51d9f575936dca0b49bfc7c6b11bc659",
+      "sha": "e87e1c5d51d9f575936dca0b49bfc7c6b11bc659"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "WIP making quantity uint",
+      "date": "2023-12-27T21:57:44Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/0ad1a5c1f5cea98125d61375ff90d6acca04bc33",
+      "sha": "0ad1a5c1f5cea98125d61375ff90d6acca04bc33"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Fixing item constructors",
+      "date": "2023-12-27T17:25:05Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/dd2797f376f3949da15c3c649c5ce16032114246",
+      "sha": "dd2797f376f3949da15c3c649c5ce16032114246"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Implementing smelting",
+      "date": "2023-12-27T16:25:33Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/c78c8296374f5bdda9d98502dd16ee73c51b3a21",
+      "sha": "c78c8296374f5bdda9d98502dd16ee73c51b3a21"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Adding an fuel inventory and combustion properties to items",
+      "date": "2023-12-26T20:52:41Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/dc44f5f271e81b63ba25b873ff0f0049fd6afea5",
+      "sha": "dc44f5f271e81b63ba25b873ff0f0049fd6afea5"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Adding ore inventory and smelting recipes",
+      "date": "2023-12-26T02:32:53Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/b19b9d7459a8ba68b66126c9ce9224cf32b4c8d3",
+      "sha": "b19b9d7459a8ba68b66126c9ce9224cf32b4c8d3"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Adding heat loss to smelters",
+      "date": "2023-12-25T01:48:55Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/65a3d5fb2458729a7f774309287b1b1caed44bfb",
+      "sha": "65a3d5fb2458729a7f774309287b1b1caed44bfb"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Fixing item port ordering bug",
+      "date": "2023-12-24T04:05:28Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/8220731cc2797a156523bc685713e21615fbafab",
+      "sha": "8220731cc2797a156523bc685713e21615fbafab"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "linking ports together",
+      "date": "2023-12-23T21:28:39Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/1bbcd07304299f570d74d0eb04eccf31c5e1dcb2",
+      "sha": "1bbcd07304299f570d74d0eb04eccf31c5e1dcb2"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Adding sorter",
+      "date": "2023-12-23T18:24:32Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/e7586d7f325cc0c43e12557bf20b29292b7a0d42",
+      "sha": "e7586d7f325cc0c43e12557bf20b29292b7a0d42"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Adding a configureComponents step",
+      "date": "2023-12-23T17:42:26Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/0f0cdce2e7edeef6ce38d31e4bc8c3e87867fbb1",
+      "sha": "0f0cdce2e7edeef6ce38d31e4bc8c3e87867fbb1"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Adding item filters",
+      "date": "2023-12-23T16:58:28Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/779b5e27f1441cfd4aa3fca7ed97d0d6f689b49d",
+      "sha": "779b5e27f1441cfd4aa3fca7ed97d0d6f689b49d"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Making itemPort work without an inventory",
+      "date": "2023-12-22T01:15:44Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/2d5d34f4b09abc2922b24890d50c3161eda4f358",
+      "sha": "2d5d34f4b09abc2922b24890d50c3161eda4f358"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Getting input ports working",
+      "date": "2023-12-21T21:07:16Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/545305eded8f0c4e7a43184239a4da05cc6be859",
+      "sha": "545305eded8f0c4e7a43184239a4da05cc6be859"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Fixing itemoutput bug",
+      "date": "2023-12-21T17:43:16Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/237383b65cf0a4845ae8c81cb757b30df6c8402e",
+      "sha": "237383b65cf0a4845ae8c81cb757b30df6c8402e"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Conflicts",
+      "date": "2023-12-21T17:38:14Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/45576de2a5f14dd063f8cc7ecf0ec68ebcabc4aa",
+      "sha": "45576de2a5f14dd063f8cc7ecf0ec68ebcabc4aa"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Making ItemOutput",
+      "date": "2023-12-21T17:36:28Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/f0c49018269ebfa2499038a964b2e8ec0f0d1f78",
+      "sha": "f0c49018269ebfa2499038a964b2e8ec0f0d1f78"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Merge branch 'master' of https://github.com/tfritzy/FactoryCoreLogic",
+      "date": "2023-12-20T18:42:33Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/f00f96b555ec3b2a85534c9935275bd0d4cfb644",
+      "sha": "f00f96b555ec3b2a85534c9935275bd0d4cfb644"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "More aware get top",
+      "date": "2023-12-20T18:42:27Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/19398870f57e9d6cff0870eb42bb7537fad59a36",
+      "sha": "19398870f57e9d6cff0870eb42bb7537fad59a36"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Adding vegetation",
+      "date": "2023-12-20T18:41:17Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/d53615b9602cda019c0c28bf0a6486e0f7341ec1",
+      "sha": "d53615b9602cda019c0c28bf0a6486e0f7341ec1"
+    },
+    {
       "repo": "FactorySurvivalGame",
       "message": "Getting build grid buildign",
       "date": "2023-12-20T16:17:41Z",
       "url": "https://github.com/tfritzy/FactorySurvivalGame/commit/ddcf8df80fc44454e20db2e71e45584e854b84fd",
       "sha": "ddcf8df80fc44454e20db2e71e45584e854b84fd"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Merge branch 'master' of https://github.com/tfritzy/FactoryCoreLogic",
+      "date": "2023-12-19T18:18:15Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/338b00eb62867970b059e68d0e70ff126b4c66dc",
+      "sha": "338b00eb62867970b059e68d0e70ff126b4c66dc"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Placing double blocks",
+      "date": "2023-12-19T18:09:37Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/f53699b8b66d2cffc0c7e404d4b889b6983849b4",
+      "sha": "f53699b8b66d2cffc0c7e404d4b889b6983849b4"
     },
     {
       "repo": "FactorySurvivalGame",
@@ -13613,11 +14383,46 @@
       "sha": "3255fc70262813b4947585c7c0cadbe5c0d0f885"
     },
     {
+      "repo": "FactoryCoreLogic",
+      "message": "WIP",
+      "date": "2023-12-18T03:24:09Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/ea3e96579b2f9bd5486afe66adcdfb6edc72191f",
+      "sha": "ea3e96579b2f9bd5486afe66adcdfb6edc72191f"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "removing concept of preview tris",
+      "date": "2023-12-17T01:59:15Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/c196c5210addbcc02cac76f3ad90c89a955d6ebf",
+      "sha": "c196c5210addbcc02cac76f3ad90c89a955d6ebf"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Updating get top hex logic",
+      "date": "2023-12-15T16:49:11Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/ba81247c72e491111e714875170f29d031f4a305",
+      "sha": "ba81247c72e491111e714875170f29d031f4a305"
+    },
+    {
       "repo": "FactorySurvivalGame",
       "message": "Single building",
       "date": "2023-12-15T15:17:50Z",
       "url": "https://github.com/tfritzy/FactorySurvivalGame/commit/f638e16281668c5862236968760baa283e9768dc",
       "sha": "f638e16281668c5862236968760baa283e9768dc"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Getting started on block placement",
+      "date": "2023-12-15T04:34:07Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/2e9fe018bae0613206af5776fc84183212497b44",
+      "sha": "2e9fe018bae0613206af5776fc84183212497b44"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Names and brick",
+      "date": "2023-12-15T03:54:20Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/edb10a19b2a29a7ce304f141090ab81268db0b0b",
+      "sha": "edb10a19b2a29a7ce304f141090ab81268db0b0b"
     },
     {
       "repo": "FactorySurvivalGame",
@@ -13662,11 +14467,46 @@
       "sha": "e8273d39bbb40ba4b5996999be95bfab546c75b9"
     },
     {
+      "repo": "FactoryCoreLogic",
+      "message": "Merge branch 'master' of https://github.com/tfritzy/FactoryCoreLogic",
+      "date": "2023-12-10T06:12:24Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/143312d4e26306ccb574b936ba2162dae1a8b9cc",
+      "sha": "143312d4e26306ccb574b936ba2162dae1a8b9cc"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Fixing transfer to preview issues",
+      "date": "2023-12-10T06:11:51Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/1fc830bec89def63bf199def0444b81055a890a8",
+      "sha": "1fc830bec89def63bf199def0444b81055a890a8"
+    },
+    {
       "repo": "FactorySurvivalGame",
       "message": "Making storage depot work",
       "date": "2023-12-08T16:24:00Z",
       "url": "https://github.com/tfritzy/FactorySurvivalGame/commit/af64539797156cf40a63b18c8c072d1ef0f5fff1",
       "sha": "af64539797156cf40a63b18c8c072d1ef0f5fff1"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Versioned remove method",
+      "date": "2023-12-08T16:03:01Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/464c734f1854914e307339d8b916a3180575e147",
+      "sha": "464c734f1854914e307339d8b916a3180575e147"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Merge branch 'master' of https://github.com/tfritzy/FactoryCoreLogic",
+      "date": "2023-12-08T15:57:26Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/f0139acb70198b2e1ab55b5ccc561e2580d7b176",
+      "sha": "f0139acb70198b2e1ab55b5ccc561e2580d7b176"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Fixing transfertoconveyor",
+      "date": "2023-12-08T15:57:20Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/8a9e0ce7733feb3343bf306d67a4a82aee873e50",
+      "sha": "8a9e0ce7733feb3343bf306d67a4a82aee873e50"
     },
     {
       "repo": "FactorySurvivalGame",
@@ -13676,6 +14516,97 @@
       "sha": "1e13476c9a9f50312d632943b624e3c6cb2d266d"
     },
     {
+      "repo": "FactoryCoreLogic",
+      "message": "Working on getting storage depot to fill",
+      "date": "2023-12-07T05:24:27Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/8bd5562f546fd6741b6fe11b4df6393d23975962",
+      "sha": "8bd5562f546fd6741b6fe11b4df6393d23975962"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Removing log",
+      "date": "2023-12-03T20:33:57Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/7b26d3c3a816050b6a119f2c5c5156c629a4bc64",
+      "sha": "7b26d3c3a816050b6a119f2c5c5156c629a4bc64"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Merge branch 'master' of https://github.com/tfritzy/FactoryCoreLogic",
+      "date": "2023-12-03T20:33:40Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/0ebe7b050e10f9900147bc1eb1226bd856a23aa2",
+      "sha": "0ebe7b050e10f9900147bc1eb1226bd856a23aa2"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "idk",
+      "date": "2023-12-03T20:33:36Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/6ed3fa5f488b358e1e429f0ba7afcdf2b9b2d2f9",
+      "sha": "6ed3fa5f488b358e1e429f0ba7afcdf2b9b2d2f9"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Fixing conveyor bug",
+      "date": "2023-12-03T20:29:22Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/cd6bfcff62fef12fdf22bbd997b9ddbc1e9a0cc2",
+      "sha": "cd6bfcff62fef12fdf22bbd997b9ddbc1e9a0cc2"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Merge branch 'master' of https://github.com/tfritzy/FactoryCoreLogic",
+      "date": "2023-12-03T17:45:58Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/2c104ba8e1c637c1af0ddbf82875e0d0defd676e",
+      "sha": "2c104ba8e1c637c1af0ddbf82875e0d0defd676e"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Fixing curved bug",
+      "date": "2023-12-03T17:45:49Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/95bd216af0e63f9eb1e6a8ac7336b781ef494f6f",
+      "sha": "95bd216af0e63f9eb1e6a8ac7336b781ef494f6f"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Removing import",
+      "date": "2023-12-03T16:57:12Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/9410091eea961aebb74c55bd5c4269c3e4d80f8d",
+      "sha": "9410091eea961aebb74c55bd5c4269c3e4d80f8d"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Relinking conveyor when owner rotation changes",
+      "date": "2023-12-03T16:46:23Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/0b5b7deaebdc442737505204243850c17e7b058c",
+      "sha": "0b5b7deaebdc442737505204243850c17e7b058c"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Making parents obey parent directionality",
+      "date": "2023-12-02T20:50:39Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/865de6c5668103b83637083833f1d53a48cc5a20",
+      "sha": "865de6c5668103b83637083833f1d53a48cc5a20"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "giving buildings a rotation",
+      "date": "2023-12-02T18:27:12Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/c4504acad12602bd7afe4d0fa5460a270f0f2d3f",
+      "sha": "c4504acad12602bd7afe4d0fa5460a270f0f2d3f"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Merge branch 'master' of https://github.com/tfritzy/FactoryCoreLogic",
+      "date": "2023-12-01T16:21:47Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/1486d32d5492b5c1f8964363843e6985fe66e1a1",
+      "sha": "1486d32d5492b5c1f8964363843e6985fe66e1a1"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Giving items an id",
+      "date": "2023-12-01T16:21:38Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/3fa85e031d47162e6f26fd8a7fd50d0aab0fa471",
+      "sha": "3fa85e031d47162e6f26fd8a7fd50d0aab0fa471"
+    },
+    {
       "repo": "FactorySurvivalGame",
       "message": "project stuff",
       "date": "2023-11-30T14:19:58Z",
@@ -13683,11 +14614,32 @@
       "sha": "21590828156767092d83d9a491189bfc335a9781"
     },
     {
+      "repo": "FactoryCoreLogic",
+      "message": "Merge branch 'master' of https://github.com/tfritzy/FactoryCoreLogic",
+      "date": "2023-11-30T14:18:53Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/3964ba5dd1d4e51085c6673755b946ebacdf8173",
+      "sha": "3964ba5dd1d4e51085c6673755b946ebacdf8173"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "?",
+      "date": "2023-11-30T14:18:39Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/b3142215b5a0a36d6035a1747dd331e07ccdaa05",
+      "sha": "b3142215b5a0a36d6035a1747dd331e07ccdaa05"
+    },
+    {
       "repo": "FactorySurvivalGame",
       "message": "UI and stuff",
       "date": "2023-11-30T13:32:28Z",
       "url": "https://github.com/tfritzy/FactorySurvivalGame/commit/d15ba9705d39ef189da2208b444013b73402bf6f",
       "sha": "d15ba9705d39ef189da2208b444013b73402bf6f"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Getting depot working",
+      "date": "2023-11-29T23:20:13Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/790d1e592b250ec0338133f6301b9300cfe5d41d",
+      "sha": "790d1e592b250ec0338133f6301b9300cfe5d41d"
     },
     {
       "repo": "FactorySurvivalGame",
@@ -13725,6 +14677,13 @@
       "sha": "101ae382f7ed307a382133317724b3baf95f2108"
     },
     {
+      "repo": "FactoryCoreLogic",
+      "message": "Not transferring to preview",
+      "date": "2023-11-27T17:22:49Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/77af422dd4bb215a6947553d304c5f70f025bef9",
+      "sha": "77af422dd4bb215a6947553d304c5f70f025bef9"
+    },
+    {
       "repo": "FactorySurvivalGame",
       "message": "Adding sscc",
       "date": "2023-11-26T22:30:19Z",
@@ -13753,6 +14712,20 @@
       "sha": "0300ace979f81da8ef4b8ff873066f2f28a27e4a"
     },
     {
+      "repo": "FactoryCoreLogic",
+      "message": "Adding version to inventory and conveyor",
+      "date": "2023-11-25T20:45:06Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/a386d4d9ae4c7ffe23939676013811e20d0158d3",
+      "sha": "a386d4d9ae4c7ffe23939676013811e20d0158d3"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Adding entity names",
+      "date": "2023-11-25T17:58:45Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/25ec2a43edf6b2d99b5df0ae36d80e5a3d56403c",
+      "sha": "25ec2a43edf6b2d99b5df0ae36d80e5a3d56403c"
+    },
+    {
       "repo": "FactorySurvivalGame",
       "message": "Adding highlighting",
       "date": "2023-11-24T22:12:45Z",
@@ -13767,6 +14740,20 @@
       "sha": "8aa4e3105c0fecc9b279edcaefecf8ec758a274e"
     },
     {
+      "repo": "FactoryCoreLogic",
+      "message": "Only transferring to conveyor if a next exists",
+      "date": "2023-11-23T16:52:57Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/bc9948cfcd33a22998ef92e5d0aaba4dd5606b89",
+      "sha": "bc9948cfcd33a22998ef92e5d0aaba4dd5606b89"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Adding concept of blocking passthrough on conveyors",
+      "date": "2023-11-21T22:59:45Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/becc73ff76ad8bc674efbea5309e47aeae9175d7",
+      "sha": "becc73ff76ad8bc674efbea5309e47aeae9175d7"
+    },
+    {
       "repo": "FactorySurvivalGame",
       "message": "Working on character inspection",
       "date": "2023-11-21T18:48:50Z",
@@ -13774,11 +14761,39 @@
       "sha": "a33d6a52b7c40a70b96fa24ea7de022291e24bf6"
     },
     {
+      "repo": "FactoryCoreLogic",
+      "message": "Implementing hex hiding",
+      "date": "2023-11-21T16:47:35Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/8bba899e417e86395b4da72ff6699b9a554623fd",
+      "sha": "8bba899e417e86395b4da72ff6699b9a554623fd"
+    },
+    {
       "repo": "FactorySurvivalGame",
       "message": "WIP",
       "date": "2023-11-21T11:55:09Z",
       "url": "https://github.com/tfritzy/FactorySurvivalGame/commit/da5606d0c32b1765bc8e10071ca659224422e25b",
       "sha": "da5606d0c32b1765bc8e10071ca659224422e25b"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Fixing item transferring",
+      "date": "2023-11-20T19:13:44Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/f66bc5dbb7d7d15c33e47a9903566cd07a1a7468",
+      "sha": "f66bc5dbb7d7d15c33e47a9903566cd07a1a7468"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Fixing conveyor issues",
+      "date": "2023-11-20T19:05:13Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/1c240f17f4d66cfb2fdc39b85f3d8dbd657595a8",
+      "sha": "1c240f17f4d66cfb2fdc39b85f3d8dbd657595a8"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Item props",
+      "date": "2023-11-20T17:57:24Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/a9b2c8c5713859182c630ad7690f23461bbd2c38",
+      "sha": "a9b2c8c5713859182c630ad7690f23461bbd2c38"
     },
     {
       "repo": "FactorySurvivalGame",
@@ -13793,6 +14808,48 @@
       "date": "2023-11-20T06:05:31Z",
       "url": "https://github.com/tfritzy/FactorySurvivalGame/commit/dd6e38ce7e861ba18fccde4e8cd8bfa68f1c6f6e",
       "sha": "dd6e38ce7e861ba18fccde4e8cd8bfa68f1c6f6e"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Not sure",
+      "date": "2023-11-20T04:51:47Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/053b9bea968359e40ea6214d104c3b8f58f4fe15",
+      "sha": "053b9bea968359e40ea6214d104c3b8f58f4fe15"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Merge branch 'master' of https://github.com/tfritzy/FactoryCoreLogic",
+      "date": "2023-11-20T04:33:19Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/f7a128a394fb0d6a22537d7d4161f237f0073e40",
+      "sha": "f7a128a394fb0d6a22537d7d4161f237f0073e40"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Adding item transferring component",
+      "date": "2023-11-20T04:33:03Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/76e362970357534c930801e11db1b256ad7a3bac",
+      "sha": "76e362970357534c930801e11db1b256ad7a3bac"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Merge conflicts",
+      "date": "2023-11-20T03:14:48Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/7d85d65dbad26d165f35dfa78f34ae79737c9b7b",
+      "sha": "7d85d65dbad26d165f35dfa78f34ae79737c9b7b"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "tmp",
+      "date": "2023-11-20T03:13:28Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/02340bf2f7987f8d6ac6e11a908a9c7955482922",
+      "sha": "02340bf2f7987f8d6ac6e11a908a9c7955482922"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Addinga  mine",
+      "date": "2023-11-19T05:34:51Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/efad0d4664487da12d52371cd44bfc9f8821c687",
+      "sha": "efad0d4664487da12d52371cd44bfc9f8821c687"
     },
     {
       "repo": "FactorySurvivalGame",
@@ -13816,11 +14873,46 @@
       "sha": "7298359a9a40f73302e1a2e33b5a8a44bd696865"
     },
     {
+      "repo": "FactoryCoreLogic",
+      "message": "Hills",
+      "date": "2023-11-18T05:22:08Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/50da6410e99a282a2aea288a7e76bd699201d5e8",
+      "sha": "50da6410e99a282a2aea288a7e76bd699201d5e8"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Categorization",
+      "date": "2023-11-18T02:58:25Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/c4b6a16629f8d5d8b23eb4215eaf05cde3c6615d",
+      "sha": "c4b6a16629f8d5d8b23eb4215eaf05cde3c6615d"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "WIP",
+      "date": "2023-11-18T00:35:37Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/d7c7a2e30d076e28eed43b1d67107464b5b2b9f1",
+      "sha": "d7c7a2e30d076e28eed43b1d67107464b5b2b9f1"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Classifying triangles",
+      "date": "2023-11-17T21:45:45Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/83c56ca1b3670a888db5f7063a40d595b25219ca",
+      "sha": "83c56ca1b3670a888db5f7063a40d595b25219ca"
+    },
+    {
       "repo": "FactorySurvivalGame",
       "message": "Getting belts going the right direction",
       "date": "2023-11-16T16:48:59Z",
       "url": "https://github.com/tfritzy/FactorySurvivalGame/commit/4c916dc6545c29cd7856f9b0e63f3d0015cb6f7a",
       "sha": "4c916dc6545c29cd7856f9b0e63f3d0015cb6f7a"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Unfucking neighbor directions",
+      "date": "2023-11-16T07:23:00Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/0ccaecc89d6e8b85dbc602a0cb2b3f026ebbecf7",
+      "sha": "0ccaecc89d6e8b85dbc602a0cb2b3f026ebbecf7"
     },
     {
       "repo": "FactorySurvivalGame",
@@ -13837,6 +14929,20 @@
       "sha": "6354a9c41e76a7e852f6afe49cccd72bc000cf01"
     },
     {
+      "repo": "FactoryCoreLogic",
+      "message": "Triangle placement",
+      "date": "2023-11-13T20:37:18Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/8a3bd1ffe4c057be7726dc3478b636e2c20a9cc0",
+      "sha": "8a3bd1ffe4c057be7726dc3478b636e2c20a9cc0"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Fixing serialization",
+      "date": "2023-11-13T17:33:30Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/94ea30ab0b380a8304737bf66fa4b10ee9bf8724",
+      "sha": "94ea30ab0b380a8304737bf66fa4b10ee9bf8724"
+    },
+    {
       "repo": "FactorySurvivalGame",
       "message": "Better conveyor",
       "date": "2023-11-13T05:08:10Z",
@@ -13849,6 +14955,27 @@
       "date": "2023-11-13T05:07:33Z",
       "url": "https://github.com/tfritzy/FactorySurvivalGame/commit/ccde403afc4564864b5431f1a44c3d39c653b7a5",
       "sha": "ccde403afc4564864b5431f1a44c3d39c653b7a5"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "new conveyors",
+      "date": "2023-11-13T01:39:43Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/c8c8d44913658748bc7034cf01e5496e58416d37",
+      "sha": "c8c8d44913658748bc7034cf01e5496e58416d37"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Better removed building interface",
+      "date": "2023-11-12T21:10:24Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/12f4c4514a579244656aa96d118a2a78ae02ab85",
+      "sha": "12f4c4514a579244656aa96d118a2a78ae02ab85"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Helper",
+      "date": "2023-11-12T20:56:02Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/94fd155271c96840093376865c72b63ba0fb0170",
+      "sha": "94fd155271c96840093376865c72b63ba0fb0170"
     },
     {
       "repo": "FactorySurvivalGame",
@@ -13865,11 +14992,25 @@
       "sha": "d07c455f49a3ea7540371d975ca160a2d9130b78"
     },
     {
+      "repo": "FactoryCoreLogic",
+      "message": "helpers",
+      "date": "2023-11-12T15:54:12Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/5a1f218265f0821776d826eee3d9339262693ece",
+      "sha": "5a1f218265f0821776d826eee3d9339262693ece"
+    },
+    {
       "repo": "FactorySurvivalGame",
       "message": "Spawning the triangles",
       "date": "2023-11-12T02:04:03Z",
       "url": "https://github.com/tfritzy/FactorySurvivalGame/commit/b80600d895b29e3938563cea9924975ffce2574e",
       "sha": "b80600d895b29e3938563cea9924975ffce2574e"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Triangles",
+      "date": "2023-11-12T00:21:08Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/deb946ec4bc3cbfb4a6d085266b052c6e4296212",
+      "sha": "deb946ec4bc3cbfb4a6d085266b052c6e4296212"
     },
     {
       "repo": "aces-web",
@@ -15111,11 +16252,403 @@
       "sha": "b8c4642a4a4f46d374900a571f7fa2a13d31302c"
     },
     {
+      "repo": "FactoryCoreLogic",
+      "message": "Spawner pretty much complete",
+      "date": "2023-06-11T22:53:09Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/711b4b7bf33b25132081d2ec23be41bd81a4f353",
+      "sha": "711b4b7bf33b25132081d2ec23be41bd81a4f353"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Plodding away on spawner",
+      "date": "2023-06-11T15:39:45Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/1caa1b364092a545e7c41c24db464d07db59f79d",
+      "sha": "1caa1b364092a545e7c41c24db464d07db59f79d"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Working on spawner's logic",
+      "date": "2023-06-10T19:27:07Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/c01704874e89059bbf932b19898d5be4e8797253",
+      "sha": "c01704874e89059bbf932b19898d5be4e8797253"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Spawner props",
+      "date": "2023-06-10T16:35:29Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/471346ab2edb7238f8d6defb556926296738edf3",
+      "sha": "471346ab2edb7238f8d6defb556926296738edf3"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Adding the boilerplat for spawners",
+      "date": "2023-06-09T04:44:29Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/d68071b41ecd234780662e46561f62398b7f5839",
+      "sha": "d68071b41ecd234780662e46561f62398b7f5839"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Fixing get power issues",
+      "date": "2023-06-09T04:31:05Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/1d62775f66ac7f55e2b5e6205c32436574d4f251",
+      "sha": "1d62775f66ac7f55e2b5e6205c32436574d4f251"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Adding more event types",
+      "date": "2023-06-08T16:05:34Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/9777845752a65cc15d03d7e08061cb8b333b6092",
+      "sha": "9777845752a65cc15d03d7e08061cb8b333b6092"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Adding mobs and power",
+      "date": "2023-06-06T05:16:46Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/92a430ab670c17e7af8f13d660e187da28e5bae9",
+      "sha": "92a430ab670c17e7af8f13d660e187da28e5bae9"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Spawning hex",
+      "date": "2023-06-05T15:09:05Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/3bc8d53d4dff288e7b1d89cb1eac4406bd6e81e8",
+      "sha": "3bc8d53d4dff288e7b1d89cb1eac4406bd6e81e8"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Bug fix",
+      "date": "2023-06-03T19:09:23Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/f37a2004189261863cc55f610003a4cf174aef7c",
+      "sha": "f37a2004189261863cc55f610003a4cf174aef7c"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "More typing",
+      "date": "2023-06-03T19:08:27Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/a4e3b0f6c9079933c155e0e00c4192be86c5acd4",
+      "sha": "a4e3b0f6c9079933c155e0e00c4192be86c5acd4"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Making build work for unity",
+      "date": "2023-06-03T19:06:43Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/05ab8ec11f3b3dcd0b8ade34eabee86d885485aa",
+      "sha": "05ab8ec11f3b3dcd0b8ade34eabee86d885485aa"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "All tests passing again!",
+      "date": "2023-06-03T18:49:04Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/6fdb824fb0d6a803aab9e420324122367a9b0a8d",
+      "sha": "6fdb824fb0d6a803aab9e420324122367a9b0a8d"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Got a pixel to hex algorithm working",
+      "date": "2023-06-03T07:44:17Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/d6a79cf081d98e5a284184695bab3a568fdb3eaf",
+      "sha": "d6a79cf081d98e5a284184695bab3a568fdb3eaf"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "So close to being done!",
+      "date": "2023-06-02T04:04:02Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/fc56e9778bd25bcf04529ab18aa77ccfd6070d0b",
+      "sha": "fc56e9778bd25bcf04529ab18aa77ccfd6070d0b"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "The number of failing tests is finally decreasing over time!",
+      "date": "2023-06-01T16:08:16Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/70e4da83b422581145dd48704b1b4b9e30b0a8dd",
+      "sha": "70e4da83b422581145dd48704b1b4b9e30b0a8dd"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Working my way through the refactor",
+      "date": "2023-05-31T15:57:21Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/9a21b1733381898196608dd99da435f5d821c051",
+      "sha": "9a21b1733381898196608dd99da435f5d821c051"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Beginning of large refactor of gridPosition",
+      "date": "2023-05-31T04:51:26Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/937f470a4e5e1f4d9e463a93e4f9b92803c8e3fc",
+      "sha": "937f470a4e5e1f4d9e463a93e4f9b92803c8e3fc"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Getting started on tower targeting",
+      "date": "2023-05-29T20:45:17Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/bdd160ecff59478050e692df0e522e7ac413594b",
+      "sha": "bdd160ecff59478050e692df0e522e7ac413594b"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "WIP",
+      "date": "2023-05-29T20:01:07Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/d0ec42ab97c71eb4b723bb5a913ab7156066486f",
+      "sha": "d0ec42ab97c71eb4b723bb5a913ab7156066486f"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Adding explosions and velocity to projectiles",
+      "date": "2023-05-28T16:48:40Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/bf137aa66ba4ac376b6ff9a582da18e7af31277e",
+      "sha": "bf137aa66ba4ac376b6ff9a582da18e7af31277e"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Refactoring update system and adding projectile updates",
+      "date": "2023-05-28T05:19:12Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/b9c8628e44fa36bb3dd2da713a216ef00d1ea21b",
+      "sha": "b9c8628e44fa36bb3dd2da713a216ef00d1ea21b"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Making projectiles deal damage",
+      "date": "2023-05-27T19:01:15Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/5fdbb73c53b188f1ea90b5e9e04d370f8ae907bf",
+      "sha": "5fdbb73c53b188f1ea90b5e9e04d370f8ae907bf"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "WIP adding projectiles",
+      "date": "2023-05-27T18:08:53Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/ef965cdb873f5d83b429d9121fd3554580730fb1",
+      "sha": "ef965cdb873f5d83b429d9121fd3554580730fb1"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Serializing attack and life",
+      "date": "2023-05-27T16:28:28Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/cf68da9edf9297a80dcd298fd1eeddfefd21a1c3",
+      "sha": "cf68da9edf9297a80dcd298fd1eeddfefd21a1c3"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Getting started on attack and life components",
+      "date": "2023-05-25T16:15:18Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/76999e73fa1f4967d106e4a17e8ee14c3ec6f5f3",
+      "sha": "76999e73fa1f4967d106e4a17e8ee14c3ec6f5f3"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Folder structure",
+      "date": "2023-05-25T15:29:48Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/f7ab2734d0e6546e55b75358adac32ddda663e71",
+      "sha": "f7ab2734d0e6546e55b75358adac32ddda663e71"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Getting all tests back to working",
+      "date": "2023-05-25T15:18:57Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/ea87a011124e8687778727406a128174bea8133a",
+      "sha": "ea87a011124e8687778727406a128174bea8133a"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Adding bedrock",
+      "date": "2023-05-24T16:50:15Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/dd84920614d18b6766e8220ea612d7b2082b8ba7",
+      "sha": "dd84920614d18b6766e8220ea612d7b2082b8ba7"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Adding more tests",
+      "date": "2023-05-23T04:36:03Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/cccbb5f764b1b580178a24885ed1c7439e7c90ca",
+      "sha": "cccbb5f764b1b580178a24885ed1c7439e7c90ca"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Updating tests",
+      "date": "2023-05-21T05:07:01Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/1d08c6da0476b6e32d2ca384bde56279fc088443",
+      "sha": "1d08c6da0476b6e32d2ca384bde56279fc088443"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Got placing stairs as you go down working!",
+      "date": "2023-05-20T17:55:06Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/66ad2cb0ddc88d075d4fea4b821639639601cfb5",
+      "sha": "66ad2cb0ddc88d075d4fea4b821639639601cfb5"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Adding a transparent prop on hexes",
+      "date": "2023-05-16T01:55:00Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/294bea6ef151b5d87a0359e08fb5b13cf2a72878",
+      "sha": "294bea6ef151b5d87a0359e08fb5b13cf2a72878"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Adding some serialization tests",
+      "date": "2023-05-16T01:15:02Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/ebfb6a49ec22dbabf0a8086b2fa409c3e289dfbb",
+      "sha": "ebfb6a49ec22dbabf0a8086b2fa409c3e289dfbb"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Mostly adding villager and worksite serialization",
+      "date": "2023-05-15T00:50:22Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/d06cc5cdb13db14b53f8ebc7465a4bb76798931c",
+      "sha": "d06cc5cdb13db14b53f8ebc7465a4bb76798931c"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Getting quarry ordering pretty much working",
+      "date": "2023-05-13T23:06:53Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/8f84e7b37aae8edd8bf2e24afe76e94045c7d5ff",
+      "sha": "8f84e7b37aae8edd8bf2e24afe76e94045c7d5ff"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Filling out tests for deleting entities",
+      "date": "2023-05-12T20:29:07Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/d123badf0473cc877ebea38a922428608aa63c7e",
+      "sha": "d123badf0473cc877ebea38a922428608aa63c7e"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Working on hex removal logic",
+      "date": "2023-05-10T16:16:10Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/93ebc03529760b2acd68820d5474372375c0a879",
+      "sha": "93ebc03529760b2acd68820d5474372375c0a879"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "WIP implementing harvesting from worksites",
+      "date": "2023-05-10T04:21:53Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/da7ac2b29a3f4b3eef03b7fd460318664b24f75c",
+      "sha": "da7ac2b29a3f4b3eef03b7fd460318664b24f75c"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Adding helpers for converting from cube to offset, and getting hexes in range",
+      "date": "2023-05-09T15:53:13Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/466f50f0aa2df8f579f6c5d0ab6ceede0054c0d5",
+      "sha": "466f50f0aa2df8f579f6c5d0ab6ceede0054c0d5"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Removing component from many names",
+      "date": "2023-05-09T14:58:12Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/b206fd463d0a289398cf826d2676fd5d81ab892e",
+      "sha": "b206fd463d0a289398cf826d2676fd5d81ab892e"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Making worksite be a component instead of part of building",
+      "date": "2023-05-09T14:50:27Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/ac690f84f8d93c29da48eafdb76aa5991b1f121d",
+      "sha": "ac690f84f8d93c29da48eafdb76aa5991b1f121d"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Adding villigers and giving buildings the ability to employ them",
+      "date": "2023-05-08T05:19:20Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/094e319738475c340c382ca50df0795dc8868a5c",
+      "sha": "094e319738475c340c382ca50df0795dc8868a5c"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Switching back to balanceBetween",
+      "date": "2023-05-06T16:55:15Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/002cb26f2c295c11cbeb350513aee0b8d8eeb2df",
+      "sha": "002cb26f2c295c11cbeb350513aee0b8d8eeb2df"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Adding a distribute between option to InventoryComponent",
+      "date": "2023-05-06T16:27:19Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/0f22139a648961e4f40b6645552487c972dd61d6",
+      "sha": "0f22139a648961e4f40b6645552487c972dd61d6"
+    },
+    {
       "repo": "FlowerWorld",
       "message": "Initial commit",
       "date": "2023-04-30T02:48:05Z",
       "url": "https://github.com/tfritzy/FlowerWorld/commit/c5009270abd4fa511e0368609d8e924623c61252",
       "sha": "c5009270abd4fa511e0368609d8e924623c61252"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Making the build from item process two step",
+      "date": "2023-04-29T23:41:15Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/e0b2057d55f0570aad2be4c288d8477667904103",
+      "sha": "e0b2057d55f0570aad2be4c288d8477667904103"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Having BuildBuildingFromItem return the building",
+      "date": "2023-04-29T23:27:08Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/f63897e3ba31c9aad0a54d1da2c8ed6b611329ab",
+      "sha": "f63897e3ba31c9aad0a54d1da2c8ed6b611329ab"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Adding a helper method to build a building from an item",
+      "date": "2023-04-29T23:14:48Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/9cf3106668ac1c8e7d743ee50e775f6b18abd94a",
+      "sha": "9cf3106668ac1c8e7d743ee50e775f6b18abd94a"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Adding inventory helpers to player",
+      "date": "2023-04-29T18:09:54Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/7b1c90c725ca20632b5d138e408681ee94070545",
+      "sha": "7b1c90c725ca20632b5d138e408681ee94070545"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Adding concept of seen updates to world",
+      "date": "2023-04-29T18:08:38Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/6adcb9353b743fb1099848c6360c6bd80d79d992",
+      "sha": "6adcb9353b743fb1099848c6360c6bd80d79d992"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Adding conveyor item",
+      "date": "2023-04-28T03:15:59Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/e77efbb49357b40dc4956188f5a218e0c6119153",
+      "sha": "e77efbb49357b40dc4956188f5a218e0c6119153"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Adding a player character with their three inventories",
+      "date": "2023-04-27T15:32:06Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/d504e5a05a65caeb46c152b887b571e0339ce73f",
+      "sha": "d504e5a05a65caeb46c152b887b571e0339ce73f"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Adding inventory width and hegith",
+      "date": "2023-04-24T04:10:04Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/8b9157b20058ecfa9d933f6659551e91f830b78a",
+      "sha": "8b9157b20058ecfa9d933f6659551e91f830b78a"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Adding a selected index",
+      "date": "2023-04-24T03:37:50Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/405055fe70a6afd5cc5d223efa9e2dc8ca2eb65a",
+      "sha": "405055fe70a6afd5cc5d223efa9e2dc8ca2eb65a"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Adding preview buildings",
+      "date": "2023-04-23T04:23:47Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/1261b20330bb66e74479b4f04091b55c73597b4e",
+      "sha": "1261b20330bb66e74479b4f04091b55c73597b4e"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Adding single transfer and item equality",
+      "date": "2023-04-23T02:35:16Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/0281e015e1adf4c7f6ab4775ed12e6e53f14ab2a",
+      "sha": "0281e015e1adf4c7f6ab4775ed12e6e53f14ab2a"
     },
     {
       "repo": "FactorySurvivalGame",
@@ -15181,11 +16714,53 @@
       "sha": "093db8768cda78aa61bf15f693db9e77dd462ad4"
     },
     {
+      "repo": "FactoryCoreLogic",
+      "message": "Adding transfer index to index",
+      "date": "2023-04-12T04:11:45Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/59fd3ac89b592491ccf1ddee9e391d4baabc920f",
+      "sha": "59fd3ac89b592491ccf1ddee9e391d4baabc920f"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Ading a transfer method",
+      "date": "2023-04-12T02:36:25Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/b0efbfb5fe0f030aa7c19f6fff374e87f34b8cd1",
+      "sha": "b0efbfb5fe0f030aa7c19f6fff374e87f34b8cd1"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Adding a crafting system",
+      "date": "2023-04-11T03:29:48Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/3d34b84493959e7dc0d60620cc31174a90a5ae4e",
+      "sha": "3d34b84493959e7dc0d60620cc31174a90a5ae4e"
+    },
+    {
       "repo": "FactorySurvivalGame",
       "message": "Making items move smoothly",
       "date": "2023-04-10T03:30:15Z",
       "url": "https://github.com/tfritzy/FactorySurvivalGame/commit/af9651beb0525c7eb205558a519711640729993b",
       "sha": "af9651beb0525c7eb205558a519711640729993b"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Making items move smoothly",
+      "date": "2023-04-10T03:28:45Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/8e7188d58bf26e9798170de3c774bb44118fb592",
+      "sha": "8e7188d58bf26e9798170de3c774bb44118fb592"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Gitignore is now ignoring meta files",
+      "date": "2023-04-09T17:50:40Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/ab8c8475f4d265e7d7beb92c4ae16d0343b46757",
+      "sha": "ab8c8475f4d265e7d7beb92c4ae16d0343b46757"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Making logic easier to work with from Unity",
+      "date": "2023-04-09T17:48:25Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/f9350338c83abb3c56e5aa8bab42ab4cf65bf2fe",
+      "sha": "f9350338c83abb3c56e5aa8bab42ab4cf65bf2fe"
     },
     {
       "repo": "FactorySurvivalGame",
@@ -15216,6 +16791,83 @@
       "sha": "793288339fe689a64187342d3f6107d8f0660cdd"
     },
     {
+      "repo": "FactoryCoreLogic",
+      "message": "return type fix",
+      "date": "2023-04-08T20:40:35Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/f343740407616af38f1a8239333e8361100b45da",
+      "sha": "f343740407616af38f1a8239333e8361100b45da"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Making points more compact when serialized",
+      "date": "2023-04-04T14:50:32Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/09a115c21ba44368c0c2563effb216ea57053679",
+      "sha": "09a115c21ba44368c0c2563effb216ea57053679"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "The bugs are dead",
+      "date": "2023-04-04T14:04:11Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/52c6ab96acfb0869499d5a2340784389f4aac08c",
+      "sha": "52c6ab96acfb0869499d5a2340784389f4aac08c"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Fixing serialization bugs",
+      "date": "2023-04-03T16:09:16Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/68c6324f1fe65dcdb801b6888f9406e1ab186b3c",
+      "sha": "68c6324f1fe65dcdb801b6888f9406e1ab186b3c"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Got a buggy serialization loop working",
+      "date": "2023-04-02T17:37:34Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/a23bc2da3ee00d522c9c300eabbfdddcbcaffec2",
+      "sha": "a23bc2da3ee00d522c9c300eabbfdddcbcaffec2"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "WIP serialization",
+      "date": "2023-04-02T16:01:18Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/f4f45447588d0f2008481731f54af6f94457b21a",
+      "sha": "f4f45447588d0f2008481731f54af6f94457b21a"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Mostly finished deserialization, and am WIP adding serialization",
+      "date": "2023-04-01T18:27:38Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/d5ba55e994af00ed12243e4a31df36f10edcf883",
+      "sha": "d5ba55e994af00ed12243e4a31df36f10edcf883"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "More WIP new serialization",
+      "date": "2023-03-31T04:46:08Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/a3756a34aca62a2038b5f9b0bfa1598af3e869f4",
+      "sha": "a3756a34aca62a2038b5f9b0bfa1598af3e869f4"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "WIP Switching to new serialization system",
+      "date": "2023-03-30T15:57:20Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/1ae3f6bc115486391e1ae62ede86d4b7cb03508c",
+      "sha": "1ae3f6bc115486391e1ae62ede86d4b7cb03508c"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Adding concept of entities contained by hex",
+      "date": "2023-03-29T05:36:28Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/d51c5f23cb676acce9c41fa126aea1243fe6a774",
+      "sha": "d51c5f23cb676acce9c41fa126aea1243fe6a774"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "More renaming",
+      "date": "2023-03-29T05:14:13Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/91b8ee96ae3e4ac7172d7fc8c29b6bad087f0ade",
+      "sha": "91b8ee96ae3e4ac7172d7fc8c29b6bad087f0ade"
+    },
+    {
       "repo": "FactorySurvivalGame",
       "message": "Build fixes",
       "date": "2023-03-29T04:34:28Z",
@@ -15228,6 +16880,132 @@
       "date": "2023-03-29T04:31:56Z",
       "url": "https://github.com/tfritzy/FactorySurvivalGame/commit/15e4695277f5255bab7dac73a733f75a73fd51a0",
       "sha": "15e4695277f5255bab7dac73a733f75a73fd51a0"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Fixes for unity",
+      "date": "2023-03-29T04:31:22Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/1171e42d8e0565f838e87b1587624d7f1d9f492c",
+      "sha": "1171e42d8e0565f838e87b1587624d7f1d9f492c"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Renaming to entities and components",
+      "date": "2023-03-29T04:18:55Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/b96a0cea8b6ed6e066b5c416fdd7620e38780ac1",
+      "sha": "b96a0cea8b6ed6e066b5c416fdd7620e38780ac1"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Okay fixed most issues. Only remaining is that trees don't actually exist in the world",
+      "date": "2023-03-28T16:23:39Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/af85ee10e6f0a6ff8994a110947610458f9040cc",
+      "sha": "af85ee10e6f0a6ff8994a110947610458f9040cc"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "WIP fixing issues after refactor",
+      "date": "2023-03-28T15:55:48Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/f599ff34454de4c833aeb492b4724e7c90609be1",
+      "sha": "f599ff34454de4c833aeb492b4724e7c90609be1"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "WIP refactor",
+      "date": "2023-03-28T04:04:17Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/c7fb0bf3f09563c151f786ae345f85657049ca56",
+      "sha": "c7fb0bf3f09563c151f786ae345f85657049ca56"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "More serialization",
+      "date": "2023-03-25T17:37:43Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/d79f0d5977aaadb1f38b3ecf033bb2e721a6fe85",
+      "sha": "d79f0d5977aaadb1f38b3ecf033bb2e721a6fe85"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "More serialization",
+      "date": "2023-03-25T08:06:52Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/3b9b84d890548d74e08f03362170922d0823ae63",
+      "sha": "3b9b84d890548d74e08f03362170922d0823ae63"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Started adding serialization for cells and items",
+      "date": "2023-03-24T16:10:15Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/c034ee256802c71ec5de9e545bf52593cece3473",
+      "sha": "c034ee256802c71ec5de9e545bf52593cece3473"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Serializing characters and world.buildings",
+      "date": "2023-03-23T15:51:20Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/5bf1c26d5ea944fefa3831c01f68fab4f1ce4056",
+      "sha": "5bf1c26d5ea944fefa3831c01f68fab4f1ce4056"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "More changes required in 4.7.1",
+      "date": "2023-03-21T16:03:26Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/2cf861ea38188676bc386414062abffa9162ec8f",
+      "sha": "2cf861ea38188676bc386414062abffa9162ec8f"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Adding required system using",
+      "date": "2023-03-21T16:00:08Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/b73e437618817a0ff93b462192c8453f7475195f",
+      "sha": "b73e437618817a0ff93b462192c8453f7475195f"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Adding serialization of world hexes",
+      "date": "2023-03-21T15:57:21Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/a5a6568f44947478b6d69b8482f16f59c1ac4182",
+      "sha": "a5a6568f44947478b6d69b8482f16f59c1ac4182"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Switching to newtonsoft",
+      "date": "2023-03-21T15:26:12Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/cda71f5ca4c7297950a03ba178e0e20f7f565684",
+      "sha": "cda71f5ca4c7297950a03ba178e0e20f7f565684"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Test using system.text.json",
+      "date": "2023-03-21T15:16:19Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/d0ba29fe9ceb59b5cbfb3fdc4eb18c9863be6524",
+      "sha": "d0ba29fe9ceb59b5cbfb3fdc4eb18c9863be6524"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Having harvest cells deposit in inventories",
+      "date": "2023-03-21T05:27:05Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/becf4af25e0fe27243fb4a9550fc343af9d62e1e",
+      "sha": "becf4af25e0fe27243fb4a9550fc343af9d62e1e"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Adding inventory management methods",
+      "date": "2023-03-19T22:08:08Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/46771d10d397bfb74f0b434a5bbfb2836dce0f89",
+      "sha": "46771d10d397bfb74f0b434a5bbfb2836dce0f89"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Fixing warnings",
+      "date": "2023-03-19T21:21:48Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/2903f4e54824f7720871fa5d1df79331ac78e595",
+      "sha": "2903f4e54824f7720871fa5d1df79331ac78e595"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Adding harvestables and harvestCell",
+      "date": "2023-03-19T21:04:12Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/9fdc3f8ff4e536269609e26d62da7179ec2d3319",
+      "sha": "9fdc3f8ff4e536269609e26d62da7179ec2d3319"
     },
     {
       "repo": "FactorySurvivalGame",
@@ -15249,6 +17027,83 @@
       "date": "2023-03-18T23:49:29Z",
       "url": "https://github.com/tfritzy/FactorySurvivalGame/commit/e9324d1775cf609bd198902c6719daff77f66418",
       "sha": "e9324d1775cf609bd198902c6719daff77f66418"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Updating sizes",
+      "date": "2023-03-18T23:40:47Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/07f7f946f6c2e494317bfb48ad5b6878e258ef27",
+      "sha": "07f7f946f6c2e494317bfb48ad5b6878e258ef27"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Adding hex height",
+      "date": "2023-03-18T23:29:40Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/0ed6bcf394617192509c9903e5d4b5ef7377f790",
+      "sha": "0ed6bcf394617192509c9903e5d4b5ef7377f790"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Fixing builds in 4.7.1",
+      "date": "2023-03-18T22:55:45Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/e65b112ece2029ea99064ef44d6a0a962193a055",
+      "sha": "e65b112ece2029ea99064ef44d6a0a962193a055"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "cleanup",
+      "date": "2023-03-18T22:47:50Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/09914c5d6693ef31e81c38434bba5ae5d38becf0",
+      "sha": "09914c5d6693ef31e81c38434bba5ae5d38becf0"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Implementing conveyor distances",
+      "date": "2023-03-18T01:01:37Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/413069064bb92ebab030542b1d36d336bd7b2f09",
+      "sha": "413069064bb92ebab030542b1d36d336bd7b2f09"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Making conveyors not link at sharp angles",
+      "date": "2023-03-18T00:04:13Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/6392bb06ccc5f542a86d69b896e516a270cea9a2",
+      "sha": "6392bb06ccc5f542a86d69b896e516a270cea9a2"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Adding item transfer between conveyors logic",
+      "date": "2023-03-17T23:29:01Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/aaab5dd49c9e62a533fac113f8592e473a209ecb",
+      "sha": "aaab5dd49c9e62a533fac113f8592e473a209ecb"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Building removal",
+      "date": "2023-03-15T15:34:05Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/5bd0c1e6a427f4daa5a85e12c4d590959aa246f7",
+      "sha": "5bd0c1e6a427f4daa5a85e12c4d590959aa246f7"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Fixing userping conveyors",
+      "date": "2023-03-14T08:56:19Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/863d6f7cc4d0bafe8779031220129d2db48078e1",
+      "sha": "863d6f7cc4d0bafe8779031220129d2db48078e1"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "Removing unwanted log",
+      "date": "2023-03-14T08:45:06Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/bf467a1b42155dd63e0ae90f9922aebc31e2c868",
+      "sha": "bf467a1b42155dd63e0ae90f9922aebc31e2c868"
+    },
+    {
+      "repo": "FactoryCoreLogic",
+      "message": "initial commit",
+      "date": "2023-03-14T08:40:11Z",
+      "url": "https://github.com/tfritzy/FactoryCoreLogic/commit/c0fc41c89116e05944b5c76de4af50b771b88a10",
+      "sha": "c0fc41c89116e05944b5c76de4af50b771b88a10"
     },
     {
       "repo": "HexagonTDF",
