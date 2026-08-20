@@ -1,9 +1,23 @@
 {
   "username": "tfritzy",
-  "generatedAt": "2026-08-20T12:30:14.855Z",
+  "generatedAt": "2026-08-20T18:29:40.180Z",
   "repoCount": 49,
-  "commitCount": 3249,
+  "commitCount": 3251,
   "commits": [
+    {
+      "repo": "typerace.io",
+      "message": "Fix agg wpm calculation",
+      "date": "2026-08-20T13:55:52Z",
+      "url": "https://github.com/tfritzy/typerace.io/commit/bb4bd75168475c5bb21984553f3cd194c1f99b9f",
+      "sha": "bb4bd75168475c5bb21984553f3cd194c1f99b9f"
+    },
+    {
+      "repo": "typerace.io",
+      "message": "Profile refactor (#565)",
+      "date": "2026-08-20T13:43:44Z",
+      "url": "https://github.com/tfritzy/typerace.io/commit/758616cd86adc96189cc74dcdd838f7147380544",
+      "sha": "758616cd86adc96189cc74dcdd838f7147380544"
+    },
     {
       "repo": "typerace.io",
       "message": "fix auto correct",
