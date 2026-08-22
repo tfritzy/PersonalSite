@@ -1,9 +1,16 @@
 {
   "username": "tfritzy",
-  "generatedAt": "2026-08-21T18:29:32.192Z",
+  "generatedAt": "2026-08-22T00:30:33.915Z",
   "repoCount": 49,
-  "commitCount": 3251,
+  "commitCount": 3252,
   "commits": [
+    {
+      "repo": "typerace.io",
+      "message": "remove type notice",
+      "date": "2026-08-21T18:39:16Z",
+      "url": "https://github.com/tfritzy/typerace.io/commit/fa1f042aa2eb786e5ae226b6c19d5f2890fe4f53",
+      "sha": "fa1f042aa2eb786e5ae226b6c19d5f2890fe4f53"
+    },
     {
       "repo": "typerace.io",
       "message": "Fix agg wpm calculation",
