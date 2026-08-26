@@ -1,9 +1,16 @@
 {
   "username": "tfritzy",
-  "generatedAt": "2026-08-26T12:30:19.395Z",
+  "generatedAt": "2026-08-26T18:59:44.894Z",
   "repoCount": 49,
-  "commitCount": 3260,
+  "commitCount": 3261,
   "commits": [
+    {
+      "repo": "typerace.io",
+      "message": "Add mode details to race page",
+      "date": "2026-08-26T13:28:50Z",
+      "url": "https://github.com/tfritzy/typerace.io/commit/eac59a06d69fe5cd1c48b2438a1a334b923ae53b",
+      "sha": "eac59a06d69fe5cd1c48b2438a1a334b923ae53b"
+    },
     {
       "repo": "typerace.io",
       "message": "fix localized",
