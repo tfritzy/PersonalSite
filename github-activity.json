@@ -1,9 +1,30 @@
 {
   "username": "tfritzy",
-  "generatedAt": "2026-08-26T00:31:06.598Z",
+  "generatedAt": "2026-08-26T06:30:17.995Z",
   "repoCount": 49,
-  "commitCount": 3257,
+  "commitCount": 3260,
   "commits": [
+    {
+      "repo": "typerace.io",
+      "message": "fix localized",
+      "date": "2026-08-26T01:58:07Z",
+      "url": "https://github.com/tfritzy/typerace.io/commit/cbb3acff93d444f00a9d495c4e23a1ac7399ae56",
+      "sha": "cbb3acff93d444f00a9d495c4e23a1ac7399ae56"
+    },
+    {
+      "repo": "typerace.io",
+      "message": "shorter og text and update description",
+      "date": "2026-08-26T01:37:44Z",
+      "url": "https://github.com/tfritzy/typerace.io/commit/3428c9f08d5fa53e338efc0a5c3cac8fd8a419a1",
+      "sha": "3428c9f08d5fa53e338efc0a5c3cac8fd8a419a1"
+    },
+    {
+      "repo": "typerace.io",
+      "message": "update large logos to match site",
+      "date": "2026-08-26T01:06:24Z",
+      "url": "https://github.com/tfritzy/typerace.io/commit/5857a18760bbb4c2245042dee4cf39becfb51543",
+      "sha": "5857a18760bbb4c2245042dee4cf39becfb51543"
+    },
     {
       "repo": "typerace.io",
       "message": "Add back type label",
