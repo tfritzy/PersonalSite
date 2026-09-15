@@ -1,9 +1,16 @@
 {
   "username": "tfritzy",
-  "generatedAt": "2026-09-15T12:38:20.668Z",
+  "generatedAt": "2026-09-15T18:30:31.120Z",
   "repoCount": 50,
-  "commitCount": 3293,
+  "commitCount": 3294,
   "commits": [
+    {
+      "repo": "typerace.io",
+      "message": "show xp on game end (#572)",
+      "date": "2026-09-15T13:46:14Z",
+      "url": "https://github.com/tfritzy/typerace.io/commit/5cd7b1c122fb815764f3a3e010f32328ba0dde32",
+      "sha": "5cd7b1c122fb815764f3a3e010f32328ba0dde32"
+    },
     {
       "repo": "typerace.io",
       "message": "on load",
