@@ -1,9 +1,30 @@
 {
   "username": "tfritzy",
-  "generatedAt": "2026-09-21T12:37:19.856Z",
+  "generatedAt": "2026-09-21T18:33:11.920Z",
   "repoCount": 51,
-  "commitCount": 3294,
+  "commitCount": 3297,
   "commits": [
+    {
+      "repo": "typerace.io",
+      "message": "Old logo",
+      "date": "2026-09-21T14:49:55Z",
+      "url": "https://github.com/tfritzy/typerace.io/commit/71c0395d86ce81f31a374f5e24f6cdd40604c8e0",
+      "sha": "71c0395d86ce81f31a374f5e24f6cdd40604c8e0"
+    },
+    {
+      "repo": "typerace.io",
+      "message": "Cursor easing params",
+      "date": "2026-09-21T13:09:04Z",
+      "url": "https://github.com/tfritzy/typerace.io/commit/21eb13e696bacc51882faeb15cfd3f72a0a00b21",
+      "sha": "21eb13e696bacc51882faeb15cfd3f72a0a00b21"
+    },
+    {
+      "repo": "typerace.io",
+      "message": "no x overflow on game page",
+      "date": "2026-09-21T12:49:23Z",
+      "url": "https://github.com/tfritzy/typerace.io/commit/5a93b79966b0856e6520687eb836ca06485aff5d",
+      "sha": "5a93b79966b0856e6520687eb836ca06485aff5d"
+    },
     {
       "repo": "typerace.io",
       "message": "show xp on game end (#572)",
