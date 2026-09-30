@@ -1,9 +1,23 @@
 {
   "username": "tfritzy",
-  "generatedAt": "2026-09-30T12:46:13.496Z",
+  "generatedAt": "2026-09-30T18:35:26.081Z",
   "repoCount": 53,
-  "commitCount": 3305,
+  "commitCount": 3307,
   "commits": [
+    {
+      "repo": "borg",
+      "message": "Basic movement hooked up",
+      "date": "2026-09-30T14:21:33Z",
+      "url": "https://github.com/tfritzy/borg/commit/4ccce31643f858f4e83ca0e18d623d44c0f3d733",
+      "sha": "4ccce31643f858f4e83ca0e18d623d44c0f3d733"
+    },
+    {
+      "repo": "WaitorWaitorSlopPlease",
+      "message": "Fix retry to resend the original edit request",
+      "date": "2026-09-30T14:19:19Z",
+      "url": "https://github.com/tfritzy/WaitorWaitorSlopPlease/commit/4dfd339d45b5a493cac0d3104d466b86e6728e07",
+      "sha": "4dfd339d45b5a493cac0d3104d466b86e6728e07"
+    },
     {
       "repo": "borg",
       "message": ".",
