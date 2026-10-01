@@ -1,9 +1,16 @@
 {
   "username": "tfritzy",
-  "generatedAt": "2026-10-01T12:43:04.983Z",
+  "generatedAt": "2026-10-01T18:37:04.321Z",
   "repoCount": 53,
-  "commitCount": 3307,
+  "commitCount": 3308,
   "commits": [
+    {
+      "repo": "borg",
+      "message": "WIP player movement",
+      "date": "2026-10-01T14:21:11Z",
+      "url": "https://github.com/tfritzy/borg/commit/567f6e42ca0671aa35d38b6b2d16db56e2b9542d",
+      "sha": "567f6e42ca0671aa35d38b6b2d16db56e2b9542d"
+    },
     {
       "repo": "borg",
       "message": "Basic movement hooked up",
