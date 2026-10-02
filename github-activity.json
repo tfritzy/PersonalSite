@@ -1,9 +1,30 @@
 {
   "username": "tfritzy",
-  "generatedAt": "2026-10-02T01:06:09.045Z",
+  "generatedAt": "2026-10-02T06:46:52.212Z",
   "repoCount": 53,
-  "commitCount": 3308,
+  "commitCount": 3311,
   "commits": [
+    {
+      "repo": "borg",
+      "message": "movement fixes",
+      "date": "2026-10-02T02:11:51Z",
+      "url": "https://github.com/tfritzy/borg/commit/c294f80875f34fff99f291c0995aa59d07ad4eea",
+      "sha": "c294f80875f34fff99f291c0995aa59d07ad4eea"
+    },
+    {
+      "repo": "borg",
+      "message": "remote player",
+      "date": "2026-10-02T01:50:32Z",
+      "url": "https://github.com/tfritzy/borg/commit/b890ce9100b32668c3dbf5b8709ce5c65a78e49b",
+      "sha": "b890ce9100b32668c3dbf5b8709ce5c65a78e49b"
+    },
+    {
+      "repo": "borg",
+      "message": "own player movement",
+      "date": "2026-10-02T01:19:11Z",
+      "url": "https://github.com/tfritzy/borg/commit/5de27edd8bb733b746325a68fd2ea7c9d9aeeabc",
+      "sha": "5de27edd8bb733b746325a68fd2ea7c9d9aeeabc"
+    },
     {
       "repo": "borg",
       "message": "WIP player movement",
