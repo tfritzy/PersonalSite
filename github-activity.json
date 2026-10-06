@@ -1,9 +1,23 @@
 {
   "username": "tfritzy",
-  "generatedAt": "2026-10-06T12:41:45.326Z",
+  "generatedAt": "2026-10-06T18:36:11.699Z",
   "repoCount": 53,
-  "commitCount": 3323,
+  "commitCount": 3325,
   "commits": [
+    {
+      "repo": "borg",
+      "message": "Use current snapshot for projectile placement",
+      "date": "2026-10-06T13:33:45Z",
+      "url": "https://github.com/tfritzy/borg/commit/73bf4139f691156f7a8784c58ffd0d1990a88382",
+      "sha": "73bf4139f691156f7a8784c58ffd0d1990a88382"
+    },
+    {
+      "repo": "borg",
+      "message": "Remove range",
+      "date": "2026-10-06T13:25:53Z",
+      "url": "https://github.com/tfritzy/borg/commit/7d7cb3ff92062a49c1cda6b06765202b6d6d5153",
+      "sha": "7d7cb3ff92062a49c1cda6b06765202b6d6d5153"
+    },
     {
       "repo": "borg",
       "message": "Timing",
