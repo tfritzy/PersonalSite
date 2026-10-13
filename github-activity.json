@@ -1,8 +1,8 @@
 {
   "username": "tfritzy",
-  "generatedAt": "2026-10-13T12:46:11.099Z",
+  "generatedAt": "2026-10-13T18:38:34.927Z",
   "repoCount": 53,
-  "commitCount": 3325,
+  "commitCount": 3320,
   "commits": [
     {
       "repo": "borg",
@@ -439,13 +439,6 @@
       "sha": "c7c843430256f99a98255d270900172a91bf5487"
     },
     {
-      "repo": "steam-deck-split-keyboard",
-      "message": "Remove keyboard lifecycle patches",
-      "date": "2026-08-28T01:26:02Z",
-      "url": "https://github.com/tfritzy/steam-deck-split-keyboard/commit/918095834a165043318e984c7b4ea550cc9aef1e",
-      "sha": "918095834a165043318e984c7b4ea550cc9aef1e"
-    },
-    {
       "repo": "typerace.io",
       "message": "Implement results copy and fix replay with allowed errors (#567)",
       "date": "2026-08-27T14:06:08Z",
@@ -549,34 +542,6 @@
       "date": "2026-08-18T02:54:22Z",
       "url": "https://github.com/tfritzy/typerace.io/commit/cbea417c47265afe3119e5f02a4c1f04924b4c9d",
       "sha": "cbea417c47265afe3119e5f02a4c1f04924b4c9d"
-    },
-    {
-      "repo": "steam-deck-split-keyboard",
-      "message": "Balance horizontal key spacing",
-      "date": "2026-08-11T17:31:48Z",
-      "url": "https://github.com/tfritzy/steam-deck-split-keyboard/commit/3fe14b553911d0d72a86f8d4e423c4512beaa606",
-      "sha": "3fe14b553911d0d72a86f8d4e423c4512beaa606"
-    },
-    {
-      "repo": "steam-deck-split-keyboard",
-      "message": "Remove README tagline",
-      "date": "2026-08-11T17:30:34Z",
-      "url": "https://github.com/tfritzy/steam-deck-split-keyboard/commit/bc623cb97e666ac0c69d687be853608dc164b7d3",
-      "sha": "bc623cb97e666ac0c69d687be853608dc164b7d3"
-    },
-    {
-      "repo": "steam-deck-split-keyboard",
-      "message": "Describe the project as AI slop",
-      "date": "2026-08-11T17:16:06Z",
-      "url": "https://github.com/tfritzy/steam-deck-split-keyboard/commit/e4519dfddcd325d81b19d6d9aec19b4f36b55d38",
-      "sha": "e4519dfddcd325d81b19d6d9aec19b4f36b55d38"
-    },
-    {
-      "repo": "steam-deck-split-keyboard",
-      "message": "Preserve split Steam Deck keyboard theme",
-      "date": "2026-08-11T16:52:28Z",
-      "url": "https://github.com/tfritzy/steam-deck-split-keyboard/commit/46ca8ad97404a3db934ec427c0591db76c191822",
-      "sha": "46ca8ad97404a3db934ec427c0591db76c191822"
     },
     {
       "repo": "typerace.io",
