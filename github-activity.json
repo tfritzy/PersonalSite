@@ -1,9 +1,16 @@
 {
   "username": "tfritzy",
-  "generatedAt": "2026-10-24T00:57:34.531Z",
+  "generatedAt": "2026-10-24T06:41:00.399Z",
   "repoCount": 53,
-  "commitCount": 3326,
+  "commitCount": 3327,
   "commits": [
+    {
+      "repo": "bufo.fun",
+      "message": "fix aspect ratios in builder, and disable smoothing",
+      "date": "2026-10-24T01:15:17Z",
+      "url": "https://github.com/tfritzy/bufo.fun/commit/60087f8de38d6a7049380b5337a91d50080a57ad",
+      "sha": "60087f8de38d6a7049380b5337a91d50080a57ad"
+    },
     {
       "repo": "bufo.fun",
       "message": "Merge pull request #50 from bdalpe/feature/bufo-thinks-about-builder",
