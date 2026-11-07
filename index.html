@@ -6,66 +6,97 @@
     <title>Tyler Fritz</title>
     <style>
       html {
-        background-color: #0d1117;
-        color: #dfeaf1;
+        background-color: #0e1111;
       }
       body {
-        font-family: Arial, sans-serif;
         margin: 0;
-        padding: 0;
+        min-height: 100vh;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Helvetica, Arial, sans-serif;
+        color: #eef2ee;
+        background: radial-gradient(
+            900px 420px at 50% -80px,
+            rgba(110, 168, 134, 0.16),
+            transparent 70%
+          )
+          #0e1111;
       }
       main {
-        max-width: 1100px;
-        margin: auto;
-        padding: 40px 20px;
+        max-width: 540px;
+        margin: 0 auto;
+        padding: 88px 20px 56px;
+      }
+      header {
+        text-align: center;
+        margin-bottom: 36px;
       }
       h1 {
-        margin: 0 0 24px 0;
-        font-weight: 500;
+        margin: 0;
+        font-size: 1.45rem;
+        font-weight: 700;
+        letter-spacing: -0.01em;
       }
-      .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-        gap: 16px;
+      .subtitle {
+        margin: 8px 0 0;
+        font-size: 0.95rem;
+        color: rgba(238, 242, 238, 0.55);
       }
-      .project {
+      .links {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+      .link {
         display: block;
-        background-color: #161b22;
-        border: 1px solid #30363d;
-        border-radius: 10px;
-        padding: 16px;
-        color: #dfeaf1;
-        text-decoration: none;
-        font-size: 1.05rem;
+        padding: 16px 20px;
+        text-align: center;
+        font-size: 1rem;
         font-weight: 600;
-        transition: border-color 0.15s ease, background-color 0.15s ease;
+        letter-spacing: 0.01em;
+        color: #eef2ee;
+        text-decoration: none;
+        background: rgba(255, 255, 255, 0.045);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 12px;
+        transition: background 0.15s ease, border-color 0.15s ease,
+          transform 0.15s ease;
       }
-      .project:hover {
-        border-color: #58a6ff;
-        background-color: #1c232c;
+      .link:hover {
+        background: rgba(255, 255, 255, 0.09);
+        border-color: rgba(255, 255, 255, 0.22);
+        transform: translateY(-1px);
+      }
+      .link:active {
+        transform: translateY(0);
+      }
+      .link:focus-visible {
+        outline: 2px solid rgba(110, 168, 134, 0.8);
+        outline-offset: 2px;
       }
     </style>
   </head>
   <body>
     <main>
-      <h1>Tyler Fritz — Projects</h1>
-      <div class="grid">
-        <a class="project" href="https://typerace.io">typerace.io</a>
-        <a class="project" href="https://bufo.fun">bufo.fun</a>
-        <a class="project" href="https://aces.cards">aces.cards</a>
-        <a class="project" href="https://github.com/tfritzy/LunaVoxel">LunaVoxel</a>
-        <a class="project" href="https://github.com/tfritzy/CommandLineTanks">Command Line Tanks</a>
-        <a class="project" href="https://github.com/tfritzy/FactorialRevolution">Factorial Revolution</a>
-        <a class="project" href="https://github.com/tfritzy/BastionWars">Bastion Wars</a>
-        <a class="project" href="https://github.com/tfritzy/typeracing.io">typeracing.io</a>
-        <a class="project" href="https://github.com/tfritzy/FactorySurvivalGame">Factory Survival Game</a>
-        <a class="project" href="https://github.com/tfritzy/FactoryCoreLogic">Factory Core Logic</a>
-        <a class="project" href="https://github.com/tfritzy/ZombieTyping">Zombie Typing</a>
-        <a class="project" href="https://github.com/tfritzy/AcesCore">Aces Core</a>
-        <a class="project" href="./braille.html">Braille Binary Order</a>
-        <a class="project" href="https://play.google.com/store/apps/details?id=com.PineconeGames.FlybyNight">Fly by Night</a>
-        <a class="project" href="https://github.com/tfritzy/HexagonTDF">Hex Grid Tower Defense</a>
-      </div>
+      <header>
+        <h1>Tyler Fritz</h1>
+        <p class="subtitle">Projects &amp; games</p>
+      </header>
+      <nav class="links">
+        <a class="link" href="https://typerace.io">typerace.io</a>
+        <a class="link" href="https://bufo.fun">bufo.fun</a>
+        <a class="link" href="https://aces.cards">aces.cards</a>
+        <a class="link" href="https://github.com/tfritzy/LunaVoxel">LunaVoxel</a>
+        <a class="link" href="https://github.com/tfritzy/CommandLineTanks">Command Line Tanks</a>
+        <a class="link" href="https://github.com/tfritzy/FactorialRevolution">Factorial Revolution</a>
+        <a class="link" href="https://github.com/tfritzy/BastionWars">Bastion Wars</a>
+        <a class="link" href="https://github.com/tfritzy/typeracing.io">typeracing.io</a>
+        <a class="link" href="https://github.com/tfritzy/FactorySurvivalGame">Factory Survival Game</a>
+        <a class="link" href="https://github.com/tfritzy/FactoryCoreLogic">Factory Core Logic</a>
+        <a class="link" href="https://github.com/tfritzy/ZombieTyping">Zombie Typing</a>
+        <a class="link" href="https://github.com/tfritzy/AcesCore">Aces Core</a>
+        <a class="link" href="https://play.google.com/store/apps/details?id=com.PineconeGames.FlybyNight">Fly by Night</a>
+        <a class="link" href="https://github.com/tfritzy/HexagonTDF">Hex Grid Tower Defense</a>
+      </nav>
     </main>
   </body>
 </html>
